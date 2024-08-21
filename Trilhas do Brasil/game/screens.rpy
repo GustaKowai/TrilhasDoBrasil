@@ -252,10 +252,10 @@ screen quick_menu():
             textbutton _("Voltar") action Rollback()
             textbutton _("Histórico") action ShowMenu('history')
             textbutton _("Pular") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Automotivo") action Preference("auto-forward", "toggle")
+            textbutton _("Automático") action Preference("auto-forward", "toggle")
             textbutton _("Salvar") action ShowMenu('save')
             textbutton _("Q.Salvar") action QuickSave()
-            textbutton _("Q. Carga") action QuickLoad()
+            textbutton _("Q. Carregar") action QuickLoad()
             textbutton _("Prefs") action ShowMenu('preferences')
 
 
@@ -305,7 +305,7 @@ screen navigation():
 
             textbutton _("Salvar") action ShowMenu("save")
 
-        textbutton _("Carga") action ShowMenu("load")
+        textbutton _("Carregar") action ShowMenu("load")
 
         textbutton _("Preferências") action ShowMenu("preferences")
 
@@ -595,7 +595,7 @@ screen load():
 
     tag menu
 
-    use file_slots(_("Carga"))
+    use file_slots(_("Carregar"))
 
 
 screen file_slots(title):
@@ -1019,7 +1019,7 @@ screen keyboard_help():
         text _("Navegue pela interface.")
 
     hbox:
-        label _("Fuga")
+        label _("Esc")
         text _("Acessa o menu do jogo.")
 
     hbox:
