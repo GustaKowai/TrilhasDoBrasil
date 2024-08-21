@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/screens.rpy", line 679: expected statement.
+    config.has_sync = False
+                    ^
+
+Ren'Py Version: Ren'Py 8.2.3.24061702
+Wed Aug 21 20:28:38 2024
