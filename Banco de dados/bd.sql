@@ -1,0 +1,53 @@
+drop database if exists trilhaDoBrasil;
+create database trilhaDoBrasil; /* criar base de dados */
+use trilhaDoBrasil; 
+
+CREATE TABLE tb_professor 
+( 
+    idProfessor INT NOT NULL AUTO_INCREMENT,  
+    nome VARCHAR(45) NOT NULL,  
+    profLogin VARCHAR(12) NOT NULL,  
+    senha VARCHAR(15) NOT NULL,  
+    UNIQUE (profLogin),
+    PRIMARY KEY (idProfessor)
+)ENGINE=InnoDB; 
+
+CREATE TABLE tb_grupo 
+( 
+    idGrupo INT NOT NULL AUTO_INCREMENT,  
+    senha VARCHAR(15) NOT NULL,  
+    idProfessor INT NOT NULL, 
+    PRIMARY KEY (idGrupo),
+    CONSTRAINT FK_GRUPO_PROFESSOR FOREIGN KEY(idProfessor) REFERENCES tb_professor (idProfessor)
+)ENGINE=InnoDB; 
+
+
+CREATE TABLE tb_aluno 
+( 
+    idAluno INT NOT NULL AUTO_INCREMENT,  
+    nome VARCHAR(45) NOT NULL,  
+    alunoLogin VARCHAR(12) NOT NULL,  
+    senha VARCHAR(15) NOT NULL,  
+    idGrupo INT NOT NULL,  
+    UNIQUE (alunoLogin),
+    PRIMARY KEY (idAluno),
+    CONSTRAINT FK_ALUNO_GRUPO FOREIGN KEY(idGrupo) REFERENCES tb_grupo (idGrupo)
+)ENGINE=InnoDB; 
+
+
+CREATE TABLE tb_escolhas 
+( 
+    idEscolhas INT NOT NULL AUTO_INCREMENT,  
+    descricao VARCHAR(50) NOT NULL,  
+    PRIMARY KEY (idEscolhas)
+)ENGINE=InnoDB; 
+
+CREATE TABLE tb_escolhe 
+( 
+    idAluno INT NOT NULL,  
+    idEscolhas INT NOT NULL,  
+    ordemEscolha INT NOT NULL,
+    PRIMARY KEY (idAluno, idEscolhas, ordemEscolha),
+    CONSTRAINT FK_ESCOLHE_ALUNO FOREIGN KEY(idAluno) REFERENCES tb_aluno (idAluno),
+    CONSTRAINT FK_ESCOLHE_ESCOLHAS FOREIGN KEY(idEscolhas) REFERENCES tb_escolhas (idEscolhas)
+)ENGINE=InnoDB; 
