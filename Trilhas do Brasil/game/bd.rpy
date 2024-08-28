@@ -1,3 +1,5 @@
+#Tentativa de conectar diretamente do python com o banco de dados
+
 #init python:
 #    import mysql.connector
 #    mydb = mysql.connector.connect(

@@ -1,31 +1,41 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 8, in script
-    init python:
-  File "game/script.rpy", line 10, in <module>
-    mydb = mysql.connector.connect(
-InterfaceError: 2003: Can't connect to MySQL server on '%-.100s:%u' (%s) (Warning: %u format: a number is required, not str)
+  File "game/script.rpy", line 26, in script
+    e "You've created a new Ren'Py game. [mydb]"
+NameError: name 'mydb' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 8, in script
-    init python:
-  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.0-sdk\renpy\ast.py", line 821, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.0-sdk\renpy\python.py", line 1178, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/script.rpy", line 10, in <module>
-    mydb = mysql.connector.connect(
-  File "python-packages/mysql/connector/pooling.py", line 323, in connect
-  File "python-packages/mysql/connector/connection.py", line 179, in __init__
-  File "python-packages/mysql/connector/abstracts.py", line 1399, in connect
-  File "python-packages/mysql/connector/connection.py", line 357, in _open_connection
-  File "python-packages/mysql/connector/network.py", line 748, in open_connection
-InterfaceError: 2003: Can't connect to MySQL server on '%-.100s:%u' (%s) (Warning: %u format: a number is required, not str)
+  File "game/script.rpy", line 26, in script
+    e "You've created a new Ren'Py game. [mydb]"
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.0-sdk\renpy\ast.py", line 2572, in execute
+    Say.execute(self)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.0-sdk\renpy\ast.py", line 615, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.0-sdk\renpy\exports\sayexports.py", line 132, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.0-sdk\renpy\character.py", line 1436, in __call__
+    what = self.prefix_suffix("what", self.what_prefix, what, self.what_suffix)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.0-sdk\renpy\character.py", line 1350, in prefix_suffix
+    return (sub(prefix) + sub(body) + sub(suffix))
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.0-sdk\renpy\character.py", line 1330, in sub
+    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.0-sdk\renpy\substitutions.py", line 373, in substitute
+    s = interpolate(s, variables) # type: ignore
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.0-sdk\renpy\substitutions.py", line 86, in interpolate
+    raise e
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.0-sdk\renpy\substitutions.py", line 78, in interpolate
+    value = renpy.python.py_eval(code, {}, scope)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.0-sdk\renpy\python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.0-sdk\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "<none>", line 1, in <module>
+NameError: name 'mydb' is not defined
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 8.3.0.24082114
 Trilhas do Brasil 1.0
-Tue Aug 27 22:15:18 2024
+Wed Aug 28 19:47:41 2024
