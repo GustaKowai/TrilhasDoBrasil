@@ -1,0 +1,31 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 8, in script
+    init python:
+  File "game/script.rpy", line 10, in <module>
+    mydb = mysql.connector.connect(
+InterfaceError: 2003: Can't connect to MySQL server on '%-.100s:%u' (%s) (Warning: %u format: a number is required, not str)
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 8, in script
+    init python:
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.0-sdk\renpy\ast.py", line 821, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.0-sdk\renpy\python.py", line 1178, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/script.rpy", line 10, in <module>
+    mydb = mysql.connector.connect(
+  File "python-packages/mysql/connector/pooling.py", line 323, in connect
+  File "python-packages/mysql/connector/connection.py", line 179, in __init__
+  File "python-packages/mysql/connector/abstracts.py", line 1399, in connect
+  File "python-packages/mysql/connector/connection.py", line 357, in _open_connection
+  File "python-packages/mysql/connector/network.py", line 748, in open_connection
+InterfaceError: 2003: Can't connect to MySQL server on '%-.100s:%u' (%s) (Warning: %u format: a number is required, not str)
+
+Windows-10-10.0.19041 AMD64
+Ren'Py 8.3.0.24082114
+Trilhas do Brasil 1.0
+Tue Aug 27 22:15:18 2024

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 679: expected statement.
-    config.has_sync = False
-                    ^
+File "game/script.rpy", line 13: invalid syntax
+            host="sql200.infinityfree.com",
+             ^
 
-Ren'Py Version: Ren'Py 8.2.3.24061702
-Wed Aug 21 20:28:38 2024
+Ren'Py Version: Ren'Py 8.3.0.24082114
+Tue Aug 27 22:13:53 2024

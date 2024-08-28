@@ -1,92 +1,39 @@
-2024-08-28 00:35:51 UTC
+2024-08-28 01:15:18 UTC
 Windows-10-10.0.19041
 Ren'Py 8.3.0.24082114
 
-Early init took 0.05s
-Loading error handling took 0.10s
-Loading script took 0.87s
-Loading save slot metadata took 0.07s
-Loading persistent took 0.00s
-Running init code took 0.07s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Etec Paulino Botelho\\AppData\\Roaming/RenPy/backups\\Trilhas do Brasil':
-Dump and make backups took 0.04s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.04s
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.01s
-Analyze screens took 0.02s
-Save screen analysis took 0.01s
-Prepare screens took 0.09s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.45s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Xe Graphics'
-Version: b'4.6.0 - Build 31.0.101.4255'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1731, 975) drawable=(1731, 975)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
-Maximum texture size: 4096x4096
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.03s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-Resetting cache.
-Early init took 441.74s
+Early init took 0.06s
 Loading error handling took 0.02s
-Loading script took 0.18s
-Loading save slot metadata took 0.02s
+Loading script took 0.09s
+Loading save slot metadata took 0.03s
 Loading persistent took 0.00s
-Running init code took 0.02s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Etec Paulino Botelho\\AppData\\Roaming/RenPy/backups\\Trilhas do Brasil':
-Dump and make backups took 0.04s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.05s
+
+Full traceback:
+  File "game/script.rpy", line 8, in script
+    init python:
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.0-sdk\renpy\ast.py", line 821, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.0-sdk\renpy\python.py", line 1178, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/script.rpy", line 10, in <module>
+    mydb = mysql.connector.connect(
+  File "python-packages/mysql/connector/pooling.py", line 323, in connect
+  File "python-packages/mysql/connector/connection.py", line 179, in __init__
+  File "python-packages/mysql/connector/abstracts.py", line 1399, in connect
+  File "python-packages/mysql/connector/connection.py", line 357, in _open_connection
+  File "python-packages/mysql/connector/network.py", line 748, in open_connection
+InterfaceError: 2003: Can't connect to MySQL server on '%-.100s:%u' (%s) (Warning: %u format: a number is required, not str)
+
+While running game code:
+  File "game/script.rpy", line 8, in script
+    init python:
+  File "game/script.rpy", line 10, in <module>
+    mydb = mysql.connector.connect(
+InterfaceError: 2003: Can't connect to MySQL server on '%-.100s:%u' (%s) (Warning: %u format: a number is required, not str)
 DPI scale factor: 1.500000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.12s
+Interface start took 0.37s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -96,21 +43,5 @@ Vendor: "b'Intel'"
 Renderer: b'Intel(R) Iris(R) Xe Graphics'
 Version: b'4.6.0 - Build 31.0.101.4255'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Screen sizes: virtual=(1920, 1080) physical=(1731, 974) drawable=(1731, 974)
 Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
-Maximum texture size: 4096x4096
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s

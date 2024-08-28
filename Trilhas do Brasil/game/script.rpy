@@ -5,6 +5,16 @@
 
 define e = Character("Eileen")
 
+init python:
+    import mysql.connector
+    mydb = mysql.connector.connect(
+        user="if0_36583066",
+        password="Site19940420",
+        host="sql200.infinityfree.com",
+        database="if0_36583066_pami_sonora_music",
+        port=3306
+    )
+
 
 # The game starts here.
 
@@ -24,7 +34,7 @@ label start:
 
     # These display lines of dialogue.
 
-    e "You've created a new Ren'Py game."
+    e "You've created a new Ren'Py game. [mydb]"
 
     e "Once you add a story, pictures, and music, you can release it to the world!"
 
