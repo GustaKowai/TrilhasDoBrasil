@@ -324,7 +324,7 @@ screen navigation():
             ## A ajuda não é necessária ou relevante para dispositivos móveis.
             textbutton _("Ajuda") action ShowMenu("help")
 
-        if renpy.variant("pc"):
+        if renpy.variant("pc") and main_menu:
 
             ## O botão Sair é proibido no iOS e desnecessário no Android e na
             ## Web.
