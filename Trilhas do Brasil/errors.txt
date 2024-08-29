@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 13: invalid syntax
-            host="sql200.infinityfree.com",
-             ^
+File "game/funcoes.rpy", line 1: expected statement.
+    Função de som de falas dos personagens
+                                          ^
 
 Ren'Py Version: Ren'Py 8.3.0.24082114
-Tue Aug 27 22:13:53 2024
+Wed Aug 28 20:43:13 2024
