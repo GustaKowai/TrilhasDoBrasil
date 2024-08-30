@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/funcoes.rpy", line 1: expected statement.
-    Função de som de falas dos personagens
-                                          ^
+File "game/bd.rpy", line 13: invalid syntax
+    global teste = mydb
+                  ^
 
 Ren'Py Version: Ren'Py 8.3.0.24082114
-Wed Aug 28 20:43:13 2024
+Fri Aug 30 19:41:27 2024

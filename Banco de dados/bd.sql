@@ -2,7 +2,7 @@ drop database if exists trilhaDoBrasil;
 create database trilhaDoBrasil; /* criar base de dados */
 use trilhaDoBrasil; 
 
---Tabela dos professores 
+/*Tabela dos professores*/
 CREATE TABLE tb_professor 
 ( 
     idProfessor INT NOT NULL AUTO_INCREMENT,  
@@ -13,7 +13,7 @@ CREATE TABLE tb_professor
     PRIMARY KEY (idProfessor)
 )ENGINE=InnoDB; 
 
---Tabela do grupo, é sempre ligado a um professor responsável
+/*Tabela do grupo, é sempre ligado a um professor responsável*/
 CREATE TABLE tb_grupo 
 ( 
     idGrupo INT NOT NULL AUTO_INCREMENT,  
@@ -23,7 +23,7 @@ CREATE TABLE tb_grupo
     CONSTRAINT FK_GRUPO_PROFESSOR FOREIGN KEY(idProfessor) REFERENCES tb_professor (idProfessor)
 )ENGINE=InnoDB; 
 
---Tabela dos alunos, é sempre ligado a um grupo
+/*Tabela dos alunos, é sempre ligado a um grupo*/
 CREATE TABLE tb_aluno 
 ( 
     idAluno INT NOT NULL AUTO_INCREMENT,  
@@ -36,7 +36,7 @@ CREATE TABLE tb_aluno
     CONSTRAINT FK_ALUNO_GRUPO FOREIGN KEY(idGrupo) REFERENCES tb_grupo (idGrupo)
 )ENGINE=InnoDB; 
 
---Tabela de escolhas possíveis feitas no jogo.
+/*Tabela de escolhas possíveis feitas no jogo.*/
 CREATE TABLE tb_escolhas 
 ( 
     idEscolhas INT NOT NULL AUTO_INCREMENT,  
@@ -44,7 +44,7 @@ CREATE TABLE tb_escolhas
     PRIMARY KEY (idEscolhas)
 )ENGINE=InnoDB; 
 
---Tabela que relaciona os alunos com as escolhas que eles fazem
+/*Tabela que relaciona os alunos com as escolhas que eles fazem*/
 CREATE TABLE tb_escolhe 
 ( 
     idAluno INT NOT NULL,  

@@ -2,14 +2,14 @@
 
 While running game code:
   File "game/script.rpy", line 26, in script
-    e "You've created a new Ren'Py game. [mydb]"
-NameError: name 'mydb' is not defined
+    e "Conectado ao bando de dados [teste]"
+NameError: name 'teste' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
   File "game/script.rpy", line 26, in script
-    e "You've created a new Ren'Py game. [mydb]"
+    e "Conectado ao bando de dados [teste]"
   File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.0-sdk\renpy\ast.py", line 2572, in execute
     Say.execute(self)
   File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.0-sdk\renpy\ast.py", line 615, in execute
@@ -33,9 +33,9 @@ Full traceback:
   File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.0-sdk\renpy\python.py", line 1202, in py_eval_bytecode
     return eval(bytecode, globals, locals)
   File "<none>", line 1, in <module>
-NameError: name 'mydb' is not defined
+NameError: name 'teste' is not defined
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 8.3.0.24082114
 Trilhas do Brasil 1.0
-Wed Aug 28 19:47:41 2024
+Fri Aug 30 19:59:43 2024

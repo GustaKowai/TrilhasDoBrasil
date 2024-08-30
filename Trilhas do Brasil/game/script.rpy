@@ -23,7 +23,9 @@ label start:
 
     # These display lines of dialogue.
 
-    e "You've created a new Ren'Py game."
+    e "Conectado ao banco de dados [BD]"
+    $ BD = conectabd("teste")
+    e "Conectado ao banco de dados [BD]"
 
     e "Once you add a story, pictures, and music, you can release it to the world!"
 
