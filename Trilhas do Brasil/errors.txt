@@ -2,9 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/bd.rpy", line 13: invalid syntax
-    global teste = mydb
-                  ^
+File "game/bd.rpy", line 43: invalid syntax
+    def selectFromBD(bancodedados)
 
 Ren'Py Version: Ren'Py 8.3.0.24082114
-Fri Aug 30 19:41:27 2024
+Fri Aug 30 20:34:09 2024

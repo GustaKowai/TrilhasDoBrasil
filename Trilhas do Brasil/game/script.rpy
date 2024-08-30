@@ -24,11 +24,14 @@ label start:
     # These display lines of dialogue.
 
     e "Conectado ao banco de dados [BD]"
-    $ BD = conectabd("teste")
+    $ BD = checaConexao("teste")
     e "Conectado ao banco de dados [BD]"
 
-    e "Once you add a story, pictures, and music, you can release it to the world!"
-
+    e "Vamos tentar fazer uma inserção no banco de dados..."
+    $ teste = insertIntoBD("trilhadobrasil","André","andre10","senha123")
+    e "[teste]"
     # This ends the game.
+    $ resultado = selectFromBD("trilhadobrasil")
+    e "[resultado]"
 
     return

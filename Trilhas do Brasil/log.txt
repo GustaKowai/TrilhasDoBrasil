@@ -1,9 +1,9 @@
-2024-08-30 23:01:24 UTC
+2024-08-30 23:42:23 UTC
 Windows-10-10.0.19041
 Ren'Py 8.3.0.24082114
 
 Early init took 0.06s
-Loading error handling took 0.03s
+Loading error handling took 0.02s
 Loading script took 0.12s
 Loading save slot metadata took 0.03s
 Loading persistent took 0.00s
@@ -26,12 +26,12 @@ Init translation took 0.03s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
-Save screen analysis took 0.02s
+Save screen analysis took 0.01s
 Prepare screens took 0.05s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.02s
 Running _start took 0.00s
-Interface start took 0.05s
+Interface start took 0.40s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -45,3 +45,10 @@ Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
 Maximum texture size: 4096x4096
 Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
 Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s

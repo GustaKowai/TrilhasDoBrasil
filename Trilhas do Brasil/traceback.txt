@@ -1,41 +1,31 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 26, in script
-    e "Conectado ao bando de dados [teste]"
-NameError: name 'teste' is not defined
+  File "game/script.rpy", line 34, in script
+    $ resultado = selectFromBD("trilhadobrasil")
+  File "game/script.rpy", line 34, in <module>
+    $ resultado = selectFromBD("trilhadobrasil")
+  File "game/bd.rpy", line 50, in selectFromBD
+    cursor.execute(sql,val)
+ProgrammingError: Could not process parameters: int(3), it must be of type list, tuple or dict
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 26, in script
-    e "Conectado ao bando de dados [teste]"
-  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.0-sdk\renpy\ast.py", line 2572, in execute
-    Say.execute(self)
-  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.0-sdk\renpy\ast.py", line 615, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.0-sdk\renpy\exports\sayexports.py", line 132, in say
-    who(what, *args, **kwargs)
-  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.0-sdk\renpy\character.py", line 1436, in __call__
-    what = self.prefix_suffix("what", self.what_prefix, what, self.what_suffix)
-  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.0-sdk\renpy\character.py", line 1350, in prefix_suffix
-    return (sub(prefix) + sub(body) + sub(suffix))
-  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.0-sdk\renpy\character.py", line 1330, in sub
-    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
-  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.0-sdk\renpy\substitutions.py", line 373, in substitute
-    s = interpolate(s, variables) # type: ignore
-  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.0-sdk\renpy\substitutions.py", line 86, in interpolate
-    raise e
-  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.0-sdk\renpy\substitutions.py", line 78, in interpolate
-    value = renpy.python.py_eval(code, {}, scope)
-  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.0-sdk\renpy\python.py", line 1209, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.0-sdk\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "<none>", line 1, in <module>
-NameError: name 'teste' is not defined
+  File "game/script.rpy", line 34, in script
+    $ resultado = selectFromBD("trilhadobrasil")
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.0-sdk\renpy\ast.py", line 821, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.0-sdk\renpy\python.py", line 1178, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/script.rpy", line 34, in <module>
+    $ resultado = selectFromBD("trilhadobrasil")
+  File "game/bd.rpy", line 50, in selectFromBD
+    cursor.execute(sql,val)
+  File "python-packages/mysql/connector/cursor.py", line 526, in execute
+ProgrammingError: Could not process parameters: int(3), it must be of type list, tuple or dict
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 8.3.0.24082114
 Trilhas do Brasil 1.0
-Fri Aug 30 19:59:43 2024
+Fri Aug 30 20:41:27 2024
