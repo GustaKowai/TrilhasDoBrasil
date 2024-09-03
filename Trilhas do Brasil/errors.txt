@@ -2,8 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/bd.rpy", line 43: invalid syntax
-    def selectFromBD(bancodedados)
+File "game/bd.rpy", line 34: invalid syntax
+        sql = "INSERT INTO tb_professor (nome, profLogin,senha) VALUES ("André","andre10","senha123")"
+                                                                          ^
 
 Ren'Py Version: Ren'Py 8.3.0.24082114
-Fri Aug 30 20:34:09 2024
+Mon Sep  2 21:31:53 2024

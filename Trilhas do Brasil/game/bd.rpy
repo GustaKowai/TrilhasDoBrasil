@@ -31,22 +31,27 @@ init python:
     def insertIntoBD(bancodedados,nome,profLogin,senha):
         mydb = conectabd(bancodedados)
         cursor = mydb.cursor()
-        sql = "INSERT INTO tb_professor (nome, profLogin,senha) VALUES (%s, %s,%s)"
+        sql = "INSERT INTO tb_professor (nome, profLogin,senha) VALUES (%s,%s,%s)"
         val = (nome,profLogin,senha)
         sucesso = "Falha"
         if mydb.is_connected():
             cursor = mydb.cursor()
             cursor.execute(sql,val)
+            mydb.commit()
+            cursor.close()
+            mydb.close()
             sucesso = "A inserção no banco de dados",bancodedados,"foi um sucesso! A ID da inserção é a", cursor.lastrowid
         return sucesso
 
-    def selectFromBD(bancodedados):
+    def selectFromBD(bancodedados,idProfessor):
         mydb = conectabd(bancodedados)
         sql = "SELECT * FROM tb_professor WHERE idProfessor = %s"
-        val = (4,)
+        val = (idProfessor,)
         resultado = "0"
         if mydb.is_connected():
             cursor = mydb.cursor()
             cursor.execute(sql,val)
             resultado = cursor.fetchall()
+            cursor.close()
+            mydb.close()
         return resultado
