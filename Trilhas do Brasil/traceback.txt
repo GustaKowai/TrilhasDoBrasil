@@ -1,34 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 31, in script
-    $ teste = insertIntoBD("trilhadobrasil","André","andre02","senha123")
-  File "game/script.rpy", line 31, in <module>
-    $ teste = insertIntoBD("trilhadobrasil","André","andre02","senha123")
-  File "game/bd.rpy", line 39, in insertIntoBD
-    cursor.execute(sql,val)
-IntegrityError: 1062 (23000): Duplicate entry 'andre02' for key 'profLogin'
+  File "game/script.rpy", line 68, in script
+    $ resposta = checkLogin(username,senha)
+  File "game/script.rpy", line 68, in <module>
+    $ resposta = checkLogin(username,senha)
+  File "game/bd.rpy", line 66, in checkLogin
+    testeSenha = resultado[3]
+IndexError: list index out of range
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 31, in script
-    $ teste = insertIntoBD("trilhadobrasil","André","andre02","senha123")
+  File "game/script.rpy", line 68, in script
+    $ resposta = checkLogin(username,senha)
   File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.0-sdk\renpy\ast.py", line 821, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.0-sdk\renpy\python.py", line 1178, in py_exec_bytecode
     exec(bytecode, globals, locals)
-  File "game/script.rpy", line 31, in <module>
-    $ teste = insertIntoBD("trilhadobrasil","André","andre02","senha123")
-  File "game/bd.rpy", line 39, in insertIntoBD
-    cursor.execute(sql,val)
-  File "python-packages/mysql/connector/cursor.py", line 537, in execute
-  File "python-packages/mysql/connector/opentelemetry/context_propagation.py", line 97, in wrapper
-  File "python-packages/mysql/connector/connection.py", line 859, in cmd_query
-  File "python-packages/mysql/connector/connection.py", line 635, in _handle_result
-IntegrityError: 1062 (23000): Duplicate entry 'andre02' for key 'profLogin'
+  File "game/script.rpy", line 68, in <module>
+    $ resposta = checkLogin(username,senha)
+  File "game/bd.rpy", line 66, in checkLogin
+    testeSenha = resultado[3]
+IndexError: list index out of range
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 8.3.0.24082114
 Trilhas do Brasil 1.0
-Mon Sep  2 22:06:59 2024
+Tue Sep  3 22:10:15 2024

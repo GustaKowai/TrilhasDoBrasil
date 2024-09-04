@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/bd.rpy", line 34: invalid syntax
-        sql = "INSERT INTO tb_professor (nome, profLogin,senha) VALUES ("André","andre10","senha123")"
-                                                                          ^
+File "game/bd.rpy", line 65: invalid syntax
+            e("o comprimento do vetor resultado é"len(resultado))
+                                                   ^
 
 Ren'Py Version: Ren'Py 8.3.0.24082114
-Mon Sep  2 21:31:53 2024
+Tue Sep  3 22:03:47 2024

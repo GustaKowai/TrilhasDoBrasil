@@ -41,12 +41,13 @@ init python:
             cursor.close()
             mydb.close()
             sucesso = "A inserção no banco de dados",bancodedados,"foi um sucesso! A ID da inserção é a", cursor.lastrowid
-        return sucesso
+        return sucesso,cursor.lastrowid
 
-    def selectFromBD(bancodedados,idProfessor):
+    #Faz o select da tabela professor
+    def selectFromBD(bancodedados,coluna,alvo):
         mydb = conectabd(bancodedados)
-        sql = "SELECT * FROM tb_professor WHERE idProfessor = %s"
-        val = (idProfessor,)
+        sql = "SELECT * FROM tb_professor WHERE "+coluna+"=%s"
+        val = (alvo,)
         resultado = "0"
         if mydb.is_connected():
             cursor = mydb.cursor()
@@ -55,3 +56,16 @@ init python:
             cursor.close()
             mydb.close()
         return resultado
+
+    def checkLogin(username,senha):
+        resultado = selectFromBD("trilhadobrasil","profLogin",username)
+        if len(resultado) < 1:
+            resposta = "O username não está no nosso banco de dados"
+        else:
+            e("o comprimento do vetor resultado é",len(resultado))
+            testeSenha = resultado[3]
+            if testeSenha == senha:
+                resposta = "O login foi executado! Seja bem vindo", resultado[1]
+            else:
+                resposta = "A senha está errada"
+        return resposta

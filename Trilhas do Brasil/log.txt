@@ -1,11 +1,11 @@
-2024-09-03 01:07:28 UTC
+2024-09-04 01:09:37 UTC
 Windows-10-10.0.19041
 Ren'Py 8.3.0.24082114
 
 Early init took 0.05s
 Loading error handling took 0.02s
-Loading script took 0.12s
-Loading save slot metadata took 0.02s
+Loading script took 0.11s
+Loading save slot metadata took 0.03s
 Loading persistent took 0.00s
 Running init code took 0.17s
 Loading analysis data took 0.01s
@@ -31,7 +31,7 @@ Prepare screens took 0.05s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.02s
 Running _start took 0.00s
-Interface start took 0.41s
+Interface start took 0.42s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -41,14 +41,27 @@ Vendor: "b'Intel'"
 Renderer: b'Intel(R) Iris(R) Xe Graphics'
 Version: b'4.6.0 - Build 31.0.101.4255'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Screen sizes: virtual=(1920, 1080) physical=(1731, 974) drawable=(1731, 974)
 Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
-Maximum texture size: 4096x4096
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
+
+Full traceback:
+  File "game/script.rpy", line 68, in script
+    $ resposta = checkLogin(username,senha)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.0-sdk\renpy\ast.py", line 821, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.0-sdk\renpy\python.py", line 1178, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/script.rpy", line 68, in <module>
+    $ resposta = checkLogin(username,senha)
+  File "game/bd.rpy", line 66, in checkLogin
+    testeSenha = resultado[3]
+IndexError: list index out of range
+
+While running game code:
+  File "game/script.rpy", line 68, in script
+    $ resposta = checkLogin(username,senha)
+  File "game/script.rpy", line 68, in <module>
+    $ resposta = checkLogin(username,senha)
+  File "game/bd.rpy", line 66, in checkLogin
+    testeSenha = resultado[3]
+IndexError: list index out of range

@@ -21,6 +21,32 @@ label start:
 
     show eileen happy
 
+    e "Vamos fazer um login simples!"
+    python:
+        nomeConfirma = True
+        usernameConfirma = True
+        while nomeConfirma:
+            nome = renpy.input("Qual é o seu nome completo?")
+            nome = nome.strip()
+            if len(nome)>0:
+                nomeConfirma = False
+            else:
+                e("O seu nome não pode estar vazio.")
+        while usernameConfirma:
+            username = renpy.input("Qual o nome de usuário que deseja colocar?")
+            username = username.strip()
+            if len(username)>5:
+                usernameConfirma = False
+            else:
+                e("O nome de usuário deve ter pelo menos 5 caracteres.")
+        confirma = True
+        while confirma:
+            senha = renpy.input("Qual senha deseja colocar?",mask="*")
+            confirmasenha = renpy.input("Por favor, confirme a senha",mask="*")
+            if confirmasenha == senha and senha:
+                confirma = False
+            else:
+                e("A senha não coincidiu.")
     # These display lines of dialogue.
 
     e "Conectado ao banco de dados [BD]"
@@ -28,11 +54,18 @@ label start:
     e "Conectado ao banco de dados [BD]"
 
     e "Vamos tentar fazer uma inserção no banco de dados..."
-    $ teste = insertIntoBD("trilhadobrasil","André","andre35","senha123")
+    $ teste,position = insertIntoBD("trilhadobrasil",nome,username,senha)
     e "[teste]"
     # This ends the game.
-    $ resultado = selectFromBD("trilhadobrasil","35")
+    $ resultado = selectFromBD("trilhadobrasil",'idProfessor',int(position))
     e "[resultado]"
 
+
+    e "Vamos agora tentar fazer o login!"
+    e "Para isso, irei pedir que você digite o seu nome de usuário:"
+    $ username = renpy.input("Nome de usuário:")
+    $ senha = senha = renpy.input("Por favor, digite sua senha",mask="*")
+    $ resposta = checkLogin(username,senha)
+    e "[resposta]"
     return
  
