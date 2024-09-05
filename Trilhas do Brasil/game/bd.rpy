@@ -59,13 +59,17 @@ init python:
 
     def checkLogin(username,senha):
         resultado = selectFromBD("trilhadobrasil","profLogin",username)
-        if len(resultado) < 1:
-            resposta = "O username não está no nosso banco de dados"
-        else:
-            e("o comprimento do vetor resultado é",len(resultado))
-            testeSenha = resultado[3]
+        resultado = resultado[0]
+        resultadoID = resultado[0]
+        resultadoNome = resultado[1]
+        resultadoLogin = resultado[2]
+        resultadoSenha = resultado[3]
+        if resultadoLogin:
+            testeSenha = resultadoSenha
             if testeSenha == senha:
-                resposta = "O login foi executado! Seja bem vindo", resultado[1]
+                resposta = "O login foi executado! Seja bem vindo", resultadoNome
             else:
                 resposta = "A senha está errada"
+        else:
+            resposta = "O username não está no nosso banco de dados"
         return resposta

@@ -8,7 +8,6 @@ define e = Character("Eileen", image="eileen", callback = low_beep, what_prefix=
 # The game starts here.
 
 label start:
-
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
@@ -20,6 +19,8 @@ label start:
     # directory.
 
     show eileen happy
+    e "Seja bem vindo ao jogo!!"
+    jump fazerlogin
 
     e "Vamos fazer um login simples!"
     python:
@@ -35,7 +36,7 @@ label start:
         while usernameConfirma:
             username = renpy.input("Qual o nome de usuário que deseja colocar?")
             username = username.strip()
-            if len(username)>5:
+            if len(username)>=5:
                 usernameConfirma = False
             else:
                 e("O nome de usuário deve ter pelo menos 5 caracteres.")
@@ -61,6 +62,7 @@ label start:
     e "[resultado]"
 
 
+label fazerlogin:
     e "Vamos agora tentar fazer o login!"
     e "Para isso, irei pedir que você digite o seu nome de usuário:"
     $ username = renpy.input("Nome de usuário:")
