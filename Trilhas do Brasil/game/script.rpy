@@ -1,27 +1,42 @@
-﻿# The script of the game goes in this file.
+﻿define e = Character("Eileen", image="eileen", callback = low_beep, what_prefix='', what_suffix='')
 
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
-
-define e = Character("Eileen", image="eileen", callback = low_beep, what_prefix='', what_suffix='')
-
-# The game starts here.
+# O jogo começa aqui.
 
 label start:
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
-
     scene bg room
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-
     show eileen happy
+
     e "Seja bem vindo ao jogo!!"
+
     jump fazerlogin
 
+#label de login no jogo
+label fazerlogin:
+    e "Vamos agora tentar fazer o login!"
+    e "Para isso, irei pedir que você digite o seu nome de usuário:"
+    $ username = renpy.input("Nome de usuário:")
+    $ senha = senha = renpy.input("Por favor, digite sua senha",mask="*")
+    $ resposta = checkLogin(username,senha,"tb_aluno","alunoLogin")
+    if resposta == 0:
+        e "A senha não corresponde ao usuário."
+        jump fazerlogin
+    if resposta == 1:
+        e "O usuário não foi encontrado no sistema"
+        jump fazerlogin
+    $ nome = resposta
+    e "O login foi executado! Seja bem vindo [nome]"
+    jump inicioHistoria
+
+label final:
+    e "Espero que tenha se divertido."
+    e "Até mais"
+
+    return
+ 
+
+ #label de testes do bd
+ label testesbd:
     e "Vamos fazer um login simples!"
     python:
         nomeConfirma = True
@@ -61,20 +76,3 @@ label start:
     $ resultado = selectFromBD("trilhadobrasil",'idProfessor',int(position))
     e "[resultado]"
 
-
-label fazerlogin:
-    e "Vamos agora tentar fazer o login!"
-    e "Para isso, irei pedir que você digite o seu nome de usuário:"
-    $ username = renpy.input("Nome de usuário:")
-    $ senha = senha = renpy.input("Por favor, digite sua senha",mask="*")
-    $ resposta = checkLogin(username,senha,"tb_aluno","alunoLogin")
-    if resposta == 0:
-        e "A senha não corresponde ao usuário."
-        jump fazerlogin
-    if resposta == 1:
-        e "O usuário não foi encontrado no sistema"
-        jump fazerlogin
-    e "[resposta]"
-
-    return
- 

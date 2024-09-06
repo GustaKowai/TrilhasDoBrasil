@@ -57,6 +57,7 @@ init python:
             mydb.close()
         return resultado
 
+    #Checa se o usuario existe e a senha correspondem
     def checkLogin(username,senha,tabela,coluna):
         resultado = selectFromBD("trilhadobrasil",coluna,tabela,username)
         if len(resultado)<1:
@@ -69,7 +70,7 @@ init python:
             resultadoSenha = resultado[3]
             testeSenha = resultadoSenha
             if testeSenha == senha:
-                resposta = "O login foi executado! Seja bem vindo", resultadoNome
+                resposta = resultadoNome
             else:
                 resposta = 0
 
