@@ -44,9 +44,9 @@ init python:
         return sucesso,cursor.lastrowid
 
     #Faz o select da tabela professor
-    def selectFromBD(bancodedados,coluna,alvo):
+    def selectFromBD(bancodedados,coluna,tabela,alvo):
         mydb = conectabd(bancodedados)
-        sql = "SELECT * FROM tb_professor WHERE "+coluna+"=%s"
+        sql = "SELECT * FROM "+tabela+" WHERE "+coluna+"=%s"
         val = (alvo,)
         resultado = "0"
         if mydb.is_connected():
@@ -57,19 +57,20 @@ init python:
             mydb.close()
         return resultado
 
-    def checkLogin(username,senha):
-        resultado = selectFromBD("trilhadobrasil","profLogin",username)
-        resultado = resultado[0]
-        resultadoID = resultado[0]
-        resultadoNome = resultado[1]
-        resultadoLogin = resultado[2]
-        resultadoSenha = resultado[3]
-        if resultadoLogin:
+    def checkLogin(username,senha,tabela,coluna):
+        resultado = selectFromBD("trilhadobrasil",coluna,tabela,username)
+        if len(resultado)<1:
+            resposta = 1
+        else:
+            resultado = resultado[0]
+            resultadoID = resultado[0]
+            resultadoNome = resultado[1]
+            resultadoLogin = resultado[2]
+            resultadoSenha = resultado[3]
             testeSenha = resultadoSenha
             if testeSenha == senha:
                 resposta = "O login foi executado! Seja bem vindo", resultadoNome
             else:
-                resposta = "A senha está errada"
-        else:
-            resposta = "O username não está no nosso banco de dados"
+                resposta = 0
+
         return resposta

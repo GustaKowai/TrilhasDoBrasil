@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/bd.rpy", line 65: invalid syntax
-            e("o comprimento do vetor resultado é"len(resultado))
-                                                   ^
+File "game/script.rpy", line 71: reached end of line when expecting ':'.
+    if resposta ==0
+                   ^
 
 Ren'Py Version: Ren'Py 8.3.0.24082114
-Tue Sep  3 22:03:47 2024
+Fri Sep  6 20:05:36 2024
