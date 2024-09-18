@@ -86,6 +86,7 @@ label testesDeEscolhas:
     e "Por favor, escolha o que quiser:"
     menu:
         "escolha1":
+        #Essa é a linha que deverá ser adicionada abaixo de cada escolha, com o id da escolha sendo substituido pelo id da escolha indicada.
             $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",alunoID,1,ordemEscolha)
         "escolha2":
             $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",alunoID,2,ordemEscolha)
