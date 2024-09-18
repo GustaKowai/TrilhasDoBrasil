@@ -1,0 +1,102 @@
+body{
+    background-image: url(img/Sala\ 1920.png);
+    font: normal 18pt Arial;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+div#divTurmOne{
+    margin-bottom: 10px;
+}
+div#divTurmTwo{
+    margin-bottom: 10px;
+}
+div#divTurmTree{
+    margin-bottom: 10px;
+}
+button#btnTurm1{
+    height: 40px;
+    transition: 750ms;
+}
+button#btnTurm2{
+    height: 40px;
+    transition: 750ms;
+}
+button#btnTurm3{
+    height: 40px;
+    transition: 750ms;
+}
+button#btnTurm1:hover{
+    transform:scale(1.10);
+}
+button#btnTurm2:hover{
+    transform:scale(1.10);
+}
+button#btnTurm3:hover{
+    transform:scale(1.10);
+}
+.estatisticas{
+    width: 700px;
+    height: 400px;
+    padding: 30px 40px;
+    border-radius: 10px;
+    align-items: center;
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    background-color: rgba(0, 0, 0, 0.795);
+    border: 3px solid #fff;
+    backdrop-filter: blur(5px);
+}
+.tittleTurm{
+    height: 50px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(240, 248, 255, 0.603);
+    margin-top: 30px;
+    margin-bottom: 80px;
+    padding: 5px 5px 5px 5px;
+}
+.tittleTurm h3{
+    font-size: 30px;
+    font-weight: 600;
+}
+.infoTurma{
+    background-color: #fff;
+    width: 90%;
+    height: 90%;
+    text-align: center;
+    padding: 30px 40px;
+    border-radius: 10px;
+    align-items: center;
+    position: absolute;
+    top: 5%;
+    border: 5px solid black;
+    backdrop-filter: blur(5px);
+}
+.infoTurma h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+.chart{
+    width: 400px;
+    height: 300px;
+    margin-top: 30px;
+}
+.linksTurms{
+    position:absolute;
+    top: 30%;
+    left: 35%;
+}
+.linksTurms a{
+    text-decoration: none;
+    color: black;
+}
+.linksTurms a:hover{
+    text-decoration: underline;
+}
