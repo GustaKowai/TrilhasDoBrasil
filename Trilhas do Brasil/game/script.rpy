@@ -1,6 +1,7 @@
 ﻿define e = Character("Eileen", image="eileen", callback = low_beep, what_prefix='', what_suffix='')
 
 # O jogo começa aqui.
+define ordemEscolha = 0
 
 label start:
     scene bg room
@@ -17,7 +18,7 @@ label fazerlogin:
     e "Para isso, irei pedir que você digite o seu nome de usuário:"
     $ username = renpy.input("Nome de usuário:")
     $ senha = senha = renpy.input("Por favor, digite sua senha",mask="*")
-    $ resposta = checkLogin(username,senha,"tb_aluno","alunoLogin")
+    $ resposta, alunoID = checkLogin(username,senha,"tb_aluno","alunoLogin")
     if resposta == 0:
         e "A senha não corresponde ao usuário."
         jump fazerlogin
@@ -26,6 +27,9 @@ label fazerlogin:
         jump fazerlogin
     $ nome = resposta
     e "O login foi executado! Seja bem vindo [nome]"
+    $ ordemEscolha = selectordemEscolha()
+    e "[ordemEscolha]"
+    jump testesDeEscolhas
     jump inicioHistoria
 
 label final:
@@ -36,7 +40,7 @@ label final:
  
 
  #label de testes do bd
- label testesbd:
+label testesbd:
     e "Vamos fazer um login simples!"
     python:
         nomeConfirma = True
@@ -72,7 +76,20 @@ label final:
     e "Vamos tentar fazer uma inserção no banco de dados..."
     $ teste,position = insertIntoBD("trilhadobrasil",nome,username,senha)
     e "[teste]"
-    # This ends the game.
     $ resultado = selectFromBD("trilhadobrasil",'idProfessor',int(position))
     e "[resultado]"
 
+
+#label para testar a inserção no banco de dados de escolhas.
+label testesDeEscolhas:
+    e "Agora, vamos testar a inserção de dados nas escolhas."
+    e "Por favor, escolha o que quiser:"
+    menu:
+        "escolha1":
+            $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",alunoID,1,ordemEscolha)
+        "escolha2":
+            $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",alunoID,2,ordemEscolha)
+
+    e "[ordemEscolha]"
+    e "Vamos testar escolher de novo!"
+    jump testesDeEscolhas

@@ -67,11 +67,48 @@ init python:
             resultadoID = resultado[0]
             resultadoNome = resultado[1]
             resultadoLogin = resultado[2]
-            resultadoSenha = resultado[3]
+            resultadoSenha = resultado[4]
             testeSenha = resultadoSenha
             if testeSenha == senha:
                 resposta = resultadoNome
             else:
                 resposta = 0
+                resultadoID = 0
 
-        return resposta
+        return resposta,resultadoID
+
+    #Função para a inserção da escolha do aluno no banco de dados
+    def insertEscolhaIntoBD(bancodedados,alunoID,escolhaID,ordemEscolha):
+        ordemEscolha = ordemEscolha + 1
+        mydb = conectabd(bancodedados)
+        cursor = mydb.cursor()
+        sql = "INSERT INTO tb_escolhe (idAluno, idEscolhas,ordemEscolha) VALUES (%s,%s,%s)"
+        val = (alunoID,escolhaID,ordemEscolha)
+        sucesso = "Falha"
+        if mydb.is_connected():
+            cursor = mydb.cursor()
+            cursor.execute(sql,val)
+            mydb.commit()
+            cursor.close()
+            mydb.close()
+            sucesso = "A inserção no banco de dados",bancodedados,"foi um sucesso! A ID da inserção é a", cursor.lastrowid
+        return ordemEscolha
+
+    #Função para detectar quantas escolhas ja foram feitas pelo aluno
+    def selectordemEscolha():
+        mydb = conectabd("trilhadobrasil")
+        sql = "select * from tb_escolhe ORDER BY ordemEscolha DESC LIMIT 0, 1"
+        resultado = "0"
+        if mydb.is_connected():
+            cursor = mydb.cursor()
+            cursor.execute(sql)
+            resultado = cursor.fetchall()
+            cursor.close()
+            mydb.close()
+            if len(resultado)<1:
+                ordemEscolha = 0
+            else:
+                resultado = resultado[0]
+                ordemEscolha = resultado[2] #pega o valor da ordem escolha
+        return ordemEscolha
+        

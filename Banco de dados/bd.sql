@@ -7,7 +7,8 @@ CREATE TABLE tb_professor
 ( 
     idProfessor INT NOT NULL AUTO_INCREMENT,  
     nome VARCHAR(45) NOT NULL,  
-    profLogin VARCHAR(12) NOT NULL,  
+    profLogin VARCHAR(12) NOT NULL,
+    profEmail VARCHAR(45) NOT NULL,  
     senha VARCHAR(15) NOT NULL,  
     UNIQUE (profLogin),
     PRIMARY KEY (idProfessor)
@@ -28,7 +29,8 @@ CREATE TABLE tb_aluno
 ( 
     idAluno INT NOT NULL AUTO_INCREMENT,  
     nome VARCHAR(45) NOT NULL,  
-    alunoLogin VARCHAR(12) NOT NULL,  
+    alunoLogin VARCHAR(12) NOT NULL,
+    alunoEmail VARCHAR(45) NOT NULL,
     senha VARCHAR(15) NOT NULL,  
     idGrupo INT NOT NULL,  
     UNIQUE (alunoLogin),

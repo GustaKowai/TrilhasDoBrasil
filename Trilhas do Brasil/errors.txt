@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 71: reached end of line when expecting ':'.
-    if resposta ==0
-                   ^
+File "game/bd.rpy", line 82: invalid syntax
+        global ordemEscolha = ordemEscolha + 1
+                             ^
 
-Ren'Py Version: Ren'Py 8.3.0.24082114
-Fri Sep  6 20:05:36 2024
+Ren'Py Version: Ren'Py 8.3.2.24090902
+Tue Sep 17 20:36:15 2024

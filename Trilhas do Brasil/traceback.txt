@@ -1,30 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 70, in script
-    $ resposta = checkLogin(username,senha,"tb_aluno","alunoLogin")
-  File "game/script.rpy", line 70, in <module>
-    $ resposta = checkLogin(username,senha,"tb_aluno","alunoLogin")
-  File "game/bd.rpy", line 62, in checkLogin
-    if type(x) is not list:
-NameError: name 'x' is not defined
+  File "game/script.rpy", line 30, in script
+    $ ordemEscolha = selectordemEscolha()
+  File "game/script.rpy", line 30, in <module>
+    $ ordemEscolha = selectordemEscolha()
+  File "game/bd.rpy", line 111, in selectordemEscolha
+    ordemEscolha = resultado[2]
+IndexError: list index out of range
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 70, in script
-    $ resposta = checkLogin(username,senha,"tb_aluno","alunoLogin")
-  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.0-sdk\renpy\ast.py", line 821, in execute
+  File "game/script.rpy", line 30, in script
+    $ ordemEscolha = selectordemEscolha()
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\ast.py", line 821, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.0-sdk\renpy\python.py", line 1178, in py_exec_bytecode
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\python.py", line 1178, in py_exec_bytecode
     exec(bytecode, globals, locals)
-  File "game/script.rpy", line 70, in <module>
-    $ resposta = checkLogin(username,senha,"tb_aluno","alunoLogin")
-  File "game/bd.rpy", line 62, in checkLogin
-    if type(x) is not list:
-NameError: name 'x' is not defined
+  File "game/script.rpy", line 30, in <module>
+    $ ordemEscolha = selectordemEscolha()
+  File "game/bd.rpy", line 111, in selectordemEscolha
+    ordemEscolha = resultado[2]
+IndexError: list index out of range
 
 Windows-10-10.0.19041 AMD64
-Ren'Py 8.3.0.24082114
+Ren'Py 8.3.2.24090902
 Trilhas do Brasil 1.0
-Fri Sep  6 20:02:11 2024
+Tue Sep 17 21:00:30 2024
