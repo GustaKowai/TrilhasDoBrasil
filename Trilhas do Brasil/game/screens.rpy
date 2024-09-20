@@ -253,9 +253,10 @@ screen quick_menu():
             textbutton _("Histórico") action ShowMenu('history')
             textbutton _("Pular") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Automático") action Preference("auto-forward", "toggle")
-            textbutton _("Salvar") action ShowMenu('save')
-            textbutton _("Q.Salvar") action QuickSave()
-            textbutton _("Q. Carregar") action QuickLoad()
+            if logado:
+                textbutton _("Salvar") action ShowMenu('save')
+                textbutton _("Q.Salvar") action QuickSave()
+                textbutton _("Q. Carregar") action QuickLoad()
             textbutton _("Prefs") action ShowMenu('preferences')
 
 
@@ -303,9 +304,12 @@ screen navigation():
 
             textbutton _("Histórico") action ShowMenu("history")
 
-            textbutton _("Salvar") action ShowMenu("save")
+            if logado:
 
-        textbutton _("Carregar") action ShowMenu("load")
+                textbutton _("Salvar") action ShowMenu("save")
+        if logado:
+
+            textbutton _("Carregar") action ShowMenu("load")
 
         textbutton _("Preferências") action ShowMenu("preferences")
 

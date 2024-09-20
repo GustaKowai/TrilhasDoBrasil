@@ -1,7 +1,8 @@
 ﻿define e = Character("Eileen", image="eileen", callback = low_beep, what_prefix='', what_suffix='')
-
+default logado = False
+define alunoID = 0
 # O jogo começa aqui.
-define ordemEscolha = 0
+default ordemEscolha = 0
 
 label start:
     scene bg room
@@ -27,8 +28,9 @@ label fazerlogin:
         jump fazerlogin
     $ nome = resposta
     e "O login foi executado! Seja bem vindo [nome]"
-    $ ordemEscolha = selectordemEscolha()
-    e "[ordemEscolha]"
+    #$ ordemEscolha = selectordemEscolha(alunoID)
+    #e "[ordemEscolha]"
+    $ logado = True
     jump testesDeEscolhas
     jump inicioHistoria
 
@@ -87,9 +89,9 @@ label testesDeEscolhas:
     menu:
         "escolha1":
         #Essa é a linha que deverá ser adicionada abaixo de cada escolha, com o id da escolha sendo substituido pelo id da escolha indicada.
-            $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",alunoID,1,ordemEscolha)
+            $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",alunoID,1)
         "escolha2":
-            $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",alunoID,2,ordemEscolha)
+            $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",alunoID,2)
 
     e "[ordemEscolha]"
     e "Vamos testar escolher de novo!"

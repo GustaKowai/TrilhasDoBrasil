@@ -1,30 +1,130 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 30, in script
-    $ ordemEscolha = selectordemEscolha()
-  File "game/script.rpy", line 30, in <module>
-    $ ordemEscolha = selectordemEscolha()
-  File "game/bd.rpy", line 111, in selectordemEscolha
-    ordemEscolha = resultado[2]
-IndexError: list index out of range
+  File "renpy/common/00gamemenu.rpy", line 174, in script
+    $ ui.interact()
+  File "renpy/common/00gamemenu.rpy", line 174, in <module>
+    $ ui.interact()
+  File "game/screens.rpy", line 591, in execute
+    screen save():
+  File "game/screens.rpy", line 591, in execute
+    screen save():
+  File "game/screens.rpy", line 595, in execute
+    use file_slots(_("Salvar"))
+  File "game/screens.rpy", line 605, in execute
+    screen file_slots(title):
+  File "game/screens.rpy", line 605, in execute
+    screen file_slots(title):
+  File "game/screens.rpy", line 609, in execute
+    use game_menu(title):
+  File "game/screens.rpy", line 421, in execute
+    screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
+  File "game/screens.rpy", line 421, in execute
+    screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
+  File "game/screens.rpy", line 430, in execute
+    frame:
+  File "game/screens.rpy", line 433, in execute
+    hbox:
+  File "game/screens.rpy", line 439, in execute
+    frame:
+  File "game/screens.rpy", line 442, in execute
+    if scroll == "viewport":
+  File "game/screens.rpy", line 477, in execute
+    transclude
+  File "game/screens.rpy", line 609, in execute
+    use game_menu(title):
+  File "game/screens.rpy", line 611, in execute
+    fixed:
+  File "game/screens.rpy", line 630, in execute
+    grid gui.file_slot_cols gui.file_slot_rows:
+  File "game/screens.rpy", line 638, in execute
+    for i in range(gui.file_slot_cols * gui.file_slot_rows):
+  File "game/screens.rpy", line 642, in execute
+    button:
+  File "game/screens.rpy", line 645, in execute
+    has vbox
+  File "game/screens.rpy", line 649, in execute
+    text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M %s",alunoID), empty=_("slot vazio")):
+  File "game/screens.rpy", line 649, in <module>
+    text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M %s",alunoID), empty=_("slot vazio")):
+TypeError: _() takes 1 positional argument but 2 were given
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 30, in script
-    $ ordemEscolha = selectordemEscolha()
+  File "renpy/common/00gamemenu.rpy", line 174, in script
+    $ ui.interact()
   File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\ast.py", line 821, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\python.py", line 1178, in py_exec_bytecode
     exec(bytecode, globals, locals)
-  File "game/script.rpy", line 30, in <module>
-    $ ordemEscolha = selectordemEscolha()
-  File "game/bd.rpy", line 111, in selectordemEscolha
-    ordemEscolha = resultado[2]
-IndexError: list index out of range
+  File "renpy/common/00gamemenu.rpy", line 174, in <module>
+    $ ui.interact()
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\display\core.py", line 2215, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\display\core.py", line 2745, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\display\screen.py", line 480, in visit_all
+    callback(self)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\display\core.py", line 2745, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\display\screen.py", line 491, in per_interact
+    self.update()
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\display\screen.py", line 697, in update
+    self.screen.function(**self.scope)
+  File "game/screens.rpy", line 591, in execute
+    screen save():
+  File "game/screens.rpy", line 591, in execute
+    screen save():
+  File "game/screens.rpy", line 595, in execute
+    use file_slots(_("Salvar"))
+  File "game/screens.rpy", line 605, in execute
+    screen file_slots(title):
+  File "game/screens.rpy", line 605, in execute
+    screen file_slots(title):
+  File "game/screens.rpy", line 609, in execute
+    use game_menu(title):
+  File "game/screens.rpy", line 421, in execute
+    screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
+  File "game/screens.rpy", line 421, in execute
+    screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
+  File "game/screens.rpy", line 430, in execute
+    frame:
+  File "game/screens.rpy", line 433, in execute
+    hbox:
+  File "game/screens.rpy", line 439, in execute
+    frame:
+  File "game/screens.rpy", line 442, in execute
+    if scroll == "viewport":
+  File "game/screens.rpy", line 477, in execute
+    transclude
+  File "game/screens.rpy", line 609, in execute
+    use game_menu(title):
+  File "game/screens.rpy", line 611, in execute
+    fixed:
+  File "game/screens.rpy", line 630, in execute
+    grid gui.file_slot_cols gui.file_slot_rows:
+  File "game/screens.rpy", line 638, in execute
+    for i in range(gui.file_slot_cols * gui.file_slot_rows):
+  File "game/screens.rpy", line 642, in execute
+    button:
+  File "game/screens.rpy", line 645, in execute
+    has vbox
+  File "game/screens.rpy", line 649, in execute
+    text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M %s",alunoID), empty=_("slot vazio")):
+  File "game/screens.rpy", line 649, in <module>
+    text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M %s",alunoID), empty=_("slot vazio")):
+TypeError: _() takes 1 positional argument but 2 were given
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 8.3.2.24090902
 Trilhas do Brasil 1.0
-Tue Sep 17 21:00:30 2024
+Fri Sep 20 19:47:22 2024

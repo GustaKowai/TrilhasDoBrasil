@@ -1,6 +1,6 @@
 #Tentativa de conectar diretamente do python com o banco de dados
 
-define BD = "0"
+default BD = "0"
 init python:
     import mysql.connector
     #Cria a conexão com o banco de dados
@@ -78,7 +78,8 @@ init python:
         return resposta,resultadoID
 
     #Função para a inserção da escolha do aluno no banco de dados
-    def insertEscolhaIntoBD(bancodedados,alunoID,escolhaID,ordemEscolha):
+    def insertEscolhaIntoBD(bancodedados,alunoID,escolhaID):
+        ordemEscolha = selectordemEscolha(alunoID) #Pega qual o número da última escolha feita pelo aluno
         ordemEscolha = ordemEscolha + 1
         mydb = conectabd(bancodedados)
         cursor = mydb.cursor()
@@ -95,13 +96,14 @@ init python:
         return ordemEscolha
 
     #Função para detectar quantas escolhas ja foram feitas pelo aluno
-    def selectordemEscolha():
+    def selectordemEscolha(alunoID):
         mydb = conectabd("trilhadobrasil")
-        sql = "select * from tb_escolhe ORDER BY ordemEscolha DESC LIMIT 0, 1"
+        sql = "select * from tb_escolhe WHERE idAluno =%s ORDER BY ordemEscolha DESC LIMIT 0, 1"
+        val = (alunoID,)
         resultado = "0"
         if mydb.is_connected():
             cursor = mydb.cursor()
-            cursor.execute(sql)
+            cursor.execute(sql,val)
             resultado = cursor.fetchall()
             cursor.close()
             mydb.close()
