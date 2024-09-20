@@ -56,3 +56,6 @@ CREATE TABLE tb_escolhe
     CONSTRAINT FK_ESCOLHE_ALUNO FOREIGN KEY(idAluno) REFERENCES tb_aluno (idAluno),
     CONSTRAINT FK_ESCOLHE_ESCOLHAS FOREIGN KEY(idEscolhas) REFERENCES tb_escolhas (idEscolhas)
 )ENGINE=InnoDB; 
+
+/*Comando para contar quantos alunos fizeram a escolha x*/
+/*select count(distinct idAluno) from tb_escolhe where idEscolhas = x*/

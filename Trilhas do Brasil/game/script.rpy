@@ -18,7 +18,7 @@ label fazerlogin:
     e "Vamos agora tentar fazer o login!"
     e "Para isso, irei pedir que você digite o seu nome de usuário:"
     $ username = renpy.input("Nome de usuário:")
-    $ senha = senha = renpy.input("Por favor, digite sua senha",mask="*")
+    $ senha = renpy.input("Por favor, digite sua senha",mask="*")
     $ resposta, persistent.alunoID = checkLogin(username,senha,"tb_aluno","alunoLogin")
     if resposta == 0:
         e "A senha não corresponde ao usuário."
