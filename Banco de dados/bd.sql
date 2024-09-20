@@ -59,3 +59,8 @@ CREATE TABLE tb_escolhe
 
 /*Comando para contar quantos alunos fizeram a escolha x*/
 /*select count(distinct idAluno) from tb_escolhe where idEscolhas = x*/
+/*select count(distinct e.idAluno) from tb_escolhe e 
+INNER JOIN tb_aluno a
+on a.idAluno = e.idAluno
+where e.idEscolhas = 1 and a.idGrupo = 1
+Para um grupo específico*/
