@@ -19,15 +19,15 @@ label fazerlogin:
     e "Para isso, irei pedir que você digite o seu nome de usuário:"
     $ username = renpy.input("Nome de usuário:")
     $ senha = senha = renpy.input("Por favor, digite sua senha",mask="*")
-    $ resposta, alunoID = checkLogin(username,senha,"tb_aluno","alunoLogin")
+    $ resposta, persistent.alunoID = checkLogin(username,senha,"tb_aluno","alunoLogin")
     if resposta == 0:
         e "A senha não corresponde ao usuário."
         jump fazerlogin
     if resposta == 1:
         e "O usuário não foi encontrado no sistema"
         jump fazerlogin
-    $ nome = resposta
-    e "O login foi executado! Seja bem vindo [nome]"
+    $ persistent.nome = resposta
+    e "O login foi executado! Seja bem vindo [persistent.nome]"
     #$ ordemEscolha = selectordemEscolha(alunoID)
     #e "[ordemEscolha]"
     $ logado = True
@@ -89,9 +89,9 @@ label testesDeEscolhas:
     menu:
         "escolha1":
         #Essa é a linha que deverá ser adicionada abaixo de cada escolha, com o id da escolha sendo substituido pelo id da escolha indicada.
-            $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",alunoID,1)
+            $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,1)
         "escolha2":
-            $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",alunoID,2)
+            $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,2)
 
     e "[ordemEscolha]"
     e "Vamos testar escolher de novo!"

@@ -1,130 +1,41 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00gamemenu.rpy", line 174, in script
-    $ ui.interact()
-  File "renpy/common/00gamemenu.rpy", line 174, in <module>
-    $ ui.interact()
-  File "game/screens.rpy", line 591, in execute
-    screen save():
-  File "game/screens.rpy", line 591, in execute
-    screen save():
-  File "game/screens.rpy", line 595, in execute
-    use file_slots(_("Salvar"))
-  File "game/screens.rpy", line 605, in execute
-    screen file_slots(title):
-  File "game/screens.rpy", line 605, in execute
-    screen file_slots(title):
-  File "game/screens.rpy", line 609, in execute
-    use game_menu(title):
-  File "game/screens.rpy", line 421, in execute
-    screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
-  File "game/screens.rpy", line 421, in execute
-    screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
-  File "game/screens.rpy", line 430, in execute
-    frame:
-  File "game/screens.rpy", line 433, in execute
-    hbox:
-  File "game/screens.rpy", line 439, in execute
-    frame:
-  File "game/screens.rpy", line 442, in execute
-    if scroll == "viewport":
-  File "game/screens.rpy", line 477, in execute
-    transclude
-  File "game/screens.rpy", line 609, in execute
-    use game_menu(title):
-  File "game/screens.rpy", line 611, in execute
-    fixed:
-  File "game/screens.rpy", line 630, in execute
-    grid gui.file_slot_cols gui.file_slot_rows:
-  File "game/screens.rpy", line 638, in execute
-    for i in range(gui.file_slot_cols * gui.file_slot_rows):
-  File "game/screens.rpy", line 642, in execute
-    button:
-  File "game/screens.rpy", line 645, in execute
-    has vbox
-  File "game/screens.rpy", line 649, in execute
-    text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M %s",alunoID), empty=_("slot vazio")):
-  File "game/screens.rpy", line 649, in <module>
-    text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M %s",alunoID), empty=_("slot vazio")):
-TypeError: _() takes 1 positional argument but 2 were given
+  File "game/script.rpy", line 30, in script
+    e "O login foi executado! Seja bem vindo [nome]"
+NameError: name 'nome' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00gamemenu.rpy", line 174, in script
-    $ ui.interact()
-  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\ast.py", line 821, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\python.py", line 1178, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "renpy/common/00gamemenu.rpy", line 174, in <module>
-    $ ui.interact()
-  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\ui.py", line 301, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\display\core.py", line 2215, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\display\core.py", line 2745, in interact_core
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\display\displayable.py", line 434, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\display\displayable.py", line 434, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\display\displayable.py", line 434, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\display\screen.py", line 480, in visit_all
-    callback(self)
-  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\display\core.py", line 2745, in <lambda>
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\display\screen.py", line 491, in per_interact
-    self.update()
-  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\display\screen.py", line 697, in update
-    self.screen.function(**self.scope)
-  File "game/screens.rpy", line 591, in execute
-    screen save():
-  File "game/screens.rpy", line 591, in execute
-    screen save():
-  File "game/screens.rpy", line 595, in execute
-    use file_slots(_("Salvar"))
-  File "game/screens.rpy", line 605, in execute
-    screen file_slots(title):
-  File "game/screens.rpy", line 605, in execute
-    screen file_slots(title):
-  File "game/screens.rpy", line 609, in execute
-    use game_menu(title):
-  File "game/screens.rpy", line 421, in execute
-    screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
-  File "game/screens.rpy", line 421, in execute
-    screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
-  File "game/screens.rpy", line 430, in execute
-    frame:
-  File "game/screens.rpy", line 433, in execute
-    hbox:
-  File "game/screens.rpy", line 439, in execute
-    frame:
-  File "game/screens.rpy", line 442, in execute
-    if scroll == "viewport":
-  File "game/screens.rpy", line 477, in execute
-    transclude
-  File "game/screens.rpy", line 609, in execute
-    use game_menu(title):
-  File "game/screens.rpy", line 611, in execute
-    fixed:
-  File "game/screens.rpy", line 630, in execute
-    grid gui.file_slot_cols gui.file_slot_rows:
-  File "game/screens.rpy", line 638, in execute
-    for i in range(gui.file_slot_cols * gui.file_slot_rows):
-  File "game/screens.rpy", line 642, in execute
-    button:
-  File "game/screens.rpy", line 645, in execute
-    has vbox
-  File "game/screens.rpy", line 649, in execute
-    text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M %s",alunoID), empty=_("slot vazio")):
-  File "game/screens.rpy", line 649, in <module>
-    text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M %s",alunoID), empty=_("slot vazio")):
-TypeError: _() takes 1 positional argument but 2 were given
+  File "game/script.rpy", line 30, in script
+    e "O login foi executado! Seja bem vindo [nome]"
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\ast.py", line 2573, in execute
+    Say.execute(self)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\ast.py", line 615, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\exports\sayexports.py", line 132, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\character.py", line 1440, in __call__
+    what = self.prefix_suffix("what", self.what_prefix, what, self.what_suffix)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\character.py", line 1354, in prefix_suffix
+    return (sub(prefix) + sub(body) + sub(suffix))
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\character.py", line 1334, in sub
+    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\substitutions.py", line 373, in substitute
+    s = interpolate(s, variables) # type: ignore
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\substitutions.py", line 86, in interpolate
+    raise e
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\substitutions.py", line 78, in interpolate
+    value = renpy.python.py_eval(code, {}, scope)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "<none>", line 1, in <module>
+NameError: name 'nome' is not defined
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 8.3.2.24090902
 Trilhas do Brasil 1.0
-Fri Sep 20 19:47:22 2024
+Fri Sep 20 20:12:13 2024
