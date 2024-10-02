@@ -62,6 +62,7 @@ init python:
         resultado = selectFromBD("trilhadobrasil",coluna,tabela,username)
         if len(resultado)<1:
             resposta = 1
+            resultadoID = 0
         else:
             resultado = resultado[0]
             resultadoID = resultado[0]

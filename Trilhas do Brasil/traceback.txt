@@ -1,41 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 30, in script
-    e "O login foi executado! Seja bem vindo [nome]"
-NameError: name 'nome' is not defined
+  File "game/script.rpy", line 22, in script
+    $ resposta, persistent.alunoID = checkLogin(username,senha,"tb_aluno","alunoLogin")
+  File "game/script.rpy", line 22, in <module>
+    $ resposta, persistent.alunoID = checkLogin(username,senha,"tb_aluno","alunoLogin")
+  File "game/bd.rpy", line 78, in checkLogin
+    return resposta,resultadoID
+UnboundLocalError: local variable 'resultadoID' referenced before assignment
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 30, in script
-    e "O login foi executado! Seja bem vindo [nome]"
-  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\ast.py", line 2573, in execute
-    Say.execute(self)
-  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\ast.py", line 615, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\exports\sayexports.py", line 132, in say
-    who(what, *args, **kwargs)
-  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\character.py", line 1440, in __call__
-    what = self.prefix_suffix("what", self.what_prefix, what, self.what_suffix)
-  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\character.py", line 1354, in prefix_suffix
-    return (sub(prefix) + sub(body) + sub(suffix))
-  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\character.py", line 1334, in sub
-    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
-  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\substitutions.py", line 373, in substitute
-    s = interpolate(s, variables) # type: ignore
-  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\substitutions.py", line 86, in interpolate
-    raise e
-  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\substitutions.py", line 78, in interpolate
-    value = renpy.python.py_eval(code, {}, scope)
-  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\python.py", line 1209, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "<none>", line 1, in <module>
-NameError: name 'nome' is not defined
+  File "game/script.rpy", line 22, in script
+    $ resposta, persistent.alunoID = checkLogin(username,senha,"tb_aluno","alunoLogin")
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\ast.py", line 821, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\python.py", line 1178, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/script.rpy", line 22, in <module>
+    $ resposta, persistent.alunoID = checkLogin(username,senha,"tb_aluno","alunoLogin")
+  File "game/bd.rpy", line 78, in checkLogin
+    return resposta,resultadoID
+UnboundLocalError: local variable 'resultadoID' referenced before assignment
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 8.3.2.24090902
 Trilhas do Brasil 1.0
-Fri Sep 20 20:12:13 2024
+Wed Oct  2 20:25:19 2024
