@@ -23,7 +23,7 @@ try {
     //processamento
     $dados = $tabela->fetchAll(PDO::FETCH_ASSOC);
     header("content-type:application/json");
-    echo json_encode($dados);
+    echo json_encode($dados,JSON_INVALID_UTF8_SUBSTITUTE);
 } catch(PDOException $e){
     echo("Falhou".$e->getMessage());
 }
