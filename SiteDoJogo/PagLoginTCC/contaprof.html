@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/styleContas.css">
   <script src="js/sript.js"></script>
   <title>Cadastro</title>
+  <script src="js/cadastroprof.js"></script>
 </head>
 
 <body>
@@ -22,33 +23,40 @@
                 <h1>Cadastrar professor</h1> <!-- Cabeçalho do formulário -->
                 <h4>Informe seu usuario, email e senha</h4> <!-- Instruções para o usuário -->
 
-                <!-- Campo de entrada para email -->
+                <!-- Campo de entrada para nome -->
                 <div class="input-box">
-                    <input type="text" placeholder="email" required> <!-- Campo para o email -->
-                    <i class='bx bx-envelope'></i> <!-- Ícone de envelope ao lado do campo -->
+                    <input type="text" placeholder="Nome" id="nomeProf" oninput="testName()" required> <!-- Campo para o email -->
+                    <i class='bx bx-user' id="iconName"></i> <!-- Ícone de envelope ao lado do campo -->
                 </div>
 
                 <!-- Campo de entrada para o nome de usuário -->
                 <div class="input-box">
-                    <input type="text" placeholder="usuário" required> <!-- Campo para o nome de usuário -->
-                    <i class='bx bxs-user'></i> <!-- Ícone de usuário ao lado do campo -->
+                    <input type="text" placeholder="usuário" id="userProf" oninput="testUser()" required> <!-- Campo para o nome de usuário -->
+                    <i class='bx bxs-user' id="iconUser"></i> <!-- Ícone de usuário ao lado do campo -->
                 </div>
+
+                <!-- Campo de entrada para email -->
+                <div class="input-box">
+                    <input type="text" placeholder="email" id="emailProf" oninput="testEmail()" required> <!-- Campo para o email -->
+                    <i class='bx bx-envelope' id="iconEmail"></i> <!-- Ícone de envelope ao lado do campo -->
+                </div>
+
 
                 <!-- Campo de entrada para a senha -->
                 <div class="input-box">
-                    <input type="password" placeholder="Senha" required> <!-- Campo para senha -->
-                    <i class='bx bxs-lock-alt'></i> <!-- Ícone de cadeado ao lado do campo -->
+                    <input type="password" placeholder="Senha" id="senhaProf" oninput="passStrenght()" required> <!-- Campo para senha -->
+                    <i class='bx bxs-lock-alt' id="iconPassword"></i> <!-- Ícone de cadeado ao lado do campo -->
                 </div>
-
+        
                 <!-- Campo para confirmar a senha -->
                 <div class="input-box">
-                    <input type="password" placeholder="Confirme a Senha" required> <!-- Campo para confirmação da senha -->
-                    <i class='bx bxs-lock-alt'></i> <!-- Ícone de cadeado ao lado do campo -->
+                    <input type="password" placeholder="Confirme a Senha" id="confirmaSenhaProf" oninput="testConfirmPassword()" required> <!-- Campo para confirmação da senha -->
+                    <i class='bx bxs-lock-alt' id="iconConfirm"></i> <!-- Ícone de cadeado ao lado do campo -->
                 </div>
 
                 <!-- Botão para enviar o formulário, redirecionando para a página de turmas -->
-                <a href="turmasprof.html">
-                    <button type="button" class="btn">Cadastrar</button> <!-- Botão para cadastrar -->
+                <a>
+                    <button type="button" class="btn" onclick="cadastrar()">Cadastrar</button> <!-- Botão para cadastrar -->
                 </a>
             </form>
         </div>
