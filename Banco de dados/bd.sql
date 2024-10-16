@@ -7,9 +7,9 @@ CREATE TABLE tb_professor
 ( 
     idProfessor INT NOT NULL AUTO_INCREMENT,  
     nome VARCHAR(45) NOT NULL,  
-    profLogin VARCHAR(12) NOT NULL,
+    profLogin VARCHAR(45) NOT NULL,
     profEmail VARCHAR(45) NOT NULL,  
-    senha VARCHAR(15) NOT NULL,  
+    senha VARCHAR(45) NOT NULL,  
     UNIQUE (profLogin),
     PRIMARY KEY (idProfessor)
 )ENGINE=InnoDB; 
@@ -18,7 +18,7 @@ CREATE TABLE tb_professor
 CREATE TABLE tb_grupo 
 ( 
     idGrupo INT NOT NULL AUTO_INCREMENT,  
-    senha VARCHAR(15) NOT NULL,  
+    senha VARCHAR(45) NOT NULL,  
     idProfessor INT NOT NULL, 
     PRIMARY KEY (idGrupo),
     CONSTRAINT FK_GRUPO_PROFESSOR FOREIGN KEY(idProfessor) REFERENCES tb_professor (idProfessor)
@@ -31,7 +31,7 @@ CREATE TABLE tb_aluno
     nome VARCHAR(45) NOT NULL,  
     alunoLogin VARCHAR(12) NOT NULL,
     alunoEmail VARCHAR(45) NOT NULL,
-    senha VARCHAR(15) NOT NULL,  
+    senha VARCHAR(45) NOT NULL,  
     idGrupo INT NOT NULL,  
     UNIQUE (alunoLogin),
     PRIMARY KEY (idAluno),
