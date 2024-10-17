@@ -11,6 +11,7 @@
     <link rel="shortcut icon" href="img/adicionar-usuario.png" type="image/x-icon">
     <link rel="stylesheet" href="css/styleContas.css">
     <script src="js/sript.js"></script>
+    <script src="js/cadastroaluno.js"></script>
     <title>Cadastro</title>
 </head>
 
@@ -23,35 +24,41 @@
                     <!-- Início do formulário, com atributo action para o destino ao ser enviado (atualmente vazio) -->
                     <h1>Cadastrar aluno</h1> <!-- Título do formulário -->
                     <h4>Informe seu email, usuário e senha</h4> <!-- Instrução para o usuário -->
+                    
+                    <!-- Campo de entrada para nome -->
+                    <div class="input-box">
+                        <input type="text" placeholder="Nome" id="nomeAluno" oninput="testName()" required> <!-- Campo para o nome -->
+                        <i class='bx bx-user' id="iconName"></i> <!-- Ícone de usuario ao lado do campo -->
+                    </div>
+                    <div class="input-box"> <!-- Caixa de entrada para o nome de usuário -->
+                        <input type="text" placeholder="usuário" id="userAluno" oninput="testUser()" required>
+                        <!-- Campo de entrada para usuário, obrigatório -->
+                        <i class='bx bxs-user' id="iconUser"></i> <!-- Ícone de usuário associado ao campo -->
+                    </div>
 
                     <div class="input-box"> <!-- Caixa de entrada para o email -->
-                        <input type="text" placeholder="email" required>
+                        <input type="text" placeholder="email" id="emailAluno" oninput="testEmail()" required>
                         <!-- Campo de entrada para email, obrigatório -->
-                        <i class='bx bx-envelope'></i> <!-- Ícone de envelope associado ao campo -->
+                        <i class='bx bx-envelope' id="iconEmail"></i> <!-- Ícone de envelope associado ao campo -->
                     </div>
 
-                    <div class="input-box"> <!-- Caixa de entrada para o nome de usuário -->
-                        <input type="text" placeholder="usuário" required>
-                        <!-- Campo de entrada para usuário, obrigatório -->
-                        <i class='bx bxs-user'></i> <!-- Ícone de usuário associado ao campo -->
-                    </div>
 
                     <div class="input-box"> <!-- Caixa de entrada para a senha -->
-                        <input type="password" placeholder="Senha" required>
+                        <input type="password" placeholder="Senha" id="senhaAluno" oninput="passStrenght()" required>
                         <!-- Campo de entrada para senha, obrigatório -->
-                        <i class='bx bxs-lock-alt'></i> <!-- Ícone de cadeado associado ao campo -->
+                        <i class='bx bxs-lock-alt' id="iconPassword"></i> <!-- Ícone de cadeado associado ao campo -->
                     </div>
 
                     <div class="input-box"> <!-- Caixa de entrada para confirmar a senha -->
-                        <input type="password" placeholder=" Confirme a Senha" required>
+                        <input type="password" placeholder=" Confirme a Senha" id="confirmaSenhaAluno" oninput="testConfirmPassword()" required>
                         <!-- Campo de entrada para confirmação de senha, obrigatório -->
-                        <i class='bx bxs-lock-alt'></i> <!-- Ícone de cadeado associado ao campo -->
+                        <i class='bx bxs-lock-alt' id="iconConfirm"></i> <!-- Ícone de cadeado associado ao campo -->
                     </div>
                     <p>Informe sua turma por favor</p>
                     <div class="input-box"> <!-- Caixa de entrada para a turma -->
                         <input type="password" placeholder=" Turma" required>
                         <!-- Campo de entrada para turma, obrigatório -->
-                        <i class='bx bx-walk'></i> <!-- Ícone associado ao campo -->
+                        <i class='bx bx-walk' id="iconTurma"></i> <!-- Ícone associado ao campo -->
                     </div>
                     <a href="index.html"> <!-- Link que envolve o botão de cadastro -->
                         <button type="button" class="btn">Cadastrar</button>
