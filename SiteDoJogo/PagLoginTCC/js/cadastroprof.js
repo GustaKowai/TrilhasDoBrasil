@@ -11,6 +11,7 @@ function cadastrar(){
         dados = JSON.stringify({nome:nome,profLogin:usuario,profEmail:email,senha:senha});
         xmlhttp.onload = function(){
             alert(this.responseText)
+            window.location.href = 'index.html';
         }
         xmlhttp.open("POST","http://localhost/cadastro_professor.php");
         xmlhttp.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
@@ -110,10 +111,39 @@ function testEmail(){
     return result;
 }
 
+function testUserUnique(){
+    testando = 0;
+    console.log("chegou aqui!!!")
+    usuario = document.getElementById("userProf").value;
+    iconUser = document.getElementById("iconUser");
+    
+    xmlhttp = new XMLHttpRequest();
+    xmlhttp.onload = function(){
+        console.log(this.responseText);
+        tabela = JSON.parse(this.responseText);
+        console.log(tabela.length);
+        for(var i = 0; i <tabela.length; i++){
+            console.log(tabela[i].profLogin,usuario)
+            if (tabela[i].profLogin == usuario){
+                testando = 1
+                console.log("tem igual sim")
+                alert ("Usuário já existe")
+                iconUser.style.color = '#ff0000';
+            }
+        }
+        if (testando != 1){
+            console.log("Não tem nenhum igual")
+            cadastrar()
+        }
+    }
+    xmlhttp.open("POST","http://localhost/checkLogin.php");
+    xmlhttp.send();
+    
+}
+
 function testAll(){
     let liberado = true;
     let message = "";
-    let testando = true;
     if(!testName()){
         message += "O nome deve ter pelo menos 4 digítos e no máximo 45 dígitos  \n";
         liberado = false
@@ -134,40 +164,8 @@ function testAll(){
         message += "A senhas não coincidem \n";
         liberado = false
     }
-    testando = testUserUnique();
-    console.log("O usuario é unico?", testando)
-    if(testUserUnique()){
-        message += "O usuário já existe \n";
-        liberado = false
-    }
     if (!liberado){
         alert(message)
     }
     return liberado    
-}
-
-function testUserUnique(){
-    testando = 0;
-    console.log("chegou aqui!!!")
-    usuario = document.getElementById("userProf").value;
-    xmlhttp = new XMLHttpRequest();
-    xmlhttp.onload = function(){
-        console.log(this.responseText);
-        tabela = JSON.parse(this.responseText);
-        console.log(tabela.length);
-        for(var i = 0; i <tabela.length; i++){
-            console.log(tabela[i].profLogin,usuario)
-            if (tabela[i].profLogin == usuario){
-                testando = 1
-                console.log("tem igual sim")
-                return false
-            }
-        }
-        if (testando != 1){
-            return true
-        }
-    }
-    xmlhttp.open("POST","http://localhost/checkLogin.php");
-    xmlhttp.send();
-    
 }
