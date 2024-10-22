@@ -18,6 +18,7 @@ CREATE TABLE tb_professor
 CREATE TABLE tb_grupo 
 ( 
     idGrupo INT NOT NULL AUTO_INCREMENT,  
+    nomeTurma VARCHAR(45) NOT NULL,
     senha VARCHAR(45) NOT NULL,  
     idProfessor INT NOT NULL, 
     PRIMARY KEY (idGrupo),
