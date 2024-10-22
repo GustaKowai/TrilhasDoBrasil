@@ -37,6 +37,7 @@ body {
     left: 50%; /* Define a posição horizontal do contêiner */
     transform: translate(-50%, -50%); /* Centraliza o contêiner em relação ao seu próprio tamanho */
     text-align: center; /* Centraliza o texto dentro do contêiner */
+    overflow-y: scroll;
 }
 
 div#cadProf {

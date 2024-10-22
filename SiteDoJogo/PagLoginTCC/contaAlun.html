@@ -56,13 +56,17 @@
                     </div>
                     <p>Informe sua turma por favor</p>
                     <div class="input-box"> <!-- Caixa de entrada para a turma -->
-                        <input type="password" placeholder=" Turma" required>
+                        <input type="text" placeholder=" Turma" id="turmaAluno" required>
                         <!-- Campo de entrada para turma, obrigatório -->
                         <i class='bx bx-walk' id="iconTurma"></i> <!-- Ícone associado ao campo -->
                     </div>
-                    <a href="index.html"> <!-- Link que envolve o botão de cadastro -->
-                        <button type="button" class="btn">Cadastrar</button>
-                        <!-- Botão que aciona o cadastro (atualmente não submete o formulário) -->
+                    <div class="input-box"> <!-- Caixa de entrada para a turma -->
+                        <input type="password" placeholder=" Senha" id="senhaturmaAluno" required>
+                        <!-- Campo de entrada para turma, obrigatório -->
+                        <i class='bx bxs-lock-alt' id="iconSenhaTurma"></i> <!-- Ícone associado ao campo -->
+                    </div>
+                    <a>
+                        <button type="button" class="btn" onclick="testUserUnique()">Cadastrar</button> <!-- Botão para cadastrar -->
                     </a>
                 </form>
             </div>

@@ -6,14 +6,15 @@ function cadastrar(){
     email = document.getElementById("emailAluno").value;
     senha = document.getElementById("senhaAluno").value;
     confirmaSenha = document.getElementById("confirmaSenhaAluno").value;
+    turma = document.getElementById("turmaAluno").value
 
     if (testAll()){
-        dados = JSON.stringify({nome:nome,profLogin:usuario,profEmail:email,senha:senha});
+        dados = JSON.stringify({nome:nome,alunoLogin:usuario,alunoEmail:email,senha:senha,idGrupo:turma});
         xmlhttp.onload = function(){
             alert(this.responseText)
             window.location.href = 'index.html';
         }
-        xmlhttp.open("POST","http://localhost/cadastro_professor.php");
+        xmlhttp.open("POST","http://localhost/cadastro_aluno.php");
         xmlhttp.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
         xmlhttp.send("dados="+dados);
         console.log("Chegou aqui");
@@ -123,8 +124,8 @@ function testUserUnique(){
         tabela = JSON.parse(this.responseText);
         console.log(tabela.length);
         for(var i = 0; i <tabela.length; i++){
-            console.log(tabela[i].profLogin,usuario)
-            if (tabela[i].profLogin == usuario){
+            console.log(tabela[i].alunoLogin,usuario)
+            if (tabela[i].alunoLogin == usuario){
                 testando = 1
                 console.log("tem igual sim")
                 alert ("Usuário já existe")
@@ -171,5 +172,38 @@ function testAll(){
 }
 
 function teste_turma(){
-    cadastrar()
+    turmaCheck = -1;
+    console.log("chegou aqui!!!")
+    turma = document.getElementById("turmaAluno").value;
+    iconTurma = document.getElementById("iconTurma");
+    iconSenhaTurma = document.getElementById("iconSenhaTurma");
+    senhaTurma = document.getElementById("senhaturmaAluno").value;
+    xmlhttp = new XMLHttpRequest();
+    xmlhttp.onload = function(){
+        console.log(this.responseText);
+        tabela = JSON.parse(this.responseText);
+        console.log(tabela.length);
+        for(var i = 0; i <tabela.length; i++){
+            console.log(tabela[i].idGrupo,turma)
+            if (tabela[i].idGrupo == turma){
+                turmaCheck = i;
+                console.log("A turma existe")
+                iconTurma.style.color = '#00ff00';
+            }
+        }
+        if (turmaCheck == -1){
+            console.log("A turma não existe")
+            alert ("Não foi encontrada uma turma com esse código")
+            iconUser.style.color = '#00ff00';
+        }else{
+            if (senhaTurma == tabela[turmaCheck].senha){
+                cadastrar()
+            } else {
+                alert("A senha da turma não está correta")
+                iconSenhaTurma.style.color = '#ff0000';
+            }
+        }
+    }
+    xmlhttp.open("POST","http://localhost/checkGrupo.php");
+    xmlhttp.send();
 }

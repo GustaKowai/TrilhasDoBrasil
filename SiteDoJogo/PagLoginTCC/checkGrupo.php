@@ -16,7 +16,7 @@ $dbname = "trilhadobrasil"; // Your MySQL database name
 
 try {
     $conn = new PDO("mysql:host=$host;port=$port;dbname=$dbname",$user,$password);
-    $sql = 'SELECT alunoLogin FROM tb_aluno';
+    $sql = 'SELECT * FROM tb_grupo';
     $tabela = $conn->prepare($sql);
     $tabela->execute();
     $tabela = $conn->query($sql);
