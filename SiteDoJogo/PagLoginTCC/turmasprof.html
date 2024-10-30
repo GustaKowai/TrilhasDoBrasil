@@ -9,82 +9,18 @@
     <link rel="shortcut icon" href="css/img/grupo-de-usuarios.png" type="image/x-icon">
     <link rel="stylesheet" href="css/styleTurmasProf.css">
     <script src="js/sript.js"></script>
+    <script src="js/turmaprof.js"></script>
     <title>Turmas</title>
 </head>
 
-<body>
+<body onload="carregarTurmas()">
     <div class="container-fluid"> <!-- Contêiner fluido que ocupa 100% da largura da tela -->
         <div id="genTurmas"> <!-- Divisão para gerenciar turmas -->
             <div class="textTurmas"> <!-- Div para o título da seção de gerenciamento de turmas -->
                 <h1>Gerenciar suas turmas!</h1> <!-- Título principal da seção -->
             </div>
-            <div class="Turmas">
-                <!-- Primeira turma -->
-                <div class="d-grid gap-2 d-md-flex justify-content-md-end" id="divTurmas1">
-                    <label for="exampleInputPassword1"></label> <!-- Label vazio, pode ser removido -->
-                    <a class="btn btn-light LinkTurm1" href="estatisticas.html" role="button">Turma 1</a>
-                    <button class="btn btn-outline-danger" type="button" id="btnTurmas1"
-                        onclick="clicado()">Remover</button> <!-- Botão para remover a turma -->
-                </div>
-
-                <!-- Segunda turma -->
-                <div class="d-grid gap-2 d-md-flex justify-content-md-end" id="divTurmas2">
-                    <label for="exampleInputPassword1"></label> <!-- Label vazio, pode ser removido -->
-                    <a class="btn btn-light LinkTurm1" href="estatisticas.html" role="button">Turma 2</a>
-                    <button class="btn btn-outline-danger" type="button" id="btnTurmas2"
-                        onclick="clicado()">Remover</button> <!-- Botão para remover a turma -->
-                </div>
-
-                <!-- Terceira turma -->
-                <div class="d-grid gap-2 d-md-flex justify-content-md-end" id="divTurmas3">
-                    <label for="exampleInputPassword1"></label> <!-- Label vazio, pode ser removido -->
-                    <a class="btn btn-light LinkTurm1" href="estatisticas.html" role="button">Turma 3</a>
-                    <button class="btn btn-outline-danger" type="button" id="btnTurmas3"
-                        onclick="clicado()">Remover</button> <!-- Botão para remover a turma -->
-                </div>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-end" id="divTurmas3">
-                    <label for="exampleInputPassword1"></label> <!-- Label vazio, pode ser removido -->
-                    <a class="btn btn-light LinkTurm1" href="estatisticas.html" role="button">Turma 3</a>
-                    <button class="btn btn-outline-danger" type="button" id="btnTurmas3"
-                        onclick="clicado()">Remover</button> <!-- Botão para remover a turma -->
-                </div>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-end" id="divTurmas3">
-                    <label for="exampleInputPassword1"></label> <!-- Label vazio, pode ser removido -->
-                    <a class="btn btn-light LinkTurm1" href="estatisticas.html" role="button">Turma 3</a>
-                    <button class="btn btn-outline-danger" type="button" id="btnTurmas3"
-                        onclick="clicado()">Remover</button> <!-- Botão para remover a turma -->
-                </div>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-end" id="divTurmas3">
-                    <label for="exampleInputPassword1"></label> <!-- Label vazio, pode ser removido -->
-                    <a class="btn btn-light LinkTurm1" href="estatisticas.html" role="button">Turma 3</a>
-                    <button class="btn btn-outline-danger" type="button" id="btnTurmas3"
-                        onclick="clicado()">Remover</button> <!-- Botão para remover a turma -->
-                </div>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-end" id="divTurmas3">
-                    <label for="exampleInputPassword1"></label> <!-- Label vazio, pode ser removido -->
-                    <a class="btn btn-light LinkTurm1" href="estatisticas.html" role="button">Turma 3</a>
-                    <button class="btn btn-outline-danger" type="button" id="btnTurmas3"
-                        onclick="clicado()">Remover</button> <!-- Botão para remover a turma -->
-                </div>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-end" id="divTurmas3">
-                    <label for="exampleInputPassword1"></label> <!-- Label vazio, pode ser removido -->
-                    <a class="btn btn-light LinkTurm1" href="estatisticas.html" role="button">Turma 3</a>
-                    <button class="btn btn-outline-danger" type="button" id="btnTurmas3"
-                        onclick="clicado()">Remover</button> <!-- Botão para remover a turma -->
-                </div>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-end" id="divTurmas3">
-                    <label for="exampleInputPassword1"></label> <!-- Label vazio, pode ser removido -->
-                    <a class="btn btn-light LinkTurm1" href="estatisticas.html" role="button">Turma 3</a>
-                    <button class="btn btn-outline-danger" type="button" id="btnTurmas3"
-                        onclick="clicado()">Remover</button> <!-- Botão para remover a turma -->
-                </div>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-end" id="divTurmas3">
-                    <label for="exampleInputPassword1"></label> <!-- Label vazio, pode ser removido -->
-                    <a class="btn btn-light LinkTurm1" href="estatisticas.html" role="button">Turma 3</a>
-                    <button class="btn btn-outline-danger" type="button" id="btnTurmas3"
-                        onclick="clicado()">Remover</button> <!-- Botão para remover a turma -->
-                </div>
-
+            <div class="Turmas" id = "turmas">
+                
             </div>
             <!-- Botão para abrir o modal de adicionar turma -->
             <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal"
