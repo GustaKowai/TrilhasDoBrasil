@@ -17,7 +17,7 @@ $dados = json_decode($_POST["dados"]);
 
 try {
     $conn = new PDO("mysql:host=$host;port=$port;dbname=$dbname",$user,$password);
-    $sql = 'SELECT * FROM tb_grupo';
+    $sql = 'SELECT * FROM tb_grupo WHERE idProfessor = '.$dados->valor.'';
     $tabela = $conn->prepare($sql);
     $tabela->execute();
     $tabela = $conn->query($sql);
