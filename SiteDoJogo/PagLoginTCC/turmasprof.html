@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/styleTurmasProf.css">
     <script src="js/sript.js"></script>
     <script src="js/turmaprof.js"></script>
+    <script src="js/cadastroturma.js"></script>
     <title>Turmas</title>
 </head>
 
@@ -45,12 +46,12 @@
                 <form> <!-- Início do formulário para adicionar turma -->
                     <div class="form-group"> <!-- Grupo de formulário para o nome da turma -->
                         <label for="exampleInputEmail1"></label> <!-- Label vazio, pode ser removido -->
-                        <input type="email" class="form-control" id="inputTurma" aria-describedby="emailHelp"
+                        <input type="email" class="form-control" id="nomeTurma" aria-describedby="emailHelp"
                             placeholder="Nome da turma"> <!-- Campo para o nome da turma -->
                     </div>
                     <div class="form-group"> <!-- Grupo de formulário para a senha -->
                         <label for="exampleInputPassword1"></label> <!-- Label vazio, pode ser removido -->
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+                        <input type="password" class="form-control" id="senhaTurma" placeholder="Senha">
                         <!-- Campo para a senha -->
                     </div>
                     <div class="mb-3 form-check"> <!-- Espaço para checkbox (pode ser adicionado no futuro) -->
@@ -59,7 +60,7 @@
                         <label for="exampleInputPassword1">
                             <h3><strong>Confirme a senha:</strong></h3> <!-- Título para confirmar a senha -->
                         </label>
-                        <input type="password" class="form-control" id="exampleInputPassword1"
+                        <input type="password" class="form-control" id="confirmaSenhaTurma"
                             placeholder="Confirme a senha"> <!-- Campo para confirmar a senha -->
                     </div>
                     <div class="mb-3 form-check"> <!-- Espaço para checkbox (pode ser adicionado no futuro) -->
@@ -69,7 +70,7 @@
             <div class="modal-footer"> <!-- Rodapé do modal -->
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
                 <!-- Botão para cancelar e fechar o modal -->
-                <button type="button" class="btn btn-dark">Confirmar</button>
+                <button type="button" class="btn btn-dark" onclick="cadastrar()">Confirmar</button>
                 <!-- Botão para confirmar a adição da turma -->
             </div>
         </div>
