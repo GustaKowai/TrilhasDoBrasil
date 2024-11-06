@@ -30,7 +30,7 @@ CREATE TABLE tb_aluno
 ( 
     idAluno INT NOT NULL AUTO_INCREMENT,  
     nome VARCHAR(45) NOT NULL,  
-    alunoLogin VARCHAR(12) NOT NULL,
+    alunoLogin VARCHAR(45) NOT NULL,
     alunoEmail VARCHAR(45) NOT NULL,
     senha VARCHAR(45) NOT NULL,  
     idGrupo INT NOT NULL,  
