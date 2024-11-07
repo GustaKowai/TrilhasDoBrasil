@@ -8,6 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     exit;
 }
 
+$dados = json_decode($_POST["dados"]);
 $host = "localhost"; // Your MySQL server host
 $port = 3306;        // MySQL port
 $user = "root"; // Your MySQL username
@@ -16,7 +17,7 @@ $dbname = "trilhadobrasil"; // Your MySQL database name
 
 try {
     $conn = new PDO("mysql:host=$host;port=$port;dbname=$dbname",$user,$password);
-    $sql = 'SELECT profLogin,idProfessor FROM tb_professor';
+    $sql = 'SELECT senha FROM tb_professor WHERE idProfessor = '.$dados->idProfessor.'';
     $tabela = $conn->prepare($sql);
     $tabela->execute();
     $tabela = $conn->query($sql);

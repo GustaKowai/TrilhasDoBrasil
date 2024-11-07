@@ -27,6 +27,8 @@
 
   <!-- Link para o arquivo JavaScript personalizado, onde você pode adicionar funcionalidades -->
   <script src="js/sript.js"></script>
+  <script src="js/loginprof.js"></script>
+
 
   <!-- Título da página, que aparece na aba do navegador -->
   <title>Login</title>
@@ -46,13 +48,13 @@
 
       <!-- Caixa de entrada para o usuário -->
       <div class="input-box">
-        <input type="text" placeholder="Usuário" required> <!-- Campo de texto para usuário -->
+        <input type="text" placeholder="Usuário"  id="profLogin"> <!-- Campo de texto para usuário -->
         <i class='bx bxs-user'></i> <!-- Ícone de usuário ao lado do campo -->
       </div>
 
       <!-- Caixa de entrada para a senha -->
       <div class="input-box">
-        <input type="password" placeholder="Senha" required> <!-- Campo de senha -->
+        <input type="password" placeholder="Senha"  id="senha"> <!-- Campo de senha -->
         <i class='bx bxs-lock-alt'></i> <!-- Ícone de cadeado ao lado do campo -->
       </div>
 
@@ -64,7 +66,7 @@
       </div>
 
       <!-- Botão para enviar o formulário -->
-      <button type="submit" class="btn">Login</button>
+      <button type="submit" class="btn" onclick="login()">Login</button>
 
       <!-- Link para criar uma nova conta caso o usuário não tenha -->
       <div class="register-link">
