@@ -1,6 +1,6 @@
 ﻿define e = Character("Eileen", image="eileen", callback = low_beep, what_prefix='', what_suffix='')
-define p1 = Character("Personagem1", image="personagem1", callback = low_beep, what_prefix='', what_suffix='')
-define n = Character("", callback = low_beep, what_prefix='', what_suffix='')
+define filipe = Character("Filipe dos Santos", image="Filipe dos Santos", callback = low_beep, what_prefix='', what_suffix='')
+define minerador = Character("Minerador", image="Minerador", callback = low_beep, what_prefix='', what_suffix='')
 default logado = False
 define alunoID = 0
 # O jogo começa aqui.
@@ -30,6 +30,7 @@ label fazerlogin:
         jump fazerlogin
     $ persistent.nome = resposta
     e "O login foi executado! Seja bem vindo [persistent.nome]"
+    hide eileen
     #$ ordemEscolha = selectordemEscolha(alunoID)
     #e "[ordemEscolha]"
     $ logado = True

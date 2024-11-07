@@ -1,7 +1,20 @@
 label inicioHistoria:
+    show bg vilarica
+    "Você observa o movimento frenético dos mineradores nas encostas. Entre eles, está Felipe dos Santos, seu personagem principal."
 
+    show filipe happy at left 
+    filipe "Mais um dia de trabalho que estamos terminando. Mas com essas casas de fundição que o governo está construindo, nosso trabalho será muito desvalorizado."
 
+    show minerador sad at center with moveinright
+    minerador "Com os impostos exigidos pela coroa portuguesa e aqueles agentes, todo esse ouro que pegamos não valerá muito."
 
+    menu:
+        "Temos que fazer algo, isto está um absurdo!":
+            $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,1)
+            jump resistencia
+        "O que podemos fazer?":
+            $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,2)
+            jump pessimismo
 jump final
 
 
