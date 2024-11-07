@@ -1,4 +1,6 @@
 label inicioHistoria:
+    show bg vilarica
+    "Você observa o movimento frenético dos mineradores nas encostas. Entre eles, está Felipe dos Santos, seu personagem principal."
 
 
 
