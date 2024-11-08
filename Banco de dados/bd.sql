@@ -23,6 +23,8 @@ CREATE TABLE tb_grupo
     idProfessor INT NOT NULL, 
     PRIMARY KEY (idGrupo),
     CONSTRAINT FK_GRUPO_PROFESSOR FOREIGN KEY(idProfessor) REFERENCES tb_professor (idProfessor)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE
 )ENGINE=InnoDB; 
 
 /*Tabela dos alunos, é sempre ligado a um grupo*/
@@ -37,6 +39,8 @@ CREATE TABLE tb_aluno
     UNIQUE (alunoLogin),
     PRIMARY KEY (idAluno),
     CONSTRAINT FK_ALUNO_GRUPO FOREIGN KEY(idGrupo) REFERENCES tb_grupo (idGrupo)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE
 )ENGINE=InnoDB; 
 
 /*Tabela de escolhas possíveis feitas no jogo.*/
@@ -54,8 +58,12 @@ CREATE TABLE tb_escolhe
     idEscolhas INT NOT NULL,  
     ordemEscolha INT NOT NULL,
     PRIMARY KEY (idAluno, idEscolhas, ordemEscolha),
-    CONSTRAINT FK_ESCOLHE_ALUNO FOREIGN KEY(idAluno) REFERENCES tb_aluno (idAluno),
+    CONSTRAINT FK_ESCOLHE_ALUNO FOREIGN KEY(idAluno) REFERENCES tb_aluno (idAluno)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE,
     CONSTRAINT FK_ESCOLHE_ESCOLHAS FOREIGN KEY(idEscolhas) REFERENCES tb_escolhas (idEscolhas)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE
 )ENGINE=InnoDB; 
 
 /*Comando para contar quantos alunos fizeram a escolha x*/
