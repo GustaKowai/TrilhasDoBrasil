@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/historia.rpy", line 8: end of line expected.
-    show minerador sad with move at center
-                                 ^
+File "game/historia.rpy", line 18: expected ':' not found.
+    label resistencia
+                     ^
 
 Ren'Py Version: Ren'Py 8.3.2.24090902
-Wed Nov  6 21:36:44 2024
+Thu Nov  7 21:14:48 2024

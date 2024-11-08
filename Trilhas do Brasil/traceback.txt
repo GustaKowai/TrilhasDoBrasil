@@ -1,30 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/historia.rpy", line 8, in script
-    show minerador sad at center with moveinright(1,0)
-  File "game/historia.rpy", line 8, in <module>
-    show minerador sad at center with moveinright(1,0)
-Exception: MoveTransition can only be applied to one or all layers, not int.
+  File "game/historia.rpy", line 17, in script
+    jump pessimismo
+ScriptError: could not find label 'pessimismo'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/historia.rpy", line 8, in script
-    show minerador sad at center with moveinright(1,0)
-  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\ast.py", line 1357, in execute
-    paired = renpy.python.py_eval(self.paired)
-  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\python.py", line 1209, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/historia.rpy", line 8, in <module>
-    show minerador sad at center with moveinright(1,0)
-  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\display\movetransition.py", line 538, in MoveTransition
-    raise Exception("MoveTransition can only be applied to one or all layers, not %s." % type(widget).__name__)
-Exception: MoveTransition can only be applied to one or all layers, not int.
+  File "game/historia.rpy", line 17, in script
+    jump pessimismo
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\ast.py", line 1699, in execute
+    rv = renpy.game.script.lookup(target)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\script.py", line 1103, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'pessimismo'.
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 8.3.2.24090902
 Trilhas do Brasil 1.0
-Wed Nov  6 21:39:52 2024
+Thu Nov  7 20:56:16 2024
