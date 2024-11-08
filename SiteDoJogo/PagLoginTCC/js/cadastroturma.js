@@ -4,7 +4,7 @@ function cadastrar(){
     nome = document.getElementById("nomeTurma").value;
     senha = document.getElementById("senhaTurma").value;
     confirmasenha = document.getElementById("confirmaSenhaTurma").value;
-    idProfessor = 1; //Trocar pelo cookie com o id do professor
+    idProfessor = getCookie("idProfessor");
 
     if (testAll()){
         dados = JSON.stringify({nomeTurma:nome,senhaTurma:senha,idProfessor:idProfessor});
@@ -82,3 +82,19 @@ function testAll(){
     }
     return liberado    
 }
+
+function getCookie(cname) {
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for(let i = 0; i <ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }

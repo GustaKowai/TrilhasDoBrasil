@@ -10,6 +10,11 @@ INSERT INTO tb_grupo (senha,nomeTurma,idProfessor) VALUES ("grupo2","Segundo ano
 INSERT INTO tb_grupo (senha,nomeTurma,idProfessor) VALUES ("grupo3","Terceiro ano",2);
 INSERT INTO tb_aluno(nome,alunoLogin,senha,idGrupo,alunoEmail) VALUES ("Caio","caio666","1010",1,"aluno@gmaiu.com");
 INSERT INTO tb_aluno(nome,alunoLogin,senha,idGrupo,alunoEmail) VALUES ("Laura","laura12","1010",1,"aluna@gmaiu.com");
+INSERT INTO tb_aluno(nome,alunoLogin,senha,idGrupo,alunoEmail) VALUES ("Bruno","bruno12","1010",1,"aluna@gmaiu.com");
+INSERT INTO tb_aluno(nome,alunoLogin,senha,idGrupo,alunoEmail) VALUES ("Cesar","cesar12","1010",1,"aluna@gmaiu.com");
+INSERT INTO tb_aluno(nome,alunoLogin,senha,idGrupo,alunoEmail) VALUES ("Claudio","claudio12","1010",1,"aluna@gmaiu.com");
+INSERT INTO tb_aluno(nome,alunoLogin,senha,idGrupo,alunoEmail) VALUES ("Claudia","claudia12","1010",1,"aluna@gmaiu.com");
+INSERT INTO tb_aluno(nome,alunoLogin,senha,idGrupo,alunoEmail) VALUES ("Felipe","felipe12","1010",1,"aluna@gmaiu.com");
 INSERT INTO tb_escolhas(descricao) VALUES ("Escolha 1");
 INSERT INTO tb_escolhas(descricao) VALUES ("Escolha 2");
 INSERT INTO tb_escolhas(descricao) VALUES ("Escolha 3");

@@ -39,7 +39,7 @@
       chart.draw(data, options);
     }
   </script>
-
+  <script src="js/estatisticas.js"></script>
   <link rel="shortcut icon" href="css/img/grupo-de-usuarios.png" type="image/x-icon">
   <!-- Define o ícone da aba do navegador -->
   <link rel="stylesheet" href="css/styleEstatisticas.css"> <!-- Importa o arquivo de estilo CSS -->
@@ -47,61 +47,14 @@
 
 </head>
 
-<body>
+<body onload="checkCookie()">
   <div class="infoTurma"> <!-- Divisão que contém as informações da turma -->
     <h1>Estatísticas da Turma</h1> <!-- Título da seção de estatísticas -->
 
     <div id="piechart_3d" class="chart"></div> <!-- Div onde o gráfico será renderizado -->
 
-    <div class="linksTurms"> <!-- Div para links relacionados -->
-      <button type="button" class="btn btn-outline-dark">Turma 1</button>
-      <button type="button" class="btn btn-outline-dark">Aluno 1</button>
-      <button type="button" class="btn btn-outline-dark">Aluno 1</button>
-      <button type="button" class="btn btn-outline-dark">Aluno 1</button>
-      <button type="button" class="btn btn-outline-dark">Aluno 1</button>
-      <button type="button" class="btn btn-outline-dark">Aluno 1</button>
-      <button type="button" class="btn btn-outline-dark">Aluno 1</button>
-      <button type="button" class="btn btn-outline-dark">Aluno 1</button>
-      <button type="button" class="btn btn-outline-dark">Aluno 1</button>
-      <button type="button" class="btn btn-outline-dark">Aluno 1</button>
-      <button type="button" class="btn btn-outline-dark">Aluno 1</button>
-      <button type="button" class="btn btn-outline-dark">Aluno 1</button>
-      <button type="button" class="btn btn-outline-dark">Aluno 1</button>
-      <button type="button" class="btn btn-outline-dark">Aluno 1</button>
-      <button type="button" class="btn btn-outline-dark">Aluno 1</button>
-      <button type="button" class="btn btn-outline-dark">Aluno 1</button>
-      <button type="button" class="btn btn-outline-dark">Aluno 1</button>
-      <button type="button" class="btn btn-outline-dark">Aluno 1</button>
-      <button type="button" class="btn btn-outline-dark">Aluno 1</button>
-      <button type="button" class="btn btn-outline-dark">Aluno 1</button>
-      <button type="button" class="btn btn-outline-dark">Aluno 1</button>
-      <button type="button" class="btn btn-outline-dark">Aluno 1</button>
-      <button type="button" class="btn btn-outline-dark">Aluno 1</button>
-      <button type="button" class="btn btn-outline-dark">Aluno 1</button>
-      <button type="button" class="btn btn-outline-dark">Aluno 1</button>
-      <button type="button" class="btn btn-outline-dark">Aluno 1</button>
-      <button type="button" class="btn btn-outline-dark">Aluno 1</button>
-      <button type="button" class="btn btn-outline-dark">Aluno 1</button>
-      <button type="button" class="btn btn-outline-dark">Aluno 1</button>
-      <button type="button" class="btn btn-outline-dark">Aluno 1</button>
-      <button type="button" class="btn btn-outline-dark">Aluno 1</button>
-      <button type="button" class="btn btn-outline-dark">Aluno 1</button>
-      <button type="button" class="btn btn-outline-dark">Aluno 1</button>
-      <button type="button" class="btn btn-outline-dark">Aluno 1</button>
-      <button type="button" class="btn btn-outline-dark">Aluno 1</button>
-      <button type="button" class="btn btn-outline-dark">Aluno 1</button>
-      <button type="button" class="btn btn-outline-dark">Aluno 1</button>
-      <button type="button" class="btn btn-outline-dark">Aluno 1</button>
-      <button type="button" class="btn btn-outline-dark">Aluno 1</button>
-      <button type="button" class="btn btn-outline-dark">Aluno 1</button>
-      <button type="button" class="btn btn-outline-dark">Aluno 1</button>
-      <button type="button" class="btn btn-outline-dark">Aluno 1</button>
-      <button type="button" class="btn btn-outline-dark">Aluno 1</button>
-      <button type="button" class="btn btn-outline-dark">Aluno 1</button>
-      <button type="button" class="btn btn-outline-dark">Aluno 1</button>
-      <button type="button" class="btn btn-outline-dark">Aluno 1</button>
-      <button type="button" class="btn btn-outline-dark">Aluno 1</button>
-      <button type="button" class="btn btn-outline-dark">Aluno 1</button>
+    <div class="linksTurms" id="alunos"> <!-- Div para links relacionados -->
+      
     </div>
     <div class="btnVoltar">
       <a class="btn btn-dark" href="turmasprof.html" role="button">Voltar</a>

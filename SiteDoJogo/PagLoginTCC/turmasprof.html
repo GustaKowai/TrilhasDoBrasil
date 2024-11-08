@@ -14,7 +14,7 @@
     <title>Turmas</title>
 </head>
 
-<body onload="carregarTurmas()">
+<body onload="checkCookie()">
     <div class="container-fluid"> <!-- Contêiner fluido que ocupa 100% da largura da tela -->
         <div id="genTurmas"> <!-- Divisão para gerenciar turmas -->
             <div class="textTurmas"> <!-- Div para o título da seção de gerenciamento de turmas -->
@@ -28,6 +28,7 @@
                 id="btnModal">
                 Adicionar turma
             </button>
+            <a onclick="sair()">Sair</a>
         </div>
     </div>
 </body>

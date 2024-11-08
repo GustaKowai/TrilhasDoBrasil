@@ -13,10 +13,11 @@ $port = 3306;        // MySQL port
 $user = "root"; // Your MySQL username
 $password = ""; // Your MySQL password
 $dbname = "trilhadobrasil"; // Your MySQL database name
+$dados = json_decode($_POST["dados"]);
 
 try {
     $conn = new PDO("mysql:host=$host;port=$port;dbname=$dbname",$user,$password);
-    $sql = 'SELECT profLogin,idProfessor,senha FROM tb_professor';
+    $sql = 'SELECT * FROM tb_aluno WHERE idGrupo = '.$dados->valor.'';
     $tabela = $conn->prepare($sql);
     $tabela->execute();
     $tabela = $conn->query($sql);

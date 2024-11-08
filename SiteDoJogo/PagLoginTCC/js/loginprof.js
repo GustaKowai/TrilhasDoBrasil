@@ -1,12 +1,8 @@
 function login(){
-    testUser()
-}
-
-function testUser(){
-    id = 0;
+    testando = 0;
     console.log("chegou aqui!!!")
     usuario = document.getElementById("profLogin").value;
-    
+    senha = document.getElementById("senha").value;
     xmlhttp = new XMLHttpRequest();
     xmlhttp.onload = function(){
         console.log(this.responseText);
@@ -15,13 +11,19 @@ function testUser(){
         for(var i = 0; i <tabela.length; i++){
             console.log(tabela[i].profLogin,usuario)
             if (tabela[i].profLogin == usuario){
-                id = tabela[i].idProfessor
+                testando = 1
                 console.log("O login existe!!")
-                console.log(id)
-                testPassword(id)
+                console.log(tabela[i].senha, senha)
+                if (tabela[i].senha == senha){
+                    setCookie("idProfessor",tabela[i].idProfessor,1)
+                    window.location.href = 'turmasprof.html';
+                }
+                else{
+                    alert("A senha e o usuário não correspondem")
+                }
             }
-        }
-        if (id==0){
+            }
+        if (testando==0){
             alert("Usuário não encontrado")
         }
     }
@@ -30,29 +32,9 @@ function testUser(){
     
 }
 
-function testPassword(id){
-    senha = document.getElementById("senha").value;
-    dados = JSON.stringify({idProfessor:id});
-    console.log(dados)
-    xmlhttp = new XMLHttpRequest();
-    xmlhttp.onload = function(){
-        console.log(this.responseText);
-        tabela = JSON.parse(this.responseText);
-        console.log(tabela.length);
-        for(var i = 0; i <tabela.length; i++){
-            console.log(tabela[i].senha,senha)
-            if (tabela[i].senha == senha){
-                alert("A senha está correta")
-            }else{
-                alert("A senha está incorreta")
-            }
-        }
-        
-    }
-    xmlhttp.open("POST","http://localhost/checkSenha.php");
-    xmlhttp.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
-    xmlhttp.send("dados="+dados);
-    console.log("Chegou aqui");
-    console.log(dados);
-    
+function setCookie(cname, cvalue, exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    let expires = "expires=" + d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
