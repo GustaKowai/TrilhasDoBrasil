@@ -1,3 +1,4 @@
+//Função usada para cadastrar o aluno
 function cadastrar(){
     xmlhttp = new XMLHttpRequest();
     let nome,usuario,email,senha;
@@ -8,7 +9,7 @@ function cadastrar(){
     confirmaSenha = document.getElementById("confirmaSenhaAluno").value;
     turma = document.getElementById("turmaAluno").value
 
-    if (testAll()){
+    if (testAll()){//Checa se tudo está em ordem para poder fazer o cadastro
         dados = JSON.stringify({nome:nome,alunoLogin:usuario,alunoEmail:email,senha:senha,idGrupo:turma});
         xmlhttp.onload = function(){
             alert(this.responseText)
@@ -22,7 +23,7 @@ function cadastrar(){
     }
 }
 
-function passStrenght(){
+function passStrenght(){//checa o tamanho da senha
     let strenght;
     strenght = document.getElementById('iconPassword');
     senha = document.getElementById("senhaAluno").value;
@@ -44,7 +45,7 @@ function passStrenght(){
     return senhaForte    
 }
 
-function testConfirmPassword(){
+function testConfirmPassword(){//checa se a senha confirmada está igual a senha digitada
     confirmaSenha = document.getElementById("iconConfirm")
     senha = document.getElementById("senhaAluno").value;
     testeSenha = document.getElementById("confirmaSenhaAluno").value;
@@ -63,7 +64,7 @@ function testConfirmPassword(){
     return senhaConfirmada;
 }
 
-function testName(){
+function testName(){//checa se o nome tem o tamanho adequado
     let result
     nome = document.getElementById("nomeAluno").value
     iconName = document.getElementById("iconName")
@@ -79,7 +80,7 @@ function testName(){
     }
     return result;
 }
-function testUser(){
+function testUser(){//checa se o usuário tem o tamanho necessário
     let result
     nome = document.getElementById("userAluno").value
     iconUser = document.getElementById("iconUser")
@@ -95,7 +96,7 @@ function testUser(){
     }
     return result;
 }
-function testEmail(){
+function testEmail(){//checa se o email tem o tamanho necessário
     let result
     nome = document.getElementById("emailAluno").value
     iconEmail = document.getElementById("iconEmail")
@@ -112,7 +113,7 @@ function testEmail(){
     return result;
 }
 
-function testUserUnique(){
+function testUserUnique(){//Checa se o usuário é único
     testando = 0;
     console.log("chegou aqui!!!")
     usuario = document.getElementById("userAluno").value;
@@ -142,7 +143,7 @@ function testUserUnique(){
     
 }
 
-function testAll(){
+function testAll(){//checa se todos os testes foram bem sucedidos e apresenta a mensagem com os erros
     let liberado = true;
     let message = "";
     if(!testName()){
@@ -171,7 +172,7 @@ function testAll(){
     return liberado    
 }
 
-function teste_turma(){
+function teste_turma(){//checa se a turma inserida existe e está com a senha correta
     turmaCheck = -1;
     console.log("chegou aqui!!!")
     turma = document.getElementById("turmaAluno").value;

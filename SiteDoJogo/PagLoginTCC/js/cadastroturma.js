@@ -83,7 +83,7 @@ function testAll(){
     return liberado    
 }
 
-function getCookie(cname) {
+function getCookie(cname) {//função usada para capturar o cookie com o id do professor para fazer o cadastro da turma
     let name = cname + "=";
     let decodedCookie = decodeURIComponent(document.cookie);
     let ca = decodedCookie.split(';');
