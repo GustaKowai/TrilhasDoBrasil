@@ -1,22 +1,34 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/historia.rpy", line 17, in script
-    jump pessimismo
-ScriptError: could not find label 'pessimismo'.
+  File "game/historia.rpy", line 102, in script
+    $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,6)
+  File "game/historia.rpy", line 102, in <module>
+    $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,6)
+  File "game/bd.rpy", line 92, in insertEscolhaIntoBD
+    cursor.execute(sql,val)
+IntegrityError: 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`trilhadobrasil`.`tb_escolhe`, CONSTRAINT `FK_ESCOLHE_ESCOLHAS` FOREIGN KEY (`idEscolhas`) REFERENCES `tb_escolhas` (`idEscolhas`) ON DELETE CASCADE ON UPDATE CASCADE)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/historia.rpy", line 17, in script
-    jump pessimismo
-  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\ast.py", line 1699, in execute
-    rv = renpy.game.script.lookup(target)
-  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\script.py", line 1103, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'pessimismo'.
+  File "game/historia.rpy", line 102, in script
+    $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,6)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\ast.py", line 821, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\python.py", line 1178, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/historia.rpy", line 102, in <module>
+    $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,6)
+  File "game/bd.rpy", line 92, in insertEscolhaIntoBD
+    cursor.execute(sql,val)
+  File "python-packages/mysql/connector/cursor.py", line 537, in execute
+  File "python-packages/mysql/connector/opentelemetry/context_propagation.py", line 97, in wrapper
+  File "python-packages/mysql/connector/connection.py", line 859, in cmd_query
+  File "python-packages/mysql/connector/connection.py", line 635, in _handle_result
+IntegrityError: 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`trilhadobrasil`.`tb_escolhe`, CONSTRAINT `FK_ESCOLHE_ESCOLHAS` FOREIGN KEY (`idEscolhas`) REFERENCES `tb_escolhas` (`idEscolhas`) ON DELETE CASCADE ON UPDATE CASCADE)
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 8.3.2.24090902
 Trilhas do Brasil 1.0
-Thu Nov  7 20:56:16 2024
+Wed Nov 13 21:20:51 2024

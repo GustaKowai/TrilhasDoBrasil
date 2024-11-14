@@ -1,6 +1,10 @@
 ﻿define e = Character("Eileen", image="eileen", callback = low_beep, what_prefix='', what_suffix='')
 define filipe = Character("Filipe dos Santos", image="Filipe dos Santos", callback = low_beep, what_prefix='', what_suffix='')
 define minerador = Character("Minerador", image="Minerador", callback = low_beep, what_prefix='', what_suffix='')
+define comerciante = Character("Comerciante", image="Comerciante", callback = low_beep, what_prefix='', what_suffix='')
+define NPC = Character("NPC", image="NPC", callback = low_beep, what_prefix='', what_suffix='')
+define NPC2 = Character("NPC2", image="NPC2", callback = low_beep, what_prefix='', what_suffix='')
+define Agente1 = Character("Agente da coroa", image="Agente da coroa", callback = low_beep, what_prefix='', what_suffix='')
 default logado = False
 define alunoID = 0
 # O jogo começa aqui.
@@ -40,7 +44,10 @@ label fazerlogin:
 label final:
     e "Espero que tenha se divertido."
     e "Até mais"
-
+    
+    jump inicioHistoria
+    e "A historia acabou"
+    
     return
  
 
