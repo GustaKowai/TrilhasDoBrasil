@@ -1,3 +1,4 @@
+//Função usada para cadastrar o professor
 function cadastrar(){
     xmlhttp = new XMLHttpRequest();
     let nome,usuario,email,senha;
@@ -7,7 +8,7 @@ function cadastrar(){
     senha = document.getElementById("senhaProf").value;
     confirmaSenha = document.getElementById("confirmaSenhaProf").value;
 
-    if (testAll()){
+    if (testAll()){//Checa se tudo está em ordem para poder fazer o cadastro
         dados = JSON.stringify({nome:nome,profLogin:usuario,profEmail:email,senha:senha});
         xmlhttp.onload = function(){
             alert(this.responseText)
@@ -21,7 +22,7 @@ function cadastrar(){
     }
 }
 
-function passStrenght(){
+function passStrenght(){//checa o tamanho da senha
     let strenght;
     strenght = document.getElementById('iconPassword');
     senha = document.getElementById("senhaProf").value;
@@ -43,7 +44,7 @@ function passStrenght(){
     return senhaForte    
 }
 
-function testConfirmPassword(){
+function testConfirmPassword(){//checa se a senha confirmada está igual a senha digitada
     confirmaSenha = document.getElementById("iconConfirm")
     senha = document.getElementById("senhaProf").value;
     testeSenha = document.getElementById("confirmaSenhaProf").value;
@@ -62,7 +63,7 @@ function testConfirmPassword(){
     return senhaConfirmada;
 }
 
-function testName(){
+function testName(){//checa se o nome tem o tamanho adequado
     let result
     nome = document.getElementById("nomeProf").value
     iconName = document.getElementById("iconName")
@@ -78,7 +79,7 @@ function testName(){
     }
     return result;
 }
-function testUser(){
+function testUser(){//checa se o usuário tem o tamanho necessário
     let result
     nome = document.getElementById("userProf").value
     iconUser = document.getElementById("iconUser")
@@ -94,7 +95,7 @@ function testUser(){
     }
     return result;
 }
-function testEmail(){
+function testEmail(){//checa se o email tem o tamanho necessário
     let result
     nome = document.getElementById("emailProf").value
     iconEmail = document.getElementById("iconEmail")
@@ -111,7 +112,7 @@ function testEmail(){
     return result;
 }
 
-function testUserUnique(){
+function testUserUnique(){//Checa se o usuário é único
     testando = 0;
     console.log("chegou aqui!!!")
     usuario = document.getElementById("userProf").value;
@@ -141,7 +142,7 @@ function testUserUnique(){
     
 }
 
-function testAll(){
+function testAll(){//checa se todos os testes foram bem sucedidos e apresenta a mensagem com os erros
     let liberado = true;
     let message = "";
     if(!testName()){
