@@ -161,7 +161,7 @@ label aumentaforça
 jump cap2
 
 label estrategia
-
+""
 jump final
 
 
