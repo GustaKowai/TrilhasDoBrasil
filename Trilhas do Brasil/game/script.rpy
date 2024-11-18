@@ -5,6 +5,7 @@ define comerciante = Character("Comerciante", image="Comerciante", callback = lo
 define NPC = Character("NPC", image="NPC", callback = low_beep, what_prefix='', what_suffix='')
 define NPC2 = Character("NPC2", image="NPC2", callback = low_beep, what_prefix='', what_suffix='')
 define Agente1 = Character("Agente da coroa", image="Agente da coroa", callback = low_beep, what_prefix='', what_suffix='')
+define Cidadã = Character("Cidadã", image="Cidadã", callback = low_beep, what_prefix='', what_suffix='')
 default logado = False
 define alunoID = 0
 # O jogo começa aqui.

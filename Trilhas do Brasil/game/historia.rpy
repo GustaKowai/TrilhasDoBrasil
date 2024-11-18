@@ -106,6 +106,61 @@ label aumentamoral (count=2):
             $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,6)
             jump atacar
 
+label tentardialogar:
+    Agente1 "Não quero saber, vocês vão pagar por isso e ainda vamos ficar com todo esse ouro para nós"
+    show Agente1 saco
+    show comerciante algema
+    show comerciante2 algema
+    scene tentardialogar
+
+    bg reuniao
+
+    show filipe sad at right
+    filipe "percebo que conseguiram reunir muitas pessoas para nos apoiar, mas venho com péssimas noticias"
+    filipe "Nossa tentativa com o santinho do pau oco falhou, eles já estão espertos com isso. Nossos companheiros foram presos"
+    show minerador happy at left
+    minerador "Vamos continuar pensando, precisamos de mais recursos para o plano"
+jump cap2final
+
+label atacar
+    show comerciante faca
+    show comerciante2 faca
+
+    bg tela escura
+    *sons de lutas*
+
+    bg comerciantesmortos
+    scene atacar
+
+    bg reuniao
+    filipe "percebo que conseguiram reunir muitas pessoas para nos apoiar, mas venho com péssimas noticias"
+    filipe "Nossa tentativa com o santinho do pau oco falhou, eles já estão espertos com isso. Nossos companheiros foram assassinado em tentativa de defender nosso ouro"
+    filipe "Mas temos de continuar nosso plano"
+    scene atacar
+jump cap2
+
+label aumentaforça
+    bg discurso
+    filipe happy at truecenter
+    filipe "Companheiros! Hoje estamos aqui, não apenas como mineradores, mas como homens e mulheres dignos que lutam pela nossa liberdade e pelos direitos que nos foram negados!"
+    filipe "Estamos sendo oprimidos, sufocados por impostos que não podemos pagar, enquanto nossas riquezas escorrem para os cofres da Coroa. É hora de nos levantarmos contra essa injustiça!"
+    filipe "Unidos, somos mais fortes! Se cada um de nós se erguer, se cada um de nós clamar por nossa autonomia, não haverá poder que possa nos deter!"
+    "ISSOO, VAMOS LUTAR POR JUSTIÇA"
+    "JUSTIÇAAA"
+    filipe "Vamos lutar contra o monopólio do comercio"
+    filipe "E também vamos lutar contra as casas de fundição que o governo quer construir"
+
+    Cidadã "Mas como vamos lutar contra as casas de fundição?"
+    Cidadã "São muitos agentes da coroa que protegem a construção delas"
+
+    filipe "Com a nossa força unida, nada vai nos deter, nem mesmo eles"
+    filipe "Quem está comigo?
+    "VAMOS A LUTAAA"
+    "Será que vai dar certo?"
+    scene aumenta força
+jump cap2
+
+label estrategia
 
 jump final
 
