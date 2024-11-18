@@ -38,7 +38,7 @@ label cap1:
     show bg salaescura
     "Você se junta a uma reunião secreta. O ambiente é carregado de descontentamento."
     show filipe default at center
-    show NPC at left
+    show NPC2 at left
     show comerciante at right
     filipe "Precisamos nos unir contra essa opressão! Não podemos mais aceitar a imposição das casas de fundição."
     filipe "Todo o ouro que pegamos em pepitas seremos obrigados a levar nas casas de fundição, onde os agentes da coroa derretem o ouro e transformam em barras."
@@ -70,7 +70,7 @@ label aumentamoral (count=2):
     show bg aumentamoral
     show filipe default at right with dissolve
     show comerciante default at center with dissolve
-    show comerciante2 default at left with dissolve
+    show NPC default at left with dissolve
 
     filipe "Vamos tentar utilizar o santinho do pau oco"
     filipe "Vocês vão passar com esses santinhos pelos guardas e tentar salvar o máximo de ouro sem passar pelas casas de fundição que serão construídas, veremos se vai dar certo esse plano"
@@ -79,23 +79,23 @@ label aumentamoral (count=2):
 
     "os dois comerciantes, com sua carroça, vão em direção a uma inspeção de mercadoria feita pelos agentes da coroa."
     hide comerciante with moveoutleft
-    hide comerciante2 with moveoutleft
+    hide NPC with moveoutleft
     scene aumentamoral
 
     show bg carroça
     show comerciante happy at center with moveinright
-    show comerciante2 happy at right with moveinright
-    show Agente1 happy at left
-    Agente1 "Muito bem, o que vocês tem aqui ?"
+    show NPC happy at right with moveinright
+    show agente1 happy at left
+    agente1 "Muito bem, o que vocês tem aqui ?"
 
     show comerciante sad at center
-    show comerciante2 sad at right
+    show NPC sad at right
 
-    Agente1 "Algumas mercadorias, comidas, santinhos"
-    Agente1 "Parece haver algo dentro desses santinhos, o que é isso?"
+    agente1 "Algumas mercadorias, comidas, santinhos"
+    agente1 "Parece haver algo dentro desses santinhos, o que é isso?"
     "Agente quebra um santinho e pepitas de ouro são espalhadas pelo chão"
-    show Agente1 santinho
-    Agente1 "Pensaram que iam nos enganar? hahahahaha"
+    show agente1 santinho
+    agente1 "Pensaram que iam nos enganar? hahahahaha"
 
     menu:
         "Desculpe-me senhor, mas todo o ouro que tivemos tanto trabalho para pegar seria tomado uma grande parte pela casa de fundição":
@@ -107,10 +107,10 @@ label aumentamoral (count=2):
             jump atacar
 
 label tentardialogar:
-    Agente1 "Não quero saber, vocês vão pagar por isso e ainda vamos ficar com todo esse ouro para nós"
-    show Agente1 saco
+    agente1 "Não quero saber, vocês vão pagar por isso e ainda vamos ficar com todo esse ouro para nós"
+    show agente1 saco
     show comerciante algema
-    show comerciante2 algema
+    show NPC algema
     scene tentardialogar
 
     bg reuniao
@@ -124,10 +124,10 @@ jump cap2final
 
 label atacar
     show comerciante faca
-    show comerciante2 faca
+    show NPC faca
 
     bg tela escura
-    *sons de lutas*
+    #sons de lutas
 
     bg comerciantesmortos
     scene atacar
@@ -161,10 +161,46 @@ label aumentaforça
 jump cap2
 
 label estrategia
-""
+    bg carroça
+    show filipe happy at left
+    show NPC2 happy at center
+    filipe "Você segue com o plano enquanto eu e os outros vamos tentar recrutar mais apoiadores para nosso plano"
+    hide filipe
+    hide NPC2 with moveoutleft
+    #Ilustração de uma carroça no fundo com algumas coisas e ouro em cima, os dois comerciantes indo em direção a uma inspeção feita pelos agentes
+    
+    Show agente1 happy at left
+    show NPC2 happy at center with moveinright
+    agente1 "Parado aí, o que temos ai?"
+    NPC2 "Tenho mercadoria para comercializar e ouro tambem"
+    agente1 "Esse ouro você vai levar a casa de fundição que está sendo construída, deixe la que será anotado e quando terminar a construção, seu ouro será derretido e carimbado, devolveremos ele a você"
+    agente1 "Subindo a rua você verá a construção a frente"
+    NPC2 "Certo, vamos lá."
+
+    hide NPC2 with moveoutleft
+    scene estrategia
+
+    bg construção 
+    show NPC2 happy at center with moveinright
+    show agente1 default at left
+    agente1 "Aqui vocês deixam o seu ouro, quando a casa estiver pronta, derreteremos, faremos barras e marcaremos seu ouro. Depois disso poderá comercializá-lo"
+    #sons de trocas de itens
+
+    show agente1 saco
+    "O comerciante entrega o ouro, observando muito bem todos os agentes posicionadoe e armados, consegue ver tudo e juntar informações para passar ao outros"
+
+    scene construção
+    bg telaescura
+    #sons de cavalo e rodas
+
+    show filipe happy at right
+    show NPC2 happy at center
+    filipe "Você voltou, como foi?"
+    NPC2 "Eu vi tudo, a localização e a quantidade de agentes lá. São bastante agentes, mas com todo o pessoal que estamos vendo que juntaram, vamos conseguir se formos espertos"
+    
+
+
 jump final
-
-
 
 label guia:   
     show bg minas with dissolve
