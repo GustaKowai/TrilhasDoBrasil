@@ -103,7 +103,7 @@ label aumentamoral (count=2):
             jump tentardialogar
 
         "Não vamos deixar que roubem nosso ouro!!":
-            $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,6)
+            $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,7)
             jump atacar
 
 label tentardialogar:
@@ -197,7 +197,60 @@ label estrategia
     show NPC2 happy at center
     filipe "Você voltou, como foi?"
     NPC2 "Eu vi tudo, a localização e a quantidade de agentes lá. São bastante agentes, mas com todo o pessoal que estamos vendo que juntaram, vamos conseguir se formos espertos"
+    scene estrategia
+jump cap2
+
+label cap2final
+    bg telaescura
+    #sons de multidão andando
+    "Você se reune aos revoltosos para atacar a construção da casa de fundição, que decidirão uma estratégia para o ataque"
+
+    bg construcão
+    show filipe angry at right
+    filipe "Agora é a nossa hora! Vamos lutar por nossa liberdade!"
+    filipe "Vamos atacar e ocupar vila rica"
+
+    "Porém no meio da decisão da estratégia e do discurso de Filipe, aparecem vários agentes da coroa que estavam escondidos e armaram uma armadilha"
+
+    show agente1 happy at left with moveinleft
+    show agente2 happy at center with moveinleft
+
+    agente2 "Pensaram que iam conseguir enganar a coroa assim?"
+    agente2 "Que ridículo, prendam todos eles"
+
+    #Sons de tristezas, gritos de socorro e cordas amarrando
+
+    filipe "Mas como? Como descobriram do nosso plano?"
+    agente2 "HAHAHA, foi fácil. Nem precisamos usar muita força contra seus amigos comerciantes que eles já soltaram tudo"
+    agente2 "entregaram vocês e toda essa revolta ridícula"
+    filipe "Traidores"
+    agente2 "prendam todos eles"
+
+    #sons de algemas
+    scene cap2final
+    bg telaescura
+    "Filipe e os outros foram capturados e levados. A revolta foi traída e não pode continuar, chegando assim ao fim da história."
+    "Os abusos com impostos continuaram e o povo seguiu sofrendo com isso"
+jump final
+
+label cap2
+    bg noite
+    "Você se junta aos revoltosos para atacar a construção da casa de fundição."
+    show filipe happy at left
     
+    filipe "Agora é a nossa hora! Vamos lutar por nossa liberdade"
+    filipe "Mas antes vamos decidir nossa estratégia"
+
+    menu:
+        "Dividir o grupo em duas frentes.":
+        $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,8)
+        jump estrategiaeficaz
+
+        "Atacar com tudo!":
+        $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,9)
+        jump aumentarisco
+
+label estrategiaeficaz
 
 
 jump final
