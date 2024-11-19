@@ -251,6 +251,121 @@ label cap2
         jump aumentarisco
 
 label estrategiaeficaz
+    bg grupos
+    "Eles se dividem em dois grupos e tentam impedir que as casas de fundição de vila rica sejam construídas, mas agentes da coroa estão no local"
+    show filipe happy at left
+    filipe "Vou com esse grupo e atacar os agentes e impedir a construção, o outro grupo atacaram o grupo de agentes que fica a leste da casa de fundição"
+    filipe"Boa sorte a todos"
+
+    hide bg grupos
+    hide filipe
+    show bg casa
+    show filipe
+
+    "O grupo de Filipe se esconde atrás de uma grande casa"
+
+    filipe "Ataquem"
+    scene estrategiaeficaz
+
+    bg telaescura
+    #sons de espadas, flechas e gritos
+    hide bg telaescura
+
+    show bg vitoria
+    show filipe at center happy
+    "Filipe e alguns revoltos de pé e todos os agentes da coroa mortos"
+
+    filipe "CONSEGUIMOS!"
+    filipe "Vamos ajudar o outro grupo, depois recolhemos recursos que nos ajudarão, tratamos os feridos e pegamos os corpos da nossa gente"
+
+    scene estrategiaeficaz
+    show bg vitoria2
+    show filipe happy at left
+    "Eles chegam a outra casa de fundição e encontram o outro grupo. Eles também derrotaram os agentes da coroa"
+
+    NPC "CONSEGUIMOS, VILA RICA AGORA É NOSSAAA!"
+    filipe "Agora teremos de ir até a sede do governo e falar diretamente com o Conde de Assumar"
+jump cap3estrategiaeficaz
+
+
+label aumentarisco
+    bg grupo
+    Show filipe happy at left
+    filipe "Vamos todos juntos atacar a casa de fundição, em maior número conquistaremos fácil todo o território"
+    #sons de murmurios
+    scene aumentarisco
+    "Todos os revoltados vão juntos a casa de fundição a oeste, porém alguns agentes avistam toda essa multidão gigante furiosa se movendo e comunicam mais agentes"
+    "Quando Filipe e os revoltados chegam na casa de fundição encontram muitos agentes posicionados"
+
+    bg agentes
+    show filipe sad at center
+
+    menu:
+        "Viemos reivindicar nossos direitos, e daremos nossas vidas por isso, ATACARRR"
+        $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,10)
+        jump ataque
+
+        "Se render"
+        $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,11)
+        jump entregartudo
+
+        "Eles estão em muitos, não temos condições de ganhar. Vamos fugir"
+        $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,12)
+        jump alternativa
+
+label ataque
+    bg telaescura
+    #sons de gritos e batalha
+    hide bg telaescura
+    bg todosmortos
+    #corpos dos participantes da revolta no chão, inclusive o de FIlipe dos Santos
+    "Ao final da batalha todos os participantes da revolta forem mortos, inclusive Filipe dos Santos"
+
+    show NPC sad at center
+    NPC "Todos morreram, vou fugir, nossa revolta foi um fracasso"
+    "A revolta acaba com quase todos os participantes mortos, e toda a luta foi em vão"
+    "A casa de fundição foi construída e o governo manteve os altos impostos e agora rígida vigilância nos cidadãos"
+jump final
+
+label entregartudo
+    bg agentes
+    show filipe sad at center
+    filipe "Nós nos rendemos, vocês nos pegaram"
+    bg telaescura
+    #sons de algemas
+    "Todos os participantes da revolta são levados e presos"
+    "* Fillipe dos santos, como o líder da revolta, é executado como uma forma de exemplo que a coroa passa a quem se opor a ela"
+jump final
+
+label alternativa
+    bg fuga
+    #pessoas correndo no fundo
+    Show filipe angry at center
+    filipe "VAMOS NOS REUNIR NOVAMENTE E BUSCAR OUTRA SOLUÇÃO"
+    #sons de corridas e gritos de medo
+    hide filipe with moveoutright
+
+    "Alguns dos revoltos são mortos, mas a grande maioria consegue escapar e se esconder dos agentes"
+jump cap3alternativa
+
+label cap3estrategiaeficaz
+    bg marcha
+    #imagem da revolta marchando
+    #sons de marcha e murmurio
+
+    "A marcha avança para a sede do governo. O clima é tenso, mas esperançoso"
+    show filipe at left happy
+    filipe "Vamos até o governador! Exigiremos o fim das casas de fundição"
+    filipe "Exigiremos nossos direitos"
+    hide filipe with moveinleft
+    
+    bg recinto
+    #imagem de uma casa grande e luxuosa onde fica o governador, com pessoas da revolta em frente
+
+    "A Revolta chega ao recinto aonde o conde se localiza"
+    show filipe angry at right
+    filipe "Conde, estamos aqui para exigir a diminuição dos impostos, o fim do monopólio, deixando que os produtos sejam comercializados por qualquer empresa, e contra a construção da casa de fundição"
+    filipe "Ocupamos vila rica e viemos direto a você fazer esse pedido"
 
 
 jump final
