@@ -36,6 +36,8 @@ label pessimismo:
 
 label cap1:
     show bg salaescura
+    #imagem de uma sala escura com a silhueta de pessoas nela
+    
     "Você se junta a uma reunião secreta. O ambiente é carregado de descontentamento."
     show filipe default at center
     show NPC2 at left
@@ -114,6 +116,7 @@ label tentardialogar:
     scene tentardialogar
 
     bg reuniao
+    #imagem de um grupo de pessoas reunidas para ouvirem filipe falar
 
     show filipe sad at right
     filipe "percebo que conseguiram reunir muitas pessoas para nos apoiar, mas venho com péssimas noticias"
@@ -133,6 +136,7 @@ label atacar
     scene atacar
 
     bg reuniao
+    #imagem de um grupo de pessoas reunidas para ouvirem filipe falar
     filipe "percebo que conseguiram reunir muitas pessoas para nos apoiar, mas venho com péssimas noticias"
     filipe "Nossa tentativa com o santinho do pau oco falhou, eles já estão espertos com isso. Nossos companheiros foram assassinado em tentativa de defender nosso ouro"
     filipe "Mas temos de continuar nosso plano"
