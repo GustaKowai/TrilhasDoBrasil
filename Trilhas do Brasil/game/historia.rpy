@@ -1,5 +1,5 @@
 label inicioHistoria:
-    scene bg vilarica
+    scene show bg vilarica
     "Você observa o movimento frenético dos mineradores nas encostas. Entre eles, está Felipe dos Santos, seu personagem principal."
 
     show filipe happy at left 
@@ -22,18 +22,19 @@ label resistencia:
     show filipe happy at left
     minerador "Vou passar em algumas lojas e lugares que conheço, vou falar que temos algo importante para falar, algo bom"
     filipe "Fale com o máximo de pessoas que conseguir. Avise que vamos nos encontrar no celeiro ao norte de minha fazenda, vamos nos encontrar, conversar sobre isso e tomar alguma atitude. Isso está me deixando revoltado"
-    scene bg vilarica
+    scene show bg vilarica
 jump cap1
 
 label pessimismo:
+    show bg vilarica
     show filipe sad at left
     minerador "Não faço ideia, mas isso nos atrapalhará muito, com o que nos vai restar não vou conseguir sustentar minha família" 
     filipe "Podemos conversar com mais trabalhadores e mercantes, ver o que acham e quem sabe juntamos força"
     minerador "Vamos fazer isso, mas acho difícil que aceitem, a coroa é muito rígida e poderosa, somos só trabalhadores. penso que é perca de tempo"
     hide minerador with dissolve
     hide filipe with dissolve
-    scene bg vilarica
-
+    scene show bg vilarica
+jump cap1
 label cap1:
     show bg salaescura
     #imagem de uma sala escura com a silhueta de pessoas nela
@@ -69,7 +70,7 @@ label cap1:
             jump estrategia
 
 label aumentamoral (count=2):
-    show bg aumentamoral
+    show bg vilarica
     show filipe default at right with dissolve
     show comerciante default at center with dissolve
     show NPC default at left with dissolve
@@ -79,7 +80,7 @@ label aumentamoral (count=2):
 
     comerciante "Vamos tentar, se conseguirmos voltaremos para avisar aos outros"
 
-    "os dois comerciantes, com sua carroça, vão em direção a uma inspeção de mercadoria feita pelos agentes da coroa."
+    "os dois comerciantes juntam suas mercadorias e vão para a cidade tentar comercializar mas encontram uma inspeção feita pelos agentes da coroa."
     hide comerciante with moveoutleft
     hide NPC with moveoutleft
     scene aumentamoral
@@ -97,6 +98,7 @@ label aumentamoral (count=2):
     agente1 "Parece haver algo dentro desses santinhos, o que é isso?"
     "Agente quebra um santinho e pepitas de ouro são espalhadas pelo chão"
     show agente1 santinho
+    #o personagem agente1 com um santinho na mão
     agente1 "Pensaram que iam nos enganar? hahahahaha"
 
     menu:
@@ -109,13 +111,20 @@ label aumentamoral (count=2):
             jump atacar
 
 label tentardialogar:
+    show bg carroça
+
+    #imagem de uma carroça com itens dentro
     agente1 "Não quero saber, vocês vão pagar por isso e ainda vamos ficar com todo esse ouro para nós"
     show agente1 saco
     show comerciante algema
     show NPC algema
+    agente1 "Vou leva-los para a prisão"
+    hide comerciante with moveoutleft
+    hide NPC with moveoutleft
+
     scene tentardialogar
 
-    bg reuniao
+    show bg reuniao
     #imagem de um grupo de pessoas reunidas para ouvirem filipe falar
 
     show filipe sad at right
@@ -123,19 +132,20 @@ label tentardialogar:
     filipe "Nossa tentativa com o santinho do pau oco falhou, eles já estão espertos com isso. Nossos companheiros foram presos"
     show minerador happy at left
     minerador "Vamos continuar pensando, precisamos de mais recursos para o plano"
+    scene tentardialogar
 jump cap2final
 
-label atacar
+label atacar:
     show comerciante faca
     show NPC faca
 
-    bg tela escura
+    show bg tela escura
     #sons de lutas
 
-    bg comerciantesmortos
+    show bg comerciantesmortos
     scene atacar
 
-    bg reuniao
+    show bg reuniao
     #imagem de um grupo de pessoas reunidas para ouvirem filipe falar
     filipe "percebo que conseguiram reunir muitas pessoas para nos apoiar, mas venho com péssimas noticias"
     filipe "Nossa tentativa com o santinho do pau oco falhou, eles já estão espertos com isso. Nossos companheiros foram assassinado em tentativa de defender nosso ouro"
@@ -143,9 +153,9 @@ label atacar
     scene atacar
 jump cap2
 
-label aumentaforça
-    bg discurso
-    filipe happy at truecenter
+label aumentaforça:
+    show bg discurso
+    show filipe happy at truecenter
     filipe "Companheiros! Hoje estamos aqui, não apenas como mineradores, mas como homens e mulheres dignos que lutam pela nossa liberdade e pelos direitos que nos foram negados!"
     filipe "Estamos sendo oprimidos, sufocados por impostos que não podemos pagar, enquanto nossas riquezas escorrem para os cofres da Coroa. É hora de nos levantarmos contra essa injustiça!"
     filipe "Unidos, somos mais fortes! Se cada um de nós se erguer, se cada um de nós clamar por nossa autonomia, não haverá poder que possa nos deter!"
@@ -158,14 +168,14 @@ label aumentaforça
     Cidadã "São muitos agentes da coroa que protegem a construção delas"
 
     filipe "Com a nossa força unida, nada vai nos deter, nem mesmo eles"
-    filipe "Quem está comigo?
+    filipe "Quem está comigo?"
     "VAMOS A LUTAAA"
     "Será que vai dar certo?"
     scene aumenta força
 jump cap2
 
-label estrategia
-    bg carroça
+label estrategia:
+    show bg carroça
     show filipe happy at left
     show NPC2 happy at center
     filipe "Você segue com o plano enquanto eu e os outros vamos tentar recrutar mais apoiadores para nosso plano"
@@ -173,7 +183,7 @@ label estrategia
     hide NPC2 with moveoutleft
     #Ilustração de uma carroça no fundo com algumas coisas e ouro em cima, os dois comerciantes indo em direção a uma inspeção feita pelos agentes
     
-    Show agente1 happy at left
+    show agente1 happy at left
     show NPC2 happy at center with moveinright
     agente1 "Parado aí, o que temos ai?"
     NPC2 "Tenho mercadoria para comercializar e ouro tambem"
@@ -184,7 +194,7 @@ label estrategia
     hide NPC2 with moveoutleft
     scene estrategia
 
-    bg construção 
+    show bg construção 
     show NPC2 happy at center with moveinright
     show agente1 default at left
     agente1 "Aqui vocês deixam o seu ouro, quando a casa estiver pronta, derreteremos, faremos barras e marcaremos seu ouro. Depois disso poderá comercializá-lo"
@@ -194,7 +204,7 @@ label estrategia
     "O comerciante entrega o ouro, observando muito bem todos os agentes posicionadoe e armados, consegue ver tudo e juntar informações para passar ao outros"
 
     scene construção
-    bg telaescura
+    show bg telaescura
     #sons de cavalo e rodas
 
     show filipe happy at right
@@ -204,12 +214,12 @@ label estrategia
     scene estrategia
 jump cap2
 
-label cap2final
-    bg telaescura
+label cap2final:
+    show bg telaescura
     #sons de multidão andando
     "Você se reune aos revoltosos para atacar a construção da casa de fundição, que decidirão uma estratégia para o ataque"
 
-    bg construcão
+    show bg construcão
     show filipe angry at right
     filipe "Agora é a nossa hora! Vamos lutar por nossa liberdade!"
     filipe "Vamos atacar e ocupar vila rica"
@@ -232,13 +242,13 @@ label cap2final
 
     #sons de algemas
     scene cap2final
-    bg telaescura
+    show bg telaescura
     "Filipe e os outros foram capturados e levados. A revolta foi traída e não pode continuar, chegando assim ao fim da história."
     "Os abusos com impostos continuaram e o povo seguiu sofrendo com isso"
 jump final
 
-label cap2
-    bg noite
+label cap2:
+    show bg noite
     "Você se junta aos revoltosos para atacar a construção da casa de fundição."
     show filipe happy at left
     
@@ -247,23 +257,23 @@ label cap2
 
     menu:
         "Dividir o grupo em duas frentes.":
-        $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,8)
-        jump estrategiaeficaz
+            $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,8)
+            jump estrategiaeficaz
 
         "Atacar com tudo!":
-        $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,9)
-        jump aumentarisco
+            $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,9)
+            jump aumentarisco
 
-label estrategiaeficaz
-    bg grupos
+label estrategiaeficaz:
+    show bg grupos
     "Eles se dividem em dois grupos e tentam impedir que as casas de fundição de vila rica sejam construídas, mas agentes da coroa estão no local"
     show filipe happy at left
     filipe "Vou com esse grupo e atacar os agentes e impedir a construção, o outro grupo atacaram o grupo de agentes que fica a leste da casa de fundição"
     filipe"Boa sorte a todos"
 
-    hide bg grupos
+    hide show bg grupos
     hide filipe
-    show bg casa
+    show show bg casa
     show filipe
 
     "O grupo de Filipe se esconde atrás de uma grande casa"
@@ -271,19 +281,19 @@ label estrategiaeficaz
     filipe "Ataquem"
     scene estrategiaeficaz
 
-    bg telaescura
+    show bg telaescura
     #sons de espadas, flechas e gritos
-    hide bg telaescura
+    hide show bg telaescura
 
-    show bg vitoria
-    show filipe at center happy
+    show show bg vitoria
+    show filipe happy at center
     "Filipe e alguns revoltos de pé e todos os agentes da coroa mortos"
 
     filipe "CONSEGUIMOS!"
     filipe "Vamos ajudar o outro grupo, depois recolhemos recursos que nos ajudarão, tratamos os feridos e pegamos os corpos da nossa gente"
 
     scene estrategiaeficaz
-    show bg vitoria2
+    show show bg vitoria2
     show filipe happy at left
     "Eles chegam a outra casa de fundição e encontram o outro grupo. Eles também derrotaram os agentes da coroa"
 
@@ -292,36 +302,36 @@ label estrategiaeficaz
 jump cap3estrategiaeficaz
 
 
-label aumentarisco
-    bg grupo
-    Show filipe happy at left
+label aumentarisco:
+    show bg grupo
+    show filipe happy at left
     filipe "Vamos todos juntos atacar a casa de fundição, em maior número conquistaremos fácil todo o território"
     #sons de murmurios
     scene aumentarisco
     "Todos os revoltados vão juntos a casa de fundição a oeste, porém alguns agentes avistam toda essa multidão gigante furiosa se movendo e comunicam mais agentes"
     "Quando Filipe e os revoltados chegam na casa de fundição encontram muitos agentes posicionados"
 
-    bg agentes
+    show bg agentes
     show filipe sad at center
 
     menu:
-        "Viemos reivindicar nossos direitos, e daremos nossas vidas por isso, ATACARRR"
-        $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,10)
-        jump ataque
+        "Viemos reivindicar nossos direitos, e daremos nossas vidas por isso, ATACARRR":
+            $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,10)
+            jump ataque
 
-        "Se render"
-        $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,11)
-        jump entregartudo
+        "Se render":
+            $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,11)
+            jump entregartudo
 
-        "Eles estão em muitos, não temos condições de ganhar. Vamos fugir"
-        $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,12)
-        jump alternativa
+        "Eles estão em muitos, não temos condições de ganhar. Vamos fugir":
+            $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,12)
+            jump alternativa
 
-label ataque
-    bg telaescura
+label ataque:
+    show bg telaescura
     #sons de gritos e batalha
-    hide bg telaescura
-    bg todosmortos
+    hide show bg telaescura
+    show bg todosmortos
     #corpos dos participantes da revolta no chão, inclusive o de FIlipe dos Santos
     "Ao final da batalha todos os participantes da revolta forem mortos, inclusive Filipe dos Santos"
 
@@ -331,20 +341,20 @@ label ataque
     "A casa de fundição foi construída e o governo manteve os altos impostos e agora rígida vigilância nos cidadãos"
 jump final
 
-label entregartudo
-    bg agentes
+label entregartudo:
+    show bg agentes
     show filipe sad at center
     filipe "Nós nos rendemos, vocês nos pegaram"
-    bg telaescura
+    show bg telaescura
     #sons de algemas
     "Todos os participantes da revolta são levados e presos"
     "* Fillipe dos santos, como o líder da revolta, é executado como uma forma de exemplo que a coroa passa a quem se opor a ela"
 jump final
 
-label alternativa
-    bg fuga
+label alternativa:
+    show bg fuga
     #pessoas correndo no fundo
-    Show filipe angry at center
+    show filipe angry at center
     filipe "VAMOS NOS REUNIR NOVAMENTE E BUSCAR OUTRA SOLUÇÃO"
     #sons de corridas e gritos de medo
     hide filipe with moveoutright
@@ -352,18 +362,18 @@ label alternativa
     "Alguns dos revoltos são mortos, mas a grande maioria consegue escapar e se esconder dos agentes"
 jump cap3alternativa
 
-label cap3estrategiaeficaz
-    bg marcha
+label cap3estrategiaeficaz:
+    show bg marcha
     #imagem da revolta marchando
     #sons de marcha e murmurio
 
     "A marcha avança para a sede do governo. O clima é tenso, mas esperançoso"
-    show filipe at left happy
+    show filipe happy at left 
     filipe "Vamos até o governador! Exigiremos o fim das casas de fundição"
     filipe "Exigiremos nossos direitos"
     hide filipe with moveinleft
     
-    bg rescinto
+    show bg rescinto
     #imagem de uma casa grande e luxuosa onde fica o governador, com pessoas da revolta em frente
 
     "A Revolta chega ao recinto aonde o conde se localiza"
@@ -382,15 +392,15 @@ label cap3estrategiaeficaz
     filipe "Vamos voltar para Vila rica, parece que nossa revolta deu certo"
     menu:
         "Devemos desconfiar e nos preparar.":
-        $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,13)
-        jump cap4ficaralerta:
+            $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,13)
+            jump cap4ficaralerta
 
-        "Vamos celebrar a vitória!"
-        $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,14)
-        jump cap4aumentarmoral:
+        "Vamos celebrar a vitória!":
+            $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,14)
+            jump cap4aumentarmoral
 
-label cap3alternativa
-    bg casafazenda
+label cap3alternativa:
+    show bg casafazenda
     #imagem de uma casa isolada
     show filipe sad at left
     show escravo sad at center
@@ -406,11 +416,11 @@ label cap3alternativa
 
 jump cap4alternativacap3
 
-label cap4alternativacap3
-    bg telaescura
+label cap4alternativacap3:
+    show bg telaescura
     "Todos na sala ficam apreensivos, mas esperançosos com a última chance"
-    bg rescinto
-    show filipe at center default
+    show bg rescinto
+    show filipe default at center
     filipe "Se acalmem, só vamos conversar com o conde, não viemos para lutar"
 
     "O conde vê o povo se aproximando e sai para conversar"
@@ -426,26 +436,26 @@ label cap4alternativacap3
     filipe "Não, você não pode fazer isso"
     conde "HAHAHAHAHAHAHA"
     scene cap4alternativacap3
-    bg telaescura
+    show bg telaescura
     #sons de algemas e correria
 
     "Os guardas levam todos para prisão e a pedido do conde, Filipe dos Santos é executado para ficar de exemplo para todos que pensarem em se voltar contra a coroa e suas decisões."
 jump final
 
-label cap4ficaralerta
-    bg vilarica
+label cap4ficaralerta:
+    show bg vilarica
     "No retorno, a euforia logo se transforma em desconfiança"
     show filipe default at left with moveinleft
     filipe "Precisamos nos preparar. A coroa não ficará quieta. Não acho que aceitarão isso assim"
     filipe "Vamos ficar alerta para qualquer coisa e vigiar qualquer coisa estranha"
     hide filipe 
-    hide bg vilarica
-    bg telaescura
+    hide show bg vilarica
+    show bg telaescura
     
     #sons de comemorações
     "Toda a população de vila rica passa a noite comemorando e festejando o sucesso da revolta, mas alguns ainda ficam de guarda levantada e de olho em tudo"
-    hide bg telaescura
-    bg vilaricasolnascendo
+    hide show bg telaescura
+    show bg vilaricasolnascendo
     #imagem de vila rica com o sol nascendo
     #sons de cavalo no fundo
 
@@ -458,35 +468,35 @@ label cap4ficaralerta
     "Mas o grupo acaba sendo os primeiros a morrer sem conseguir nem ao menos avisar os outros"
     scene cap4ficaralerta
 
-    bg telaescura
+    show bg telaescura
     "As tropas da coroa portuguesa invadem, predem e matam todos os participantes da revolta"
     "Filipe dos Santos é preso e como era um dos líderes, é levado separado pelos agentes"
     scene cap4ficaralerta
 
-    bg guardas
+    show bg guardas
     #imagem com guardas e cavalos ao fundo
     show filipe preso at center 
     #Filipe com as mão e pés amarrados
     filipe "Nós lutamos por justiça"
     scene cap4ficaralerta
     
-    bg telaescura
+    show bg telaescura
     "Filipe dos Santos é morto e largado no meio de vila rica para ficar de exemplo para os demais"
 
     "A revolta de Filipe dos Santos não alcançou seus objetivos, lutaram bravamente até o fim, fazendo uma historia de orgulho e luta. A coroa portuguesa intensificou sua fiscalização"
     "E assim, a capitania de Minas Gerais foi criada para aumentar o controle sobre a região das minas."
 
     menu:
-        "O que podemos aprender com isso?"
-        $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,15)
-        jump moral
+        "O que podemos aprender com isso?":
+            $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,15)
+            jump moral
 
-        "É o fim de nossa luta."
-        $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,16)
-        jump final
+        "É o fim de nossa luta.":
+            $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,16)
+            jump final
 
-label cap4aumentarmoral
-    bg vilarica
+label cap4aumentarmoral:
+    show bg vilarica
     "Todos em Vila rica comemoram muito. Filipe dos Santos é tratado como herói e ovacionado"
     #sons de gritos ao fundo
     show filipe happy at left
@@ -498,15 +508,15 @@ label cap4aumentarmoral
     filipe "Agora nossos trabalhos serão muito mais valorizados"
     scene cap4aumentarmoral
 
-    bg vilaricasolnascendo
+    show bg vilaricasolnascendo
     #imagem de vila rica com o sol nascendo
     "A população de Vila rica comemora a noite toda, mas ao nascer do sol..."
 
-    bg telaescura
+    show bg telaescura
     #sons de gritos e espadas
 
     "Quando todos se dão conta, tropas da coroa já estão em vila rica prendendo e assassinando todos"
-    bg vilaricasolnascendo
+    show bg vilaricasolnascendo
     show filipe default at left
     filipe "O que é isso, fizemos um acordo com o conde"
     show agente1 default at right with moveinleft
@@ -518,7 +528,7 @@ label cap4aumentarmoral
     "Filipe tenta fugir, mas é cercado por agentes que o seguram e amarram-no"
     scene cap4aumentarmoral
 
-    bg guardas
+    show bg guardas
     #imagem com guardas e cavalos ao fundo
     show filipe preso at center
     #Filipe com as mão e pés amarrados
@@ -526,23 +536,22 @@ label cap4aumentarmoral
     filipe "Lutamos por nossos direitos, isso não vai acabar assim"
     scene cap4aumentarmoral
 
-    bg telaescura
+    show bg telaescura
     "Filipe é morto e deixado no meio de vila rica para exemplo aos demais"
     "A revolta de Filipe dos Santos não alcançou seus objetivos e foi facilmente enganada e derrotada. A coroa portuguesa intensificou sua fiscalização."
 
-    (3)
     "E assim, a capitania de Minas Gerais foi criada para aumentar o controle sobre a região das minas, a revolta mesmo sendo um grande ato de coragem dos cidadãos de Vila rica, foi um fracasso, mas foi um grande marco na história do Brasil"
     menu:
         "O que podemos aprender com isso?":
-        $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,17)
-        jump moral
+            $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,17)
+            jump moral
 
-        "É o fim de nossa luta."
-        $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,18)
+        "É o fim de nossa luta.":
+            $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,18)
 jump final
 
 label guia:   
-    show bg minas with dissolve
+    show show bg minas with dissolve
     show eileen happy with dissolve
     e "A história acontecerá aqui"
     n "O dia estava ensolarado"
