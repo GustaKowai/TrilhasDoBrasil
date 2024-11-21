@@ -359,15 +359,182 @@ label cap3estrategiaeficaz
     filipe "Exigiremos nossos direitos"
     hide filipe with moveinleft
     
-    bg recinto
+    bg rescinto
     #imagem de uma casa grande e luxuosa onde fica o governador, com pessoas da revolta em frente
 
     "A Revolta chega ao recinto aonde o conde se localiza"
     show filipe angry at right
+    show conde default at left
     filipe "Conde, estamos aqui para exigir a diminuição dos impostos, o fim do monopólio, deixando que os produtos sejam comercializados por qualquer empresa, e contra a construção da casa de fundição"
     filipe "Ocupamos vila rica e viemos direto a você fazer esse pedido"
 
+    conde "Acalmem-se, acalmem-se"
+    conde "Eu entendo todo esse alvoroço com os impostos e as casas de fundição. Estamos analisando e vamos atender o pedido do povo"
+    conde "Prometo, as casas de fundição não serão instaladas e o comércio será livre de impostos!"
+    #sons de comemoração
+    "O conde vendo que o povo agora comemora com o discurso, volta para seus aposentos"
+    hide conde with moveoutleft
 
+    filipe "Vamos voltar para Vila rica, parece que nossa revolta deu certo"
+    menu:
+        "Devemos desconfiar e nos preparar.":
+        $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,13)
+        jump cap4ficaralerta:
+
+        "Vamos celebrar a vitória!"
+        $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,14)
+        jump cap4aumentarmoral:
+
+label cap3alternativa
+    bg casafazenda
+    #imagem de uma casa isolada
+    show filipe sad at left
+    show escravo sad at center
+    filipe "Bom pessoal, tentamos fazer a revolta de igual para igual, mas falhamos"
+    filipe "Agora temos que pensar e reunir forças para tentar novamente"
+
+    escravo "Acho que tentar um ataque novamente é burrice, já tentamos e falhamos. Acho melhor desistir disso e aceitar que somos comandados pelo governo"
+    filipe "Não podemos aceitar isso, temos que fazer algo, nem que custe nossas vida"
+    show minerador default at right
+    minerador "Que tal ao invés de tentarmos atacar os agentes e evitar a construção da casa, nós não vamos direto ao Conde de Assumar e falamos com ele"
+    filipe "Acho nossa única chance, mas os agentes vão fazer de tudo para nos parar"
+    "Todos na sala ficam apreensivos, mas esperançosos com a última chance"
+
+jump cap4alternativacap3
+
+label cap4alternativacap3
+    bg telaescura
+    "Todos na sala ficam apreensivos, mas esperançosos com a última chance"
+    bg rescinto
+    show filipe at center default
+    filipe "Se acalmem, só vamos conversar com o conde, não viemos para lutar"
+
+    "O conde vê o povo se aproximando e sai para conversar"
+    show conde happy at left with moveinleft
+
+    conde "O que vieram fazer aqui depois daquela tentativa ridícula de ataque a casa de fundição?"
+    filipe "Viemos conversar com o senhor, estamos aqui para pedir a diminuição dos impostos, o alívio no do monopólio, deixando que os produtos sejam comercializados por algumas outras empresas, e contra a construção da casa de fundição"
+    filipe "Isso vem atrapalhando muito a vida dos cidadãos e pedimos que o senhor nos ajude"
+
+    conde "HAHAHAHA, vocês depois de tudo isso vem até aqui pedir tudo isso e esperam que eu vá ajudá-los?"
+    conde "Guardas, prendam todos eles"   
+    show agente1 at right with moveinright
+    filipe "Não, você não pode fazer isso"
+    conde "HAHAHAHAHAHAHA"
+    scene cap4alternativacap3
+    bg telaescura
+    #sons de algemas e correria
+
+    "Os guardas levam todos para prisão e a pedido do conde, Filipe dos Santos é executado para ficar de exemplo para todos que pensarem em se voltar contra a coroa e suas decisões."
+jump final
+
+label cap4ficaralerta
+    bg vilarica
+    "No retorno, a euforia logo se transforma em desconfiança"
+    show filipe default at left with moveinleft
+    filipe "Precisamos nos preparar. A coroa não ficará quieta. Não acho que aceitarão isso assim"
+    filipe "Vamos ficar alerta para qualquer coisa e vigiar qualquer coisa estranha"
+    hide filipe 
+    hide bg vilarica
+    bg telaescura
+    
+    #sons de comemorações
+    "Toda a população de vila rica passa a noite comemorando e festejando o sucesso da revolta, mas alguns ainda ficam de guarda levantada e de olho em tudo"
+    hide bg telaescura
+    bg vilaricasolnascendo
+    #imagem de vila rica com o sol nascendo
+    #sons de cavalo no fundo
+
+    show NPC2 faca at right
+    #imagem de um NPC com uma faca na mão
+    show agente1 at center with moveinleft
+    show agente2 at left with moveinleft
+    "Os que ficaram alertas tentam combater as tropas de soldados, mas eles estão em menor número e a batalha dura pouco tempo"
+    #sons de gritos e espadas
+    "Mas o grupo acaba sendo os primeiros a morrer sem conseguir nem ao menos avisar os outros"
+    scene cap4ficaralerta
+
+    bg telaescura
+    "As tropas da coroa portuguesa invadem, predem e matam todos os participantes da revolta"
+    "Filipe dos Santos é preso e como era um dos líderes, é levado separado pelos agentes"
+    scene cap4ficaralerta
+
+    bg guardas
+    #imagem com guardas e cavalos ao fundo
+    show filipe preso at center 
+    #Filipe com as mão e pés amarrados
+    filipe "Nós lutamos por justiça"
+    scene cap4ficaralerta
+    
+    bg telaescura
+    "Filipe dos Santos é morto e largado no meio de vila rica para ficar de exemplo para os demais"
+
+    "A revolta de Filipe dos Santos não alcançou seus objetivos, lutaram bravamente até o fim, fazendo uma historia de orgulho e luta. A coroa portuguesa intensificou sua fiscalização"
+    "E assim, a capitania de Minas Gerais foi criada para aumentar o controle sobre a região das minas."
+
+    menu:
+        "O que podemos aprender com isso?"
+        $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,15)
+        jump moral
+
+        "É o fim de nossa luta."
+        $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,16)
+        jump final
+
+label cap4aumentarmoral
+    bg vilarica
+    "Todos em Vila rica comemoram muito. Filipe dos Santos é tratado como herói e ovacionado"
+    #sons de gritos ao fundo
+    show filipe happy at left
+    show Cidadã happy at center
+
+
+    Cidadã "Você conseguiu, vamos ter nossos direitos e conseguir viver melhor graças a você Filipe"
+    filipe "Foi graça a todos nós que lutamos e fomos reivindicar nosso direito. Todos somos heróis e heroinas"
+    filipe "Agora nossos trabalhos serão muito mais valorizados"
+    scene cap4aumentarmoral
+
+    bg vilaricasolnascendo
+    #imagem de vila rica com o sol nascendo
+    "A população de Vila rica comemora a noite toda, mas ao nascer do sol..."
+
+    bg telaescura
+    #sons de gritos e espadas
+
+    "Quando todos se dão conta, tropas da coroa já estão em vila rica prendendo e assassinando todos"
+    bg vilaricasolnascendo
+    show filipe default at left
+    filipe "O que é isso, fizemos um acordo com o conde"
+    show agente1 default at right with moveinleft
+    agente1 "Vocês acharam mesmo que iam conseguir tudo isso"
+    filipe "Desgraçados"
+
+    show filipe default at center with moveinleft
+    show agente2 default at left with moveinleft
+    "Filipe tenta fugir, mas é cercado por agentes que o seguram e amarram-no"
+    scene cap4aumentarmoral
+
+    bg guardas
+    #imagem com guardas e cavalos ao fundo
+    show filipe preso at center
+    #Filipe com as mão e pés amarrados
+
+    filipe "Lutamos por nossos direitos, isso não vai acabar assim"
+    scene cap4aumentarmoral
+
+    bg telaescura
+    "Filipe é morto e deixado no meio de vila rica para exemplo aos demais"
+    "A revolta de Filipe dos Santos não alcançou seus objetivos e foi facilmente enganada e derrotada. A coroa portuguesa intensificou sua fiscalização."
+
+    (3)
+    "E assim, a capitania de Minas Gerais foi criada para aumentar o controle sobre a região das minas, a revolta mesmo sendo um grande ato de coragem dos cidadãos de Vila rica, foi um fracasso, mas foi um grande marco na história do Brasil"
+    menu:
+        "O que podemos aprender com isso?":
+        $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,17)
+        jump moral
+
+        "É o fim de nossa luta."
+        $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,18)
 jump final
 
 label guia:   

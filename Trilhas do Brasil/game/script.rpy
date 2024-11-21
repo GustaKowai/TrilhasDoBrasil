@@ -7,6 +7,8 @@ define NPC2 = Character("NPC2", image="NPC2", callback = low_beep, what_prefix='
 define agente1 = Character("Agente da coroa", image="Agente da coroa", callback = low_beep, what_prefix='', what_suffix='')
 define agente2 = Character("Agente da comandante", image="Agente da ccomandante", callback = low_beep, what_prefix='', what_suffix='')
 define Cidadã = Character("Cidadã", image="Cidadã", callback = low_beep, what_prefix='', what_suffix='')
+define conde = Character("Conde de assumar", image="Conde de assumar", callback = low_beep, what_prefix='', what_suffix='')
+define escravo = Character("Escravo", image="Escravo", callback = low_beep, what_prefix='', what_suffix='')
 default logado = False
 define alunoID = 0
 # O jogo começa aqui.
