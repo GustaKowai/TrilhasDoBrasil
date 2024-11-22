@@ -1,5 +1,5 @@
 label inicioHistoria:
-    scene show bg vilarica
+    scene bg vilarica
     "Você observa o movimento frenético dos mineradores nas encostas. Entre eles, está Felipe dos Santos, seu personagem principal."
 
     show filipe happy at left 
@@ -22,7 +22,7 @@ label resistencia:
     show filipe happy at left
     minerador "Vou passar em algumas lojas e lugares que conheço, vou falar que temos algo importante para falar, algo bom"
     filipe "Fale com o máximo de pessoas que conseguir. Avise que vamos nos encontrar no celeiro ao norte de minha fazenda, vamos nos encontrar, conversar sobre isso e tomar alguma atitude. Isso está me deixando revoltado"
-    scene show bg vilarica
+    scene bg vilarica
 jump cap1
 
 label pessimismo:
@@ -33,10 +33,10 @@ label pessimismo:
     minerador "Vamos fazer isso, mas acho difícil que aceitem, a coroa é muito rígida e poderosa, somos só trabalhadores. penso que é perca de tempo"
     hide minerador with dissolve
     hide filipe with dissolve
-    scene show bg vilarica
+    scene bg vilarica
 jump cap1
 label cap1:
-    show bg salaescura
+    scene bg salaescura
     #imagem de uma sala escura com a silhueta de pessoas nela
     
     "Você se junta a uma reunião secreta. O ambiente é carregado de descontentamento."
@@ -70,7 +70,7 @@ label cap1:
             jump estrategia
 
 label aumentamoral (count=2):
-    show bg vilarica
+    scene bg reuniao
     show filipe default at right with dissolve
     show comerciante default at center with dissolve
     show NPC default at left with dissolve
@@ -85,7 +85,7 @@ label aumentamoral (count=2):
     hide NPC with moveoutleft
     scene aumentamoral
 
-    show bg carroça
+    scene bg carroça
     show comerciante happy at center with moveinright
     show NPC happy at right with moveinright
     show agente1 happy at left
@@ -124,7 +124,7 @@ label tentardialogar:
 
     scene tentardialogar
 
-    show bg reuniao
+    scene bg reuniao
     #imagem de um grupo de pessoas reunidas para ouvirem filipe falar
 
     show filipe sad at right
@@ -136,14 +136,19 @@ label tentardialogar:
 jump cap2final
 
 label atacar:
-    show comerciante faca
-    show NPC faca
+    show comerciante faca at center
+    show NPC faca at right
+    show agente1 at left
+    scene atacar
 
     show bg tela escura
+    "..."
     #sons de lutas
+    hide bg telaescura
 
     show bg comerciantesmortos
-    scene atacar
+    show agente1 at left
+    agente1 "Patético"
 
     show bg reuniao
     #imagem de um grupo de pessoas reunidas para ouvirem filipe falar
@@ -175,7 +180,7 @@ label aumentaforça:
 jump cap2
 
 label estrategia:
-    show bg carroça
+    scene bg carroça
     show filipe happy at left
     show NPC2 happy at center
     filipe "Você segue com o plano enquanto eu e os outros vamos tentar recrutar mais apoiadores para nosso plano"
@@ -328,10 +333,10 @@ label aumentarisco:
             jump alternativa
 
 label ataque:
-    show bg telaescura
+    scene bg telaescura
+    pause 1.0
     #sons de gritos e batalha
-    hide show bg telaescura
-    show bg todosmortos
+    scene bg todosmortos
     #corpos dos participantes da revolta no chão, inclusive o de FIlipe dos Santos
     "Ao final da batalha todos os participantes da revolta forem mortos, inclusive Filipe dos Santos"
 
