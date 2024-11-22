@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/historia.rpy", line 316: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "Eles estão em muitos, não temos condições de ganhar. Vamos fugir"
-                                                                      ^
+File "game/historia.rpy", line 148: Line is indented, but the preceding scene statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    show bg reuniao
+    ^
 
 Ren'Py Version: Ren'Py 8.3.3.24111502
-Thu Nov 21 19:43:21 2024
+Thu Nov 21 20:49:33 2024
