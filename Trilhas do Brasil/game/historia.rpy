@@ -41,8 +41,8 @@ label cap1:
     
     "Você se junta a uma reunião secreta. O ambiente é carregado de descontentamento."
     show filipe default at center
-    show NPC2 at left
-    show comerciante at right
+    show NPC2 happy at left
+    show comerciante default at right
     filipe "Precisamos nos unir contra essa opressão! Não podemos mais aceitar a imposição das casas de fundição."
     filipe "Todo o ouro que pegamos em pepitas seremos obrigados a levar nas casas de fundição, onde os agentes da coroa derretem o ouro e transformam em barras."
     filipe "Porém a cada 5 barras de ouro 1 fica com a coroa e todas essas barras tem um selo que mostra que passaram pelas casas, só assim conseguimos comercializa-las."
@@ -88,7 +88,7 @@ label aumentamoral (count=2):
     scene bg carroça
     show comerciante happy at center with moveinright
     show NPC happy at right with moveinright
-    show agente1 happy at left
+    show agente1 at left
     agente1 "Muito bem, o que vocês tem aqui ?"
 
     show comerciante sad at center
@@ -160,6 +160,7 @@ jump cap2
 
 label aumentaforça:
     show bg discurso
+    ######imagem de pessoas reunidas para ouvir um discurso
     show filipe happy at truecenter
     filipe "Companheiros! Hoje estamos aqui, não apenas como mineradores, mas como homens e mulheres dignos que lutam pela nossa liberdade e pelos direitos que nos foram negados!"
     filipe "Estamos sendo oprimidos, sufocados por impostos que não podemos pagar, enquanto nossas riquezas escorrem para os cofres da Coroa. É hora de nos levantarmos contra essa injustiça!"
@@ -188,7 +189,7 @@ label estrategia:
     hide NPC2 with moveoutleft
     #Ilustração de uma carroça no fundo com algumas coisas e ouro em cima, os dois comerciantes indo em direção a uma inspeção feita pelos agentes
     
-    show agente1 happy at left
+    show agente1 at left
     show NPC2 happy at center with moveinright
     agente1 "Parado aí, o que temos ai?"
     NPC2 "Tenho mercadoria para comercializar e ouro tambem"
@@ -201,17 +202,21 @@ label estrategia:
 
     show bg construção 
     show NPC2 happy at center with moveinright
-    show agente1 default at left
+    show agente1 at left
     agente1 "Aqui vocês deixam o seu ouro, quando a casa estiver pronta, derreteremos, faremos barras e marcaremos seu ouro. Depois disso poderá comercializá-lo"
     #sons de trocas de itens
 
-    show agente1 saco
+    show agente1 #saco
+    ###imagem do agente com um saco na mão#############
     "O comerciante entrega o ouro, observando muito bem todos os agentes posicionadoe e armados, consegue ver tudo e juntar informações para passar ao outros"
+    pause 1.0
 
     scene construção
     show bg telaescura
     #sons de cavalo e rodas
+    pause 1.0
 
+    scene bg vilarica
     show filipe happy at right
     show NPC2 happy at center
     filipe "Você voltou, como foi?"
@@ -254,6 +259,7 @@ jump final
 
 label cap2:
     show bg noite
+    ###### imagem de pessoas juntas, casas no fundo na noite
     "Você se junta aos revoltosos para atacar a construção da casa de fundição."
     show filipe happy at left
     
@@ -290,17 +296,19 @@ label estrategiaeficaz:
 
     show bg telaescura
     #sons de espadas, flechas e gritos
+    pause 1.0
     hide show bg telaescura
 
-    show show bg vitoria
+    scene bg vitoria
+    ####imagens de agentes mortos e pessoas da revolta de pé
     show filipe happy at center
     "Filipe e alguns revoltos de pé e todos os agentes da coroa mortos"
 
     filipe "CONSEGUIMOS!"
     filipe "Vamos ajudar o outro grupo, depois recolhemos recursos que nos ajudarão, tratamos os feridos e pegamos os corpos da nossa gente"
 
-    scene estrategiaeficaz
-    show show bg vitoria2
+    scene show bg vitoria
+    show NPC at right
     show filipe happy at left
     "Eles chegam a outra casa de fundição e encontram o outro grupo. Eles também derrotaram os agentes da coroa"
 

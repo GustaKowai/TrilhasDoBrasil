@@ -1,34 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/historia.rpy", line 102, in script
-    $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,6)
-  File "game/historia.rpy", line 102, in <module>
-    $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,6)
-  File "game/bd.rpy", line 92, in insertEscolhaIntoBD
-    cursor.execute(sql,val)
-IntegrityError: 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`trilhadobrasil`.`tb_escolhe`, CONSTRAINT `FK_ESCOLHE_ESCOLHAS` FOREIGN KEY (`idEscolhas`) REFERENCES `tb_escolhas` (`idEscolhas`) ON DELETE CASCADE ON UPDATE CASCADE)
+  File "game/historia.rpy", line 398, in script
+    show conde default at left
+Exception: Image 'conde' does not accept attributes 'default'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/historia.rpy", line 102, in script
-    $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,6)
-  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\ast.py", line 821, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.2-sdk\renpy\python.py", line 1178, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/historia.rpy", line 102, in <module>
-    $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,6)
-  File "game/bd.rpy", line 92, in insertEscolhaIntoBD
-    cursor.execute(sql,val)
-  File "python-packages/mysql/connector/cursor.py", line 537, in execute
-  File "python-packages/mysql/connector/opentelemetry/context_propagation.py", line 97, in wrapper
-  File "python-packages/mysql/connector/connection.py", line 859, in cmd_query
-  File "python-packages/mysql/connector/connection.py", line 635, in _handle_result
-IntegrityError: 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`trilhadobrasil`.`tb_escolhe`, CONSTRAINT `FK_ESCOLHE_ESCOLHAS` FOREIGN KEY (`idEscolhas`) REFERENCES `tb_escolhas` (`idEscolhas`) ON DELETE CASCADE ON UPDATE CASCADE)
+  File "game/historia.rpy", line 398, in script
+    show conde default at left
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\ast.py", line 1111, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\ast.py", line 1074, in show_imspec
+    renpy.config.show(name,
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\exports\displayexports.py", line 477, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 249, in _duplicate
+    args.extraneous()
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 109, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'conde' does not accept attributes 'default'.
 
 Windows-10-10.0.19041 AMD64
-Ren'Py 8.3.2.24090902
-Trilhas do Brasil 1.0
-Wed Nov 13 21:20:51 2024
+Ren'Py 8.3.3.24111502
+ 1.0
+Fri Nov 22 20:33:32 2024
