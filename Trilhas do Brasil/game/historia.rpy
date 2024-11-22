@@ -271,6 +271,7 @@ label cap2:
 
 label estrategiaeficaz:
     show bg grupos
+    #####imagem de dois grupos divididos para atacarem######
     "Eles se dividem em dois grupos e tentam impedir que as casas de fundição de vila rica sejam construídas, mas agentes da coroa estão no local"
     show filipe happy at left
     filipe "Vou com esse grupo e atacar os agentes e impedir a construção, o outro grupo atacaram o grupo de agentes que fica a leste da casa de fundição"
@@ -279,6 +280,7 @@ label estrategiaeficaz:
     hide show bg grupos
     hide filipe
     show show bg casa
+    ###imagem de uma construção da casa de fundição######
     show filipe
 
     "O grupo de Filipe se esconde atrás de uma grande casa"
@@ -309,6 +311,7 @@ jump cap3estrategiaeficaz
 
 label aumentarisco:
     show bg grupo
+    ####imagem do grupo pronto para a batalha########
     show filipe happy at left
     filipe "Vamos todos juntos atacar a casa de fundição, em maior número conquistaremos fácil todo o território"
     #sons de murmurios
@@ -317,6 +320,7 @@ label aumentarisco:
     "Quando Filipe e os revoltados chegam na casa de fundição encontram muitos agentes posicionados"
 
     show bg agentes
+    #####imagem de varios agentes da coroa no fundo#####
     show filipe sad at center
 
     menu:
@@ -448,7 +452,8 @@ label cap4alternativacap3:
 jump final
 
 label cap4ficaralerta:
-    show bg vilarica
+    show bg vilaricafesta
+    #####imagem de vila rica em comemoração, com pessoas comemorando####
     "No retorno, a euforia logo se transforma em desconfiança"
     show filipe default at left with moveinleft
     filipe "Precisamos nos preparar. A coroa não ficará quieta. Não acho que aceitarão isso assim"
@@ -501,7 +506,7 @@ label cap4ficaralerta:
             jump final
 
 label cap4aumentarmoral:
-    show bg vilarica
+    show bg vilaricafesta
     "Todos em Vila rica comemoram muito. Filipe dos Santos é tratado como herói e ovacionado"
     #sons de gritos ao fundo
     show filipe happy at left
