@@ -37,7 +37,7 @@ label pessimismo:
 jump cap1
 label cap1:
     scene bg salaescura
-    #imagem de uma sala escura com a silhueta de pessoas nela
+    #imagem de uma sala escura com a silhueta de pessoas nela (feito)
     
     "Você se junta a uma reunião secreta. O ambiente é carregado de descontentamento."
     show filipe at center
@@ -98,7 +98,7 @@ label aumentamoral (count=2):
     agente1 "Parece haver algo dentro desses santinhos, o que é isso?"
     "O Agente quebra um santinho e pepitas de ouro são espalhadas pelo chão"
     show agente1 #santinho
-    #o personagem agente1 com um santinho na mão
+    #o personagem agente1 com um santinho na mão (feito)
     agente1 "Pensaram que iam nos enganar? hahahahaha"
 
     menu:
@@ -113,7 +113,7 @@ label aumentamoral (count=2):
 label tentardialogar:
     show bg carroça
 
-    #imagem de uma carroça com itens dentro
+    #imagem de uma carroça com itens dentro (feito)
     agente1 "Não quero saber, vocês vão pagar por isso e ainda vamos ficar com todo esse ouro para nós"
     show agente1 #saco
     show comerciante #algema
@@ -125,7 +125,7 @@ label tentardialogar:
     scene tentardialogar
 
     scene bg reuniao
-    #imagem de um grupo de pessoas reunidas para ouvirem filipe falar
+    #imagem de um grupo de pessoas reunidas para ouvirem filipe falar (feito)
 
     show filipe at right #sad
     filipe "percebo que conseguiram reunir muitas pessoas para nos apoiar, mas venho com péssimas noticias"
@@ -146,14 +146,14 @@ label atacar:
     #sons de lutas
 
     scene bg comerciantesmortos
-    ####### dois corpos no chão mortos e a carroça no fundo
+    ####### dois corpos no chão mortos e a carroça no fundo (feito)
     show agente1 at left
     agente1 "Patético"
     pause 1.0
 
     scene bg reuniao
     show filipe at center
-    #imagem de um grupo de pessoas reunidas para ouvirem filipe falar
+    #imagem de um grupo de pessoas reunidas para ouvirem filipe falar (feito)
     filipe "percebo que conseguiram reunir muitas pessoas para nos apoiar, mas venho com péssimas noticias"
     filipe "Nossa tentativa com o santinho do pau oco falhou, eles já estão espertos com isso. Nossos companheiros foram assassinado em tentativa de defender nosso ouro"
     filipe "Mas temos de continuar nosso plano"
@@ -162,7 +162,7 @@ jump cap2
 
 label aumentaforça:
     show bg discurso
-    ######imagem de pessoas reunidas para ouvir um discurso
+    ######imagem de pessoas reunidas para ouvir um discurso (feito)
     show filipe happy at truecenter
     filipe "Companheiros! Hoje estamos aqui, não apenas como mineradores, mas como homens e mulheres dignos que lutam pela nossa liberdade e pelos direitos que nos foram negados!"
     filipe "Estamos sendo oprimidos, sufocados por impostos que não podemos pagar, enquanto nossas riquezas escorrem para os cofres da Coroa. É hora de nos levantarmos contra essa injustiça!"
@@ -189,7 +189,7 @@ label estrategia:
     filipe "Você segue com o plano enquanto eu e os outros vamos tentar recrutar mais apoiadores para nosso plano"
     hide filipe
     hide npc2 with moveoutleft
-    #Ilustração de uma carroça no fundo com algumas coisas e ouro em cima, os dois comerciantes indo em direção a uma inspeção feita pelos agentes
+    #Ilustração de uma carroça no fundo com algumas coisas e ouro em cima, os dois comerciantes indo em direção a uma inspeção feita pelos agentes (feito)
     
     show agente1 at left
     show npc2 default at center with moveinright
@@ -209,7 +209,7 @@ label estrategia:
     #sons de trocas de itens
 
     show agente1 #saco
-    ###imagem do agente com um saco na mão#############
+    ###imagem do agente com um saco na mão############# (feito)
     "O comerciante entrega o ouro, observando muito bem todos os agentes posicionadoe e armados, consegue ver tudo e juntar informações para passar ao outros"
     pause 1.0
 
@@ -262,7 +262,7 @@ jump final
 
 label cap2:
     show bg noite
-    ###### imagem de pessoas juntas, casas no fundo na noite
+    ###### imagem de pessoas juntas, casas no fundo na noite (feito)
     "Você se junta aos revoltosos para atacar a construção da casa de fundição."
     show filipe happy at left
     
@@ -280,7 +280,7 @@ label cap2:
 
 label estrategiaeficaz:
     show bg grupos
-    #####imagem de dois grupos divididos para atacarem######
+    #####imagem de dois grupos divididos para atacarem###### (feito)
     "Eles se dividem em dois grupos e tentam impedir que as casas de fundição de vila rica sejam construídas, mas agentes da coroa estão no local"
     show filipe happy at left
     filipe "Vou com esse grupo e atacar os agentes e impedir a construção, o outro grupo atacaram o grupo de agentes que fica a leste da casa de fundição"
@@ -289,7 +289,7 @@ label estrategiaeficaz:
     hide show bg grupos
     hide filipe
     show show bg casa
-    ###imagem de uma construção da casa de fundição######
+    ###imagem de uma construção da casa de fundição###### (feito)
     show filipe
 
     "O grupo de Filipe se esconde atrás de uma grande casa"
@@ -303,7 +303,7 @@ label estrategiaeficaz:
     hide show bg telaescura
 
     scene bg vitoria
-    ####imagens de agentes mortos e pessoas da revolta de pé
+    ####imagens de agentes mortos e pessoas da revolta de pé (feito)
     show filipe happy at center
     "Filipe e alguns revoltos de pé e todos os agentes da coroa mortos"
 
@@ -322,14 +322,14 @@ jump cap3estrategiaeficaz
 
 label aumentarisco:
     scene bg grupo
-    ####imagem do grupo pronto para a batalha########
+    ####imagem do grupo pronto para a batalha######## (feito)
     show filipe happy at left
     filipe "Vamos todos juntos atacar a casa de fundição, em maior número conquistaremos fácil todo o território"
     #sons de murmurios
     "Todos os revoltados vão juntos a casa de fundição a oeste, porém alguns agentes avistam toda essa multidão gigante furiosa se movendo e comunicam mais agentes"
     pause 1.0
     scene bg agentes
-    #####imagem de varios agentes da coroa no fundo#####
+    #####imagem de varios agentes da coroa no fundo##### (feito)
     "Quando Filipe e os revoltados chegam na casa de fundição encontram muitos agentes posicionados"
     show filipe at center #sad
 
@@ -351,7 +351,7 @@ label ataque:
     pause 1.0
     #sons de gritos e batalha
     scene bg todosmortos
-    #corpos dos participantes da revolta no chão, inclusive o de FIlipe dos Santos
+    #corpos dos participantes da revolta no chão, inclusive o de FIlipe dos Santos (feito)
     "Ao final da batalha todos os participantes da revolta forem mortos, inclusive Filipe dos Santos"
 
     show npc sad at center
@@ -373,7 +373,7 @@ jump final
 
 label alternativa:
     scene bg fuga
-    #####pessoas correndo no fundo######
+    #####pessoas correndo no fundo###### (feito)
     show filipe at center #angry
     filipe "VAMOS NOS REUNIR NOVAMENTE E BUSCAR OUTRA SOLUÇÃO"
     #sons de corridas e gritos de medo
@@ -384,7 +384,7 @@ jump cap3alternativa
 
 label cap3estrategiaeficaz:
     show bg marcha
-    #imagem da revolta marchando
+    #imagem da revolta marchando (feito)
     #sons de marcha e murmurio
 
     "A marcha avança para a sede do governo. O clima é tenso, mas esperançoso"
@@ -394,7 +394,7 @@ label cap3estrategiaeficaz:
     hide filipe with moveinleft
     
     show bg rescinto
-    #imagem de uma casa grande e luxuosa onde fica o governador, com pessoas da revolta em frente
+    #imagem de uma casa grande e luxuosa onde fica o governador, com pessoas da revolta em frente (feito)
 
     "A Revolta chega ao recinto aonde o conde se localiza"
     show filipe angry at right
@@ -421,7 +421,7 @@ label cap3estrategiaeficaz:
 
 label cap3alternativa:
     show bg casafazenda
-    ####imagem de uma casa isolada com pessoas no fundo
+    ####imagem de uma casa isolada com pessoas no fundo (feito)
     show filipe at left #sad
     show escravo at center #sad
     filipe "Bom pessoal, tentamos fazer a revolta de igual para igual, mas falhamos"
@@ -463,7 +463,7 @@ jump final
 
 label cap4ficaralerta:
     show bg vilaricafesta
-    #####imagem de vila rica em comemoração, com pessoas comemorando####
+    #####imagem de vila rica em comemoração, com pessoas comemorando#### (feito)
     "No retorno, a euforia logo se transforma em desconfiança"
     show filipe at left with moveinleft
     filipe "Precisamos nos preparar. A coroa não ficará quieta. Não acho que aceitarão isso assim"
@@ -476,11 +476,11 @@ label cap4ficaralerta:
     "Toda a população de vila rica passa a noite comemorando e festejando o sucesso da revolta, mas alguns ainda ficam de guarda levantada e de olho em tudo"
     hide show bg telaescura
     show bg vilaricasolnascendo
-    #imagem de vila rica com o sol nascendo
+    #imagem de vila rica com o sol nascendo (feito)
     #sons de cavalo no fundo
 
     show npc2 faca at right
-    #imagem de um npc com uma faca na mão
+    #imagem de um npc com uma faca na mão (feito)
     show agente1 at center with moveinleft
     show agente2 at left with moveinleft
     "Os que ficaram alertas tentam combater as tropas de soldados, mas eles estão em menor número e a batalha dura pouco tempo"
@@ -494,9 +494,9 @@ label cap4ficaralerta:
     scene cap4ficaralerta
 
     show bg guardas
-    #imagem com guardas e cavalos ao fundo
+    #imagem com guardas e cavalos ao fundo (feito)
     show filipe preso at center 
-    #Filipe com as mão e pés amarrados
+    #Filipe com as mão e pés amarrados (feito)
     filipe "Nós lutamos por justiça"
     scene cap4ficaralerta
     
@@ -529,7 +529,7 @@ label cap4aumentarmoral:
     scene cap4aumentarmoral
 
     show bg vilaricasolnascendo
-    #imagem de vila rica com o sol nascendo
+    #imagem de vila rica com o sol nascendo (feito)
     "A população de Vila rica comemora a noite toda, mas ao nascer do sol..."
 
     show bg telaescura
@@ -549,9 +549,9 @@ label cap4aumentarmoral:
     scene cap4aumentarmoral
 
     show bg guardas
-    #imagem com guardas e cavalos ao fundo
+    #imagem com guardas e cavalos ao fundo (feito)
     show filipe preso at center
-    #Filipe com as mão e pés amarrados
+    #Filipe com as mão e pés amarrados (feito)
 
     filipe "Lutamos por nossos direitos, isso não vai acabar assim"
     scene cap4aumentarmoral
