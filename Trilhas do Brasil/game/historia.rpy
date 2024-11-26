@@ -496,7 +496,7 @@ label cap4ficaralerta:
     show bg guardas
     #imagem com guardas e cavalos ao fundo (feito)
     show filipe preso at center 
-    #Filipe com as mão e pés amarrados
+    #Filipe com as mão e pés amarrados (feito)
     filipe "Nós lutamos por justiça"
     scene cap4ficaralerta
     
@@ -551,7 +551,7 @@ label cap4aumentarmoral:
     show bg guardas
     #imagem com guardas e cavalos ao fundo (feito)
     show filipe preso at center
-    #Filipe com as mão e pés amarrados
+    #Filipe com as mão e pés amarrados (feito)
 
     filipe "Lutamos por nossos direitos, isso não vai acabar assim"
     scene cap4aumentarmoral
