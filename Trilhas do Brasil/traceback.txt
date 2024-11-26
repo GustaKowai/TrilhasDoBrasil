@@ -1,15 +1,15 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/historia.rpy", line 398, in script
-    show conde default at left
-Exception: Image 'conde' does not accept attributes 'default'.
+  File "game/historia.rpy", line 8, in script
+    show minerador sad at center with moveinright
+Exception: Image 'minerador' does not accept attributes 'sad'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/historia.rpy", line 398, in script
-    show conde default at left
+  File "game/historia.rpy", line 8, in script
+    show minerador sad at center with moveinright
   File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\ast.py", line 1111, in execute
     show_imspec(self.imspec, atl=getattr(self, "atl", None))
   File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\ast.py", line 1074, in show_imspec
@@ -22,9 +22,9 @@ Full traceback:
     args.extraneous()
   File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 109, in extraneous
     raise Exception("Image '{}' does not accept attributes '{}'.".format(
-Exception: Image 'conde' does not accept attributes 'default'.
+Exception: Image 'minerador' does not accept attributes 'sad'.
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 8.3.3.24111502
  1.0
-Fri Nov 22 20:33:32 2024
+Mon Nov 25 21:47:02 2024
