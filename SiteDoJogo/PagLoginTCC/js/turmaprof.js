@@ -25,7 +25,7 @@ function carregarTurmas(id){
 }
 
 function apagarTurma(id,nome){
-    let resp=window.prompt("Confirme com o nome da turma:")
+    let resp=window.prompt("Aviso, caso a turma seja excluida a conta de todos os alunos vinculados a ela serão excluidas!\nConfirme com o nome da turma:")
     if (resp == nome){
         xmlhttp = new XMLHttpRequest();
         idGrupo = id;
