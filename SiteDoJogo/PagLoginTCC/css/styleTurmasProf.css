@@ -15,6 +15,7 @@ body {
     /* Utiliza grid para o layout */
     place-items: center;
     /* Centraliza os itens do grid */
+    overflow-x: hidden;
 }
  
 div#genTurmas {
@@ -254,4 +255,15 @@ button#btnTurmas6:hover {
     height: 200px;
     padding: 15px;
     overflow-y: scroll;
+}
+.linkVoltar a{
+    position: absolute;
+    left: 80%;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.linkVoltar a:hover {
+    text-decoration: underline;
+    /* Adiciona sublinhado ao passar o mouse sobre o link */
 }
