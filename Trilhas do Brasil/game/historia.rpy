@@ -202,7 +202,7 @@ label estrategia:
     hide npc2 with moveoutleft
     scene estrategia
 
-    show bg construção 
+    show bg casafundição 
     show npc2 default at center with moveinright
     show agente1 at left
     agente2 "Aqui vocês deixam o seu ouro, quando a casa estiver pronta, derreteremos, faremos barras e marcaremos seu ouro. Depois disso poderá comercializá-lo"
@@ -231,7 +231,7 @@ label cap2final:
     #sons de multidão andando
     "Você se reune aos revoltosos para atacar a construção da casa de fundição, que decidirão uma estratégia para o ataque"
 
-    show bg construcão
+    show bg casafundição
     show filipe at right #angry
     filipe "Agora é a nossa hora! Vamos lutar por nossa liberdade!"
     filipe "Vamos atacar e ocupar vila rica"
@@ -288,11 +288,11 @@ label estrategiaeficaz:
 
     hide show bg grupos
     hide filipe
-    show show bg casa
+    show show bg casafundição
     ###imagem de uma construção da casa de fundição######
     show filipe
 
-    "O grupo de Filipe se esconde atrás de uma grande casa"
+    "O grupo de Filipe se prepara para o ataque"
 
     filipe "Ataquem"
     scene estrategiaeficaz
