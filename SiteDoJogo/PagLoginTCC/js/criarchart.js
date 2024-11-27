@@ -194,7 +194,7 @@ var chart = JSC.chart('chartDiv', {
         },
         {
           name: 'Final ruim: Todos presos, Filipe morto',
-          id: 'f3',
+          id: 'c3_v2',
           color: 'red',
           parent: '11',
           attributes: {
@@ -225,88 +225,184 @@ var chart = JSC.chart('chartDiv', {
   }
 });
 
-function atualizar() {
+function atualizar(teste) {
   let chart = this.chart;
   chart.series(0).options({
     points: [
       {
-        name: 'Margret Swanson',
-        id: 'ms',
+        name: teste,
+        id: 'pr',
+        color: 'black',
+        attributes: {
+          desc: '630-555-1111'
+        }
+      },
+      {
+        name: 'Resistêcia',
+        id: '1',
+        parent: 'pr',
+        attributes: {
+          desc: 'Resistência 1'
+        }
+      },
+      {
+        name: 'Pessimismo',
+        id: '2',
+        parent: 'pr',
+        attributes: {
+          desc: 'Pessimismo 2'
+        }
+      },
+      {
+        name: 'Capítulo 1',
+        id: 'c1',
+        color: 'black',
+        parent: '1,2',
+        attributes: {
+          desc: 'Capítulo 1'
+        }
+      },
+      {
+        name: 'Aumenta moral',
+        id: '3',
+        parent: 'c1',
+        attributes: {
+          desc: 'Resistência 1'
+        }
+      },
+      {
+        name: 'Aumenta força',
+        id: '4',
+        parent: 'c1',
+        attributes: {
+          desc: 'Resistência 1'
+        }
+      },
+      {
+        name: 'Estratégia',
+        id: '5',
+        parent: 'c1',
+        attributes: {
+          desc: 'Resistência 1'
+        }
+      },
+      {
+        name: 'Tentar dialogar',
+        id: '6',
+        parent: '3',
+        attributes: {
+          desc: 'Resistência 1'
+        }
+      },
+      {
+        name: 'Atacar os agentes',
+        id: '7',
+        parent: '3',
+        attributes: {
+          desc: 'Resistência 1'
+        }
+      },
+      {
+        name: 'Capítulo 2',
+        id: 'c2_v1',
+        color: 'black',
+        parent: '6',
+        attributes: {
+          desc: 'Versão 1 do capítulo 2'
+        }
+      },
+      {
+        name: 'Final ruim: Todos presos',
+        id: 'f1',
         color: 'red',
+        parent: 'c2_v1',
         attributes: {
-          pos: 'President',
-          phone: '630-555-1111'
+          desc: 'Resistência 1'
         }
       },
       {
-        name: 'Mark Swanson',
-        id: 'ms2',
+        name: 'Capítulo 2',
+        id: 'c2_v2',
+        color: 'black',
+        parent: '7,4,5',
+        attributes: {
+          desc: 'Versão 2 do capítulo 2'
+        }
+      },
+      {
+        name: 'Estratégia eficaz',
+        id: '8',
+        parent: 'c2_v2',
+        attributes: {
+          desc: 'Versão 2 do capítulo 2'
+        }
+      },
+      {
+        name: 'Aumentar o risco',
+        id: '9',
+        parent: 'c2_v2',
+        attributes: {
+          desc: 'Versão 2 do capítulo 2'
+        }
+      },
+      {
+        name: 'Capítulo 3',
+        id: 'c3_v1',
+        color: 'black',
+        parent: '8',
+        attributes: {
+          desc: 'Versão 2 do capítulo 2'
+        }
+      },
+      {
+        name: 'Ataque',
+        id: '10',
+        parent: '9',
+        attributes: {
+          desc: 'Versão 2 do capítulo 2'
+        }
+      },
+      {
+        name: 'Entregar tudo',
+        id: '11',
+        parent: '9',
+        attributes: {
+          desc: 'Versão 2 do capítulo 2'
+        }
+      },
+      {
+        name: 'Alternativa',
+        id: '12',
+        parent: '9',
+        attributes: {
+          desc: 'Versão 2 do capítulo 2'
+        }
+      },
+      {
+        name: 'Final ruim: Todos mortos',
+        id: 'f2',
         color: 'red',
+        parent: '10',
         attributes: {
-          pos: 'President',
-          phone: '630-555-1111'
+          desc: 'Resistência 1'
         }
       },
       {
-        name: 'Mark Hudson',
-        id: 'mh',
-        parent: 'ms',
+        name: 'Final ruim: Todos presos, Filipe morto',
+        id: 'f3',
+        color: 'red',
+        parent: '11',
         attributes: {
-          pos: 'Vice President Marketing',
-          phone: '630-555-1111'
+          desc: 'Resistência 1'
         }
       },
       {
-        name: 'Chris Lysek',
-        id: 'cl',
-        parent: 'ms,ms2',
+        name: 'Final ruim: Todos presos, Filipe morto',
+        id: 'c3_v2',
+        color: 'red',
+        parent: '11',
         attributes: {
-          pos: 'Vice President Sales',
-          phone: '630-555-2222'
-        }
-      },
-      {
-        name: 'Karyn Borbas',
-        id: 'kb',
-        parent: 'mh',
-        attributes: {
-          pos: 'Marketing Manager',
-          phone: '312-555-3333'
-        }
-      },
-      {
-        name: 'Chris Rup',
-        id: 'cr',
-        parent: 'mh',
-        attributes: {
-          pos: 'Marketing Manager',
-          phone: random(250)
-        }
-      },
-      {
-        name: 'Jenny Powers',
-        id: 'jp',
-        parent: 'cl',
-        attributes: {
-          pos: 'Sales Manager',
-          phone: random(250)
-        }
-      },
-      {
-        name: 'Katies Lone Parent',
-        id: 'kslp',
-        attributes: {
-          pos: 'Sales Manager',
-          phone: '630-555-6666'
-        }
-      },
-      {
-        name: 'Katie Swift',
-        id: 'ks',
-        parent: 'cl,kslp',
-        attributes: {
-          pos: 'Sales Manager',
-          phone: '630-555-6666'
+          desc: 'Resistência 1'
         }
       }
     ]
