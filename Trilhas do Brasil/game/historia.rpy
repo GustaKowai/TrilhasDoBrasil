@@ -141,7 +141,7 @@ label atacar:
     show agente1 at left
     scene atacar
 
-    scene bg tela escura
+    scene bg telaescura
     "..."
     #sons de lutas
 
