@@ -17,7 +17,7 @@ $dados = json_decode($_POST["dados"]);
 
 try {
     $conn = new PDO("mysql:host=$host;port=$port;dbname=$dbname",$user,$password);
-    $sql = 'SELECT ordemEscolha FROM tb_escolhe WHERE idAluno = '.$dados->idAluno.' and idEscolhas ='.$dados->idEscolhas.'';
+    $sql = 'SELECT * FROM tb_escolhe WHERE idAluno = '.$dados->idAluno.'';
     $tabela = $conn->prepare($sql);
     $tabela->execute();
     $tabela = $conn->query($sql);

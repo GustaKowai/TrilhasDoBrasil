@@ -6,7 +6,7 @@ var chart = JSC.chart('chartDiv', {
     {
       defaultPoint: {
         label: {
-          text: '<b>%name</b>',
+          text: '<b>%name</b><br> %ordem',
           autoWrap: true
         },
         connectorLine_color: '#747c72',
@@ -30,7 +30,8 @@ var chart = JSC.chart('chartDiv', {
           id: 'pr',
           color: 'black',
           attributes: {
-            desc: '630-555-1111'
+            desc: 'Prólogo',
+            ordem: ''
           }
         },
         {
@@ -200,6 +201,15 @@ var chart = JSC.chart('chartDiv', {
           attributes: {
             desc: 'Resistência 1'
           }
+        },
+        {
+          name: 'Final ruim: Todos presos, Filipe morto',
+          id: 'c3_v2',
+          color: 'red',
+          parent: '',
+          attributes: {
+            desc: 'Resistência 1'
+          }
         }
       ]
     }
@@ -225,16 +235,17 @@ var chart = JSC.chart('chartDiv', {
   }
 });
 
-function atualizar(teste,escolha1) {
+function atualizar(escolhas) {
   let chart = this.chart;
   chart.series(0).options({
     points: [
       {
-        name: teste,
+        name: 'Prólogo',
         id: 'pr',
         color: 'black',
         attributes: {
-          desc: '630-555-1111'
+          desc: 'Prólogo',
+          ordem: escolhas[0]
         }
       },
       {
@@ -242,7 +253,8 @@ function atualizar(teste,escolha1) {
         id: '1',
         parent: 'pr',
         attributes: {
-          desc: escolha1
+          desc: 'escolha1',
+          ordem: escolhas[1]
         }
       },
       {
@@ -250,7 +262,8 @@ function atualizar(teste,escolha1) {
         id: '2',
         parent: 'pr',
         attributes: {
-          desc: carregarEscolha(teste,2)
+          desc: 'carregarEscolha(teste,2)',
+          ordem: escolhas[2]
         }
       },
       {
@@ -259,7 +272,8 @@ function atualizar(teste,escolha1) {
         color: 'black',
         parent: '1,2',
         attributes: {
-          desc: 'Capítulo 1'
+          desc: 'Capítulo 1',
+          ordem: escolhas[0]
         }
       },
       {
@@ -267,7 +281,8 @@ function atualizar(teste,escolha1) {
         id: '3',
         parent: 'c1',
         attributes: {
-          desc: 'Resistência 1'
+          desc: 'Resistência 1',
+          ordem: escolhas[3]
         }
       },
       {
@@ -275,7 +290,8 @@ function atualizar(teste,escolha1) {
         id: '4',
         parent: 'c1',
         attributes: {
-          desc: 'Resistência 1'
+          desc: 'Resistência 1',
+          ordem: escolhas[4]
         }
       },
       {
@@ -283,7 +299,8 @@ function atualizar(teste,escolha1) {
         id: '5',
         parent: 'c1',
         attributes: {
-          desc: 'Resistência 1'
+          desc: 'Resistência 1',
+          ordem: escolhas[5]
         }
       },
       {
@@ -291,7 +308,8 @@ function atualizar(teste,escolha1) {
         id: '6',
         parent: '3',
         attributes: {
-          desc: 'Resistência 1'
+          desc: 'Resistência 1',
+          ordem: escolhas[6]
         }
       },
       {
@@ -299,7 +317,8 @@ function atualizar(teste,escolha1) {
         id: '7',
         parent: '3',
         attributes: {
-          desc: 'Resistência 1'
+          desc: 'Resistência 1',
+          ordem: escolhas[7]
         }
       },
       {
@@ -308,7 +327,8 @@ function atualizar(teste,escolha1) {
         color: 'black',
         parent: '6',
         attributes: {
-          desc: 'Versão 1 do capítulo 2'
+          desc: 'Versão 1 do capítulo 2',
+          ordem: escolhas[0]
         }
       },
       {
@@ -317,7 +337,8 @@ function atualizar(teste,escolha1) {
         color: 'red',
         parent: 'c2_v1',
         attributes: {
-          desc: 'Resistência 1'
+          desc: 'Resistência 1',
+          ordem: escolhas[0]
         }
       },
       {
@@ -326,7 +347,8 @@ function atualizar(teste,escolha1) {
         color: 'black',
         parent: '7,4,5',
         attributes: {
-          desc: 'Versão 2 do capítulo 2'
+          desc: 'Versão 2 do capítulo 2',
+          ordem: escolhas[0]
         }
       },
       {
@@ -334,7 +356,8 @@ function atualizar(teste,escolha1) {
         id: '8',
         parent: 'c2_v2',
         attributes: {
-          desc: 'Versão 2 do capítulo 2'
+          desc: 'Versão 2 do capítulo 2',
+          ordem: escolhas[8]
         }
       },
       {
@@ -342,7 +365,8 @@ function atualizar(teste,escolha1) {
         id: '9',
         parent: 'c2_v2',
         attributes: {
-          desc: 'Versão 2 do capítulo 2'
+          desc: 'Versão 2 do capítulo 2',
+          ordem: escolhas[9]
         }
       },
       {
@@ -351,7 +375,8 @@ function atualizar(teste,escolha1) {
         color: 'black',
         parent: '8',
         attributes: {
-          desc: 'Versão 2 do capítulo 2'
+          desc: 'Versão 1 do capítulo 3',
+          ordem: escolhas[0]
         }
       },
       {
@@ -359,7 +384,8 @@ function atualizar(teste,escolha1) {
         id: '10',
         parent: '9',
         attributes: {
-          desc: 'Versão 2 do capítulo 2'
+          desc: 'Versão 2 do capítulo 2',
+          ordem: escolhas[10]
         }
       },
       {
@@ -367,7 +393,8 @@ function atualizar(teste,escolha1) {
         id: '11',
         parent: '9',
         attributes: {
-          desc: 'Versão 2 do capítulo 2'
+          desc: 'Versão 2 do capítulo 2',
+          ordem: escolhas[11]
         }
       },
       {
@@ -375,7 +402,8 @@ function atualizar(teste,escolha1) {
         id: '12',
         parent: '9',
         attributes: {
-          desc: 'Versão 2 do capítulo 2'
+          desc: 'Versão 2 do capítulo 2',
+          ordem: escolhas[12]
         }
       },
       {
@@ -384,7 +412,8 @@ function atualizar(teste,escolha1) {
         color: 'red',
         parent: '10',
         attributes: {
-          desc: 'Resistência 1'
+          desc: 'Resistência 1',
+          ordem: escolhas[0]
         }
       },
       {
@@ -393,16 +422,38 @@ function atualizar(teste,escolha1) {
         color: 'red',
         parent: '11',
         attributes: {
-          desc: 'Resistência 1'
+          desc: 'Resistência 1',
+          ordem: escolhas[0]
         }
       },
       {
         name: 'Final ruim: Todos presos, Filipe morto',
-        id: 'c3_v2',
+        id: 'f4',
         color: 'red',
         parent: '11',
         attributes: {
-          desc: 'Resistência 1'
+          desc: 'Resistência 1',
+          ordem: escolhas[0]
+        }
+      },
+      {
+        name: 'Final ruim: Todos presos, Filipe morto',
+        id: 'f5',
+        color: 'red',
+        parent: '11',
+        attributes: {
+          desc: 'Resistência 1',
+          ordem: escolhas[0]
+        }
+      },
+      {
+        name: 'Final ruim: Todos presos, Filipe morto!!',
+        id: 'f6',
+        color: 'red',
+        parent: '11',
+        attributes: {
+          desc: 'Resistência 1',
+          ordem: escolhas[0]
         }
       }
     ]
@@ -418,11 +469,12 @@ function random(max) {
   return Math.round(Math.random() * max);
 }
 
-function carregarEscolha(idAluno,idEscolhas){
-
-  dados = JSON.stringify({
-      idAluno: idAluno, idEscolhas: idEscolhas
-    });
+function carregarEscolha(idAluno){
+  var escolhas = [];
+  for (i = 0; i < 19; i++){
+    escolhas[i] = "";
+  }
+  dados = JSON.stringify({idAluno: idAluno});
   console.log(dados)
   xmlhttp = new XMLHttpRequest();
   xmlhttp.onload = function(){
@@ -431,13 +483,13 @@ function carregarEscolha(idAluno,idEscolhas){
       console.log(tabela.length);
       if (tabela.length < 1){
         console.log("A escolha não é definida");
-        return "A escolha não é definida"
       }else{
         for (elemento of tabela){
-          console.log("ordem escolha:" + elemento.ordemEscolha);
-          return elemento.ordemEscolha
+          escolhas[elemento.idEscolhas] = "Escolha: " + elemento.ordemEscolha
         }
       }
+      console.log(escolhas);
+      atualizar(escolhas);
   }
   xmlhttp.open("POST","http://localhost/carregar_escolha.php");
       xmlhttp.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
