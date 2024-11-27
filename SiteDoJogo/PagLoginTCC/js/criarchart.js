@@ -225,7 +225,7 @@ var chart = JSC.chart('chartDiv', {
   }
 });
 
-function atualizar(teste) {
+function atualizar(teste,escolha1) {
   let chart = this.chart;
   chart.series(0).options({
     points: [
@@ -242,7 +242,7 @@ function atualizar(teste) {
         id: '1',
         parent: 'pr',
         attributes: {
-          desc: 'Resistência 1'
+          desc: escolha1
         }
       },
       {
@@ -250,7 +250,7 @@ function atualizar(teste) {
         id: '2',
         parent: 'pr',
         attributes: {
-          desc: 'Pessimismo 2'
+          desc: carregarEscolha(teste,2)
         }
       },
       {
@@ -418,10 +418,10 @@ function random(max) {
   return Math.round(Math.random() * max);
 }
 
-function carregarAluno(id){
+function carregarEscolha(idAluno,idEscolhas){
 
   dados = JSON.stringify({
-      valor: id
+      idAluno: idAluno, idEscolhas: idEscolhas
     });
   console.log(dados)
   xmlhttp = new XMLHttpRequest();
@@ -429,15 +429,17 @@ function carregarAluno(id){
       console.log(this.responseText);
       tabela = JSON.parse(this.responseText);
       console.log(tabela.length);
-      let nometurma = [];
-      for(var i = 0; i <tabela.length; i++){
-          nometurma[i] = '\''+tabela[i].nomeTurma+'\''
-          console.log(nometurma[i]);
-          document.getElementById('turmas').innerHTML +=
-          '<div class="d-grid gap-2 d-md-flex justify-content-md-end divTurmas" id="divTurmas'+tabela[i].idGrupo+'"> <a class="btn btn-light LinkTurm1" onclick="estatTurma('+tabela[i].idGrupo+','+nometurma[i]+')" role="button">'+tabela[i].nomeTurma+' (código: '+tabela[i].idGrupo+')</a> <button class="btn btn-outline-danger btnTurmas" type="button" id="btnTurmas1"onclick="apagarTurma('+tabela[i].idGrupo+','+nometurma[i]+')">Remover</button></div>';
+      if (tabela.length < 1){
+        console.log("A escolha não é definida");
+        return "A escolha não é definida"
+      }else{
+        for (elemento of tabela){
+          console.log("ordem escolha:" + elemento.ordemEscolha);
+          return elemento.ordemEscolha
+        }
       }
   }
-  xmlhttp.open("POST","http://localhost/carregar_turmas.php");
+  xmlhttp.open("POST","http://localhost/carregar_escolha.php");
       xmlhttp.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
       xmlhttp.send("dados="+dados);
       console.log("Chegou aqui");
