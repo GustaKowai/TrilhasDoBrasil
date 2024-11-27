@@ -19,7 +19,7 @@ label resistencia:
     minerador "concordo, não podemos aceitar isso. Temos nossas famílias para sustentar, com esses impostos não sobra o suficiente!"
     show minerador happy at center
     filipe "Precisamos de um plano, algo para mudar isso, o povo não pode sofrer assim. Vamos reunir mais pessoas e discutiremos o que faremos!"
-    show filipe happy at left
+    show filipe at left #happy
     minerador "Vou passar em algumas lojas e lugares que conheço, vou falar que temos algo importante para falar, algo bom"
     filipe "Fale com o máximo de pessoas que conseguir. Avise que vamos nos encontrar no celeiro ao norte de minha fazenda, vamos nos encontrar, conversar sobre isso e tomar alguma atitude. Isso está me deixando revoltado"
     scene bg vilarica
@@ -80,9 +80,10 @@ label aumentamoral (count=2):
 
     comerciante "Vamos tentar, se conseguirmos voltaremos para avisar aos outros"
 
-    "os dois comerciantes juntam suas mercadorias e vão para a cidade tentar comercializar mas encontram uma inspeção feita pelos agentes da coroa."
+    "Os dois comerciantes juntam suas mercadorias e vão para a cidade tentar comercializar mas encontram uma inspeção feita pelos agentes da coroa."
     hide comerciante with moveoutleft
     hide morador with moveoutleft
+    pause 1.0
     scene aumentamoral
 
     scene bg carroça
@@ -184,7 +185,7 @@ jump cap2
 
 label estrategia:
     scene bg carroça
-    show filipe happy at left
+    show filipe  at left
     show cidadao default at center
     filipe "Você segue com o plano enquanto eu e os outros vamos tentar recrutar mais apoiadores para nosso plano"
     hide filipe
@@ -219,15 +220,16 @@ label estrategia:
     pause 1.0
 
     scene bg vilarica
-    show filipe happy at right
+    show filipe at right
     show cidadao default at center
     filipe "Você voltou, como foi?"
-    cidadao "Eu vi tudo, a localização e a quantidade de agentes lá. São bastante agentes, mas com todo o pessoal que estamos vendo que juntaram, vamos conseguir se formos espertos"
+    cidadao "Eu vi tudo, a localização e a quantidade de agentes lá. São bastante agentes, mas com todo o pessoal que estou vendo que juntaram, vamos conseguir se formos espertos"
     scene estrategia
 jump cap2
 
 label cap2final:
     show bg telaescura
+    play sound ""
     #sons de multidão andando
     "Você se reune aos revoltosos para atacar a construção da casa de fundição, que decidirão uma estratégia para o ataque"
 
@@ -264,7 +266,7 @@ label cap2:
     show bg noite
     ###### imagem de pessoas juntas, casas no fundo na noite
     "Você se junta aos revoltosos para atacar a construção da casa de fundição."
-    show filipe happy at left
+    show filipe at left #happy
     
     filipe "Agora é a nossa hora! Vamos lutar por nossa liberdade"
     filipe "Mas antes vamos decidir nossa estratégia"
@@ -279,18 +281,15 @@ label cap2:
             jump aumentarisco
 
 label estrategiaeficaz:
-    show bg grupos
+    scene bg grupos
     #####imagem de dois grupos divididos para atacarem######
     "Eles se dividem em dois grupos e tentam impedir que as casas de fundição de vila rica sejam construídas, mas agentes da coroa estão no local"
-    show filipe happy at left
+    show filipe at left
     filipe "Vou com esse grupo e atacar os agentes e impedir a construção, o outro grupo atacaram o grupo de agentes que fica a leste da casa de fundição"
     filipe"Boa sorte a todos"
 
-    hide show bg grupos
-    hide filipe
-    show show bg casafundição
+    scene bg casafundição
     ###imagem de uma construção da casa de fundição######
-    show filipe
 
     "O grupo de Filipe se prepara para o ataque"
 
@@ -304,15 +303,15 @@ label estrategiaeficaz:
 
     scene bg vitoria
     ####imagens de agentes mortos e pessoas da revolta de pé
-    show filipe happy at center
+    show filipe at center
     "Filipe e alguns revoltos de pé e todos os agentes da coroa mortos"
 
     filipe "CONSEGUIMOS!"
     filipe "Vamos ajudar o outro grupo, depois recolhemos recursos que nos ajudarão, tratamos os feridos e pegamos os corpos da nossa gente"
 
-    scene show bg vitoria
+    scene bg vitoria
     show morador default at right
-    show filipe happy at left
+    show filipe at left
     "Eles chegam a outra casa de fundição e encontram o outro grupo. Eles também derrotaram os agentes da coroa"
 
     morador "CONSEGUIMOS, VILA RICA AGORA É NOSSAAA!"
@@ -323,7 +322,7 @@ jump cap3estrategiaeficaz
 label aumentarisco:
     scene bg grupo
     ####imagem do grupo pronto para a batalha########
-    show filipe happy at left
+    show filipe at left
     filipe "Vamos todos juntos atacar a casa de fundição, em maior número conquistaremos fácil todo o território"
     #sons de murmurios
     "Todos os revoltados vão juntos a casa de fundição a oeste, porém alguns agentes avistam toda essa multidão gigante furiosa se movendo e comunicam mais agentes"
@@ -344,6 +343,7 @@ label aumentarisco:
 
         "Eles estão em muitos, não temos condições de ganhar. Vamos fugir":
             $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,12)
+            hide filipe with moveoutright
             jump alternativa
 
 label ataque:
@@ -354,8 +354,9 @@ label ataque:
     #corpos dos participantes da revolta no chão, inclusive o de FIlipe dos Santos
     "Ao final da batalha todos os participantes da revolta forem mortos, inclusive Filipe dos Santos"
 
-    show morador sad at center
+    show morador default at center
     morador "Todos morreram, vou fugir, nossa revolta foi um fracasso"
+    hide morador with moveoutright
     "A revolta acaba com quase todos os participantes mortos, e toda a luta foi em vão"
     "A casa de fundição foi construída e o governo manteve os altos impostos e agora rígida vigilância nos cidadaos"
 jump final
@@ -383,12 +384,12 @@ label alternativa:
 jump cap3alternativa
 
 label cap3estrategiaeficaz:
-    show bg marcha
+    scene bg marcha
     #imagem da revolta marchando
     #sons de marcha e murmurio
 
     "A marcha avança para a sede do governo. O clima é tenso, mas esperançoso"
-    show filipe happy at left 
+    show filipe at left 
     filipe "Vamos até o governador! Exigiremos o fim das casas de fundição"
     filipe "Exigiremos nossos direitos"
     hide filipe with moveinleft
@@ -397,7 +398,7 @@ label cap3estrategiaeficaz:
     #imagem de uma casa grande e luxuosa onde fica o governador, com pessoas da revolta em frente
 
     "A Revolta chega ao recinto aonde o conde se localiza"
-    show filipe angry at right
+    show filipe at right #angry
     show conde at left
     filipe "Conde, estamos aqui para exigir a diminuição dos impostos, o fim do monopólio, deixando que os produtos sejam comercializados por qualquer empresa, e contra a construção da casa de fundição"
     filipe "Ocupamos vila rica e viemos direto a você fazer esse pedido"
@@ -420,7 +421,7 @@ label cap3estrategiaeficaz:
             jump cap4aumentarmoral
 
 label cap3alternativa:
-    show bg casafazenda
+    scene bg casafazenda
     ####imagem de uma casa isolada com pessoas no fundo
     show filipe at left #sad
     show escravo at center #sad
@@ -462,7 +463,7 @@ label cap4alternativacap3:
 jump final
 
 label cap4ficaralerta:
-    show bg vilaricafesta
+    scene bg vilaricafesta
     #####imagem de vila rica em comemoração, com pessoas comemorando####
     "No retorno, a euforia logo se transforma em desconfiança"
     show filipe at left with moveinleft
@@ -516,11 +517,11 @@ label cap4ficaralerta:
             jump final
 
 label cap4aumentarmoral:
-    show bg vilaricafesta
+    scene bg vilaricafesta
     "Todos em Vila rica comemoram muito. Filipe dos Santos é tratado como herói e ovacionado"
     #sons de gritos ao fundo
-    show filipe happy at left
-    show cidada happy at center
+    show filipe at left
+    show cidada at center
 
 
     cidada "Você conseguiu, vamos ter nossos direitos e conseguir viver melhor graças a você Filipe"
@@ -539,12 +540,12 @@ label cap4aumentarmoral:
     show bg vilaricasolnascendo
     show filipe at left
     filipe "O que é isso, fizemos um acordo com o conde"
-    show agente1 default at right with moveinleft
+    show agente1 at right with moveinleft
     agente1 "Vocês acharam mesmo que iam conseguir tudo isso"
     filipe "Desgraçados"
 
     show filipe at center with moveinleft
-    show agente2 default at left with moveinleft
+    show agente2 at left with moveinleft
     "Filipe tenta fugir, mas é cercado por agentes que o seguram e amarram-no"
     scene cap4aumentarmoral
 
