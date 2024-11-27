@@ -2,9 +2,33 @@
 errors listed below, and try again.
 
 
-File "game/historia.rpy", line 148: Line is indented, but the preceding scene statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    show bg reuniao
-    ^
+File "game/historia.rpy", line 289: expected 'image_name_component' not found.
+    hide show bg grupos
+        ^
 
-Ren'Py Version: Ren'Py 8.3.3.24111502
-Thu Nov 21 20:49:33 2024
+File "game/historia.rpy", line 291: expected 'image_name_component' not found.
+    show show bg casa
+        ^
+
+File "game/historia.rpy", line 303: expected 'image_name_component' not found.
+    hide show bg telaescura
+        ^
+
+File "game/historia.rpy", line 313: expected 'image_name_component' not found.
+    scene show bg vitoria
+          ^
+
+File "game/historia.rpy", line 472: expected 'image_name_component' not found.
+    hide show bg vilarica
+        ^
+
+File "game/historia.rpy", line 477: expected 'image_name_component' not found.
+    hide show bg telaescura
+        ^
+
+File "game/historia.rpy", line 574: expected 'image_name_component' not found.
+    show show bg minas with dissolve
+        ^
+
+Ren'Py Version: Ren'Py 8.2.1.24030407
+Wed Nov 27 14:24:36 2024

@@ -55,7 +55,7 @@ label final:
     return
  
 
- #label de testes do bd
+#label de testes do bd
 label testesbd:
     e "Vamos fazer um login simples!"
     python:

@@ -8,7 +8,12 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <link rel="shortcut icon" href="css/img/grupo-de-usuarios.png" type="image/x-icon">
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript" src="../jsc/jscharting.js"></script>
+  <script type="text/javascript" src="../jsc/modules/toolbar.js"></script>
+  <script type="text/javascript" src="../jsc/modules/types.js"></script>
+
+  <!--Como não aceita dois pais, irei manter comentado-->
+  <!--<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
           <script type="text/javascript">
             google.charts.load('current', {packages:["orgchart"]});
             google.charts.setOnLoadCallback(drawChart);
@@ -35,7 +40,7 @@
               // Draw the chart, setting the allowHtml option to true for the tooltips.
               chart.draw(data, {'allowHtml':true});
             }
-         </script>
+         </script>-->
   <!-- Define o ícone da aba do navegador -->
   <link rel="stylesheet" href="css/styleEstatisticas.css"> <!-- Importa o arquivo de estilo CSS -->
   <title>Estatísticas da turma</title> <!-- Título da página -->
@@ -46,10 +51,11 @@
   <div class="infoTurma"> <!-- Divisão que contém as informações da turma -->
     <h1>Estatísticas da Turma</h1> <!-- Título da seção de estatísticas -->
     <div class="Fluxograma">      
-          <div id="chart_div"></div>     
+          <!--<div id="chart_div"></div> -->
+          <div id="chartDiv" style="max-width: 740px;height: 400px;margin: 0px auto"></div>
     </div>
     <div class="linksTurms" id="alunos"> <!-- Div para links relacionados -->
-      <button type="button" class="btn btn-outline-dark">aluno 1</button>
+      <button type="button" onclick="atualizar()"  class="btn btn-outline-dark">aluno 1</button>
       <button type="button" class="btn btn-outline-dark">aluno2</button>
       <button type="button" class="btn btn-outline-dark">aluno3</button>
       <button type="button" class="btn btn-outline-dark">aluno4</button>
@@ -65,7 +71,7 @@
       <!-- Botão que redireciona para a página anterior -->
     </div>
   </div>
-
+<script src="js/criarchart.js"></script>
 </body>
 
 </html>
