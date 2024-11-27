@@ -28,9 +28,9 @@ jump cap1
 label pessimismo:
     show bg vilarica
     show filipe at left
-    npc "Não faço ideia, mas isso nos atrapalhará muito, com o que nos vai restar não vou conseguir sustentar minha família" 
+    morador "Não faço ideia, mas isso nos atrapalhará muito, com o que nos vai restar não vou conseguir sustentar minha família" 
     filipe "Podemos conversar com mais trabalhadores e mercantes, ver o que acham e quem sabe juntamos força"
-    npc "Vamos fazer isso, mas acho difícil que aceitem, a coroa é muito rígida e poderosa, somos só trabalhadores. penso que é perca de tempo"
+    morador "Vamos fazer isso, mas acho difícil que aceitem, a coroa é muito rígida e poderosa, somos só trabalhadores. penso que é perca de tempo"
     hide minerador with dissolve
     hide filipe with dissolve
     scene bg vilarica
@@ -41,15 +41,15 @@ label cap1:
     
     "Você se junta a uma reunião secreta. O ambiente é carregado de descontentamento."
     show filipe at center
-    show npc2 default at left
+    show cidadao default at left
     show comerciante default at right
     filipe "Precisamos nos unir contra essa opressão! Não podemos mais aceitar a imposição das casas de fundição."
     filipe "Todo o ouro que pegamos em pepitas seremos obrigados a levar nas casas de fundição, onde os agentes da coroa derretem o ouro e transformam em barras."
     filipe "Porém a cada 5 barras de ouro 1 fica com a coroa e todas essas barras tem um selo que mostra que passaram pelas casas, só assim conseguimos comercializa-las."
     filipe "Precisamos ocupar toda vila rica"
 
-    npc2 "Além de pegarem uma grande parte do nosso ouro, os agentes da coroa ainda agem de má fé, tentando de alguma maneira roubar nosso ouro"
-    npc2 "eles fazem chantagem e ameaças, sem falar de quando roubam a força."
+    cidadao "Além de pegarem uma grande parte do nosso ouro, os agentes da coroa ainda agem de má fé, tentando de alguma maneira roubar nosso ouro"
+    cidadao "eles fazem chantagem e ameaças, sem falar de quando roubam a força."
 
     comerciante "O que podemos fazer? A coroa nos controla e tem olhos em todo lugar."
 
@@ -69,11 +69,11 @@ label cap1:
             jump estrategia
 
 label aumentamoral (count=2):
-    npc2 "concordo, vamos tentar isso"
+    cidadao "concordo, vamos tentar isso"
     scene bg reuniao
     show filipe at right with dissolve
     show comerciante default at center with dissolve
-    show npc default at left with dissolve
+    show morador default at left with dissolve
 
     filipe "Vamos tentar utilizar o santinho do pau oco"
     filipe "Vocês vão passar com esses santinhos pelos guardas e tentar salvar o máximo de ouro sem passar pelas casas de fundição que serão construídas, veremos se vai dar certo esse plano"
@@ -82,22 +82,22 @@ label aumentamoral (count=2):
 
     "os dois comerciantes juntam suas mercadorias e vão para a cidade tentar comercializar mas encontram uma inspeção feita pelos agentes da coroa."
     hide comerciante with moveoutleft
-    hide npc with moveoutleft
+    hide morador with moveoutleft
     scene aumentamoral
 
     scene bg carroça
     show comerciante default at center with moveinright #happy
-    show npc default at right with moveinright
+    show morador default at right with moveinright
     show agente1 at left
     agente1 "Muito bem, o que vocês tem aqui ?"
 
     show comerciante at center #sad
-    show npc at right #sad
+    show morador at right #sad
 
     agente1 "Algumas mercadorias, comidas, santinhos"
     agente1 "Parece haver algo dentro desses santinhos, o que é isso?"
     "O Agente quebra um santinho e pepitas de ouro são espalhadas pelo chão"
-    show agente1 #santinho
+    show agente1 santinho
     #o personagem agente1 com um santinho na mão
     agente1 "Pensaram que iam nos enganar? hahahahaha"
 
@@ -115,12 +115,12 @@ label tentardialogar:
 
     #imagem de uma carroça com itens dentro
     agente1 "Não quero saber, vocês vão pagar por isso e ainda vamos ficar com todo esse ouro para nós"
-    show agente1 #saco
+    show agente1 saco
     show comerciante #algema
-    show npc #algema
+    show morador #algema
     agente1 "Vou leva-los para a prisão"
     hide comerciante with moveoutleft
-    hide npc with moveoutleft
+    hide morador with moveoutleft
 
     scene tentardialogar
 
@@ -137,7 +137,7 @@ jump cap2final
 
 label atacar:
     show comerciante faca at center
-    show npc faca at right
+    show morador faca at right
     show agente1 at left
     scene atacar
 
@@ -172,8 +172,8 @@ label aumentaforça:
     filipe "Vamos lutar contra o monopólio do comercio"
     filipe "E também vamos lutar contra as casas de fundição que o governo quer construir"
 
-    Cidadã "Mas como vamos lutar contra as casas de fundição?"
-    Cidadã "São muitos agentes da coroa que protegem a construção delas"
+    cidada "Mas como vamos lutar contra as casas de fundição?"
+    cidada "São muitos agentes da coroa que protegem a construção delas"
 
     filipe "Com a nossa força unida, nada vai nos deter, nem mesmo eles"
     filipe "Quem está comigo?"
@@ -185,25 +185,25 @@ jump cap2
 label estrategia:
     scene bg carroça
     show filipe happy at left
-    show npc2 default at center
+    show cidadao default at center
     filipe "Você segue com o plano enquanto eu e os outros vamos tentar recrutar mais apoiadores para nosso plano"
     hide filipe
-    hide npc2 with moveoutleft
+    hide cidadao with moveoutleft
     #Ilustração de uma carroça no fundo com algumas coisas e ouro em cima, os dois comerciantes indo em direção a uma inspeção feita pelos agentes
     
     show agente1 at left
-    show npc2 default at center with moveinright
+    show cidadao default at center with moveinright
     agente1 "Parado aí, o que temos ai?"
-    npc2 "Tenho mercadoria para comercializar e ouro tambem"
+    cidadao "Tenho mercadoria para comercializar e ouro tambem"
     agente1 "Esse ouro você vai levar a casa de fundição que está sendo construída, deixe la que será anotado e quando terminar a construção, seu ouro será derretido e carimbado, devolveremos ele a você"
     agente1 "Subindo a rua você verá a construção a frente"
-    npc2 "Certo, vamos lá."
+    cidadao "Certo, vamos lá."
 
-    hide npc2 with moveoutleft
+    hide cidadao with moveoutleft
     scene estrategia
 
-    show bg construção 
-    show npc2 default at center with moveinright
+    show bg casafundição 
+    show cidadao default at center with moveinright
     show agente1 at left
     agente2 "Aqui vocês deixam o seu ouro, quando a casa estiver pronta, derreteremos, faremos barras e marcaremos seu ouro. Depois disso poderá comercializá-lo"
     #sons de trocas de itens
@@ -220,9 +220,9 @@ label estrategia:
 
     scene bg vilarica
     show filipe happy at right
-    show npc2 default at center
+    show cidadao default at center
     filipe "Você voltou, como foi?"
-    npc2 "Eu vi tudo, a localização e a quantidade de agentes lá. São bastante agentes, mas com todo o pessoal que estamos vendo que juntaram, vamos conseguir se formos espertos"
+    cidadao "Eu vi tudo, a localização e a quantidade de agentes lá. São bastante agentes, mas com todo o pessoal que estamos vendo que juntaram, vamos conseguir se formos espertos"
     scene estrategia
 jump cap2
 
@@ -231,7 +231,7 @@ label cap2final:
     #sons de multidão andando
     "Você se reune aos revoltosos para atacar a construção da casa de fundição, que decidirão uma estratégia para o ataque"
 
-    show bg construcão
+    show bg casafundição
     show filipe at right #angry
     filipe "Agora é a nossa hora! Vamos lutar por nossa liberdade!"
     filipe "Vamos atacar e ocupar vila rica"
@@ -288,11 +288,11 @@ label estrategiaeficaz:
 
     hide show bg grupos
     hide filipe
-    show show bg casa
+    show show bg casafundição
     ###imagem de uma construção da casa de fundição######
     show filipe
 
-    "O grupo de Filipe se esconde atrás de uma grande casa"
+    "O grupo de Filipe se prepara para o ataque"
 
     filipe "Ataquem"
     scene estrategiaeficaz
@@ -311,11 +311,11 @@ label estrategiaeficaz:
     filipe "Vamos ajudar o outro grupo, depois recolhemos recursos que nos ajudarão, tratamos os feridos e pegamos os corpos da nossa gente"
 
     scene show bg vitoria
-    show npc default at right
+    show morador default at right
     show filipe happy at left
     "Eles chegam a outra casa de fundição e encontram o outro grupo. Eles também derrotaram os agentes da coroa"
 
-    npc "CONSEGUIMOS, VILA RICA AGORA É NOSSAAA!"
+    morador "CONSEGUIMOS, VILA RICA AGORA É NOSSAAA!"
     filipe "Agora teremos de ir até a sede do governo e falar diretamente com o Conde de Assumar"
 jump cap3estrategiaeficaz
 
@@ -354,10 +354,10 @@ label ataque:
     #corpos dos participantes da revolta no chão, inclusive o de FIlipe dos Santos
     "Ao final da batalha todos os participantes da revolta forem mortos, inclusive Filipe dos Santos"
 
-    show npc sad at center
-    npc "Todos morreram, vou fugir, nossa revolta foi um fracasso"
+    show morador sad at center
+    morador "Todos morreram, vou fugir, nossa revolta foi um fracasso"
     "A revolta acaba com quase todos os participantes mortos, e toda a luta foi em vão"
-    "A casa de fundição foi construída e o governo manteve os altos impostos e agora rígida vigilância nos cidadãos"
+    "A casa de fundição foi construída e o governo manteve os altos impostos e agora rígida vigilância nos cidadaos"
 jump final
 
 label entregartudo:
@@ -446,7 +446,7 @@ label cap4alternativacap3:
 
     conde "O que vieram fazer aqui depois daquela tentativa ridícula de ataque a casa de fundição?"
     filipe "Viemos conversar com o senhor, estamos aqui para pedir a diminuição dos impostos, o alívio no do monopólio, deixando que os produtos sejam comercializados por algumas outras empresas, e contra a construção da casa de fundição"
-    filipe "Isso vem atrapalhando muito a vida dos cidadãos e pedimos que o senhor nos ajude"
+    filipe "Isso vem atrapalhando muito a vida dos cidadaos e pedimos que o senhor nos ajude"
 
     conde "HAHAHAHA, vocês depois de tudo isso vem até aqui pedir tudo isso e esperam que eu vá ajudá-los?"
     conde "Guardas, prendam todos eles"   
@@ -479,8 +479,8 @@ label cap4ficaralerta:
     #imagem de vila rica com o sol nascendo
     #sons de cavalo no fundo
 
-    show npc2 faca at right
-    #imagem de um npc com uma faca na mão
+    show cidadao faca at right
+    #imagem de um morador com uma faca na mão
     show agente1 at center with moveinleft
     show agente2 at left with moveinleft
     "Os que ficaram alertas tentam combater as tropas de soldados, mas eles estão em menor número e a batalha dura pouco tempo"
@@ -520,10 +520,10 @@ label cap4aumentarmoral:
     "Todos em Vila rica comemoram muito. Filipe dos Santos é tratado como herói e ovacionado"
     #sons de gritos ao fundo
     show filipe happy at left
-    show Cidadã happy at center
+    show cidada happy at center
 
 
-    Cidadã "Você conseguiu, vamos ter nossos direitos e conseguir viver melhor graças a você Filipe"
+    cidada "Você conseguiu, vamos ter nossos direitos e conseguir viver melhor graças a você Filipe"
     filipe "Foi graça a todos nós que lutamos e fomos reivindicar nosso direito. Todos somos heróis e heroinas"
     filipe "Agora nossos trabalhos serão muito mais valorizados"
     scene cap4aumentarmoral
@@ -560,7 +560,7 @@ label cap4aumentarmoral:
     "Filipe é morto e deixado no meio de vila rica para exemplo aos demais"
     "A revolta de Filipe dos Santos não alcançou seus objetivos e foi facilmente enganada e derrotada. A coroa portuguesa intensificou sua fiscalização."
 
-    "E assim, a capitania de Minas Gerais foi criada para aumentar o controle sobre a região das minas, a revolta mesmo sendo um grande ato de coragem dos cidadãos de Vila rica, foi um fracasso, mas foi um grande marco na história do Brasil"
+    "E assim, a capitania de Minas Gerais foi criada para aumentar o controle sobre a região das minas, a revolta mesmo sendo um grande ato de coragem dos cidadaos de Vila rica, foi um fracasso, mas foi um grande marco na história do Brasil"
     menu:
         "O que podemos aprender com isso?":
             $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,17)
