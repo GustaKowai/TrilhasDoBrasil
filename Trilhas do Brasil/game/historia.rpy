@@ -40,9 +40,9 @@ label cap1:
     #imagem de uma sala escura com a silhueta de pessoas nela
     
     "Você se junta a uma reunião secreta. O ambiente é carregado de descontentamento."
-    show filipe at center
-    show cidadao default at left
-    show comerciante default at right
+    show filipe at center with dissolve
+    show cidadao default at left with dissolve
+    show comerciante default at right with dissolve
     filipe "Precisamos nos unir contra essa opressão! Não podemos mais aceitar a imposição das casas de fundição."
     filipe "Todo o ouro que pegamos em pepitas seremos obrigados a levar nas casas de fundição, onde os agentes da coroa derretem o ouro e transformam em barras."
     filipe "Porém a cada 5 barras de ouro 1 fica com a coroa e todas essas barras tem um selo que mostra que passaram pelas casas, só assim conseguimos comercializa-las."
@@ -143,11 +143,13 @@ label atacar:
     scene atacar
 
     scene bg telaescura
+    play sound "audio/sons de lutas.mp3"
     "..."
     #sons de lutas
 
     scene bg comerciantesmortos
     ####### dois corpos no chão mortos e a carroça no fundo
+    stop sound
     show agente1 at left
     agente1 "Patético"
     pause 1.0
@@ -164,7 +166,8 @@ jump cap2
 label aumentaforça:
     show bg discurso
     ######imagem de pessoas reunidas para ouvir um discurso
-    show filipe happy at center
+    show filipe at center
+    play sound "audio/sons de murmurios.MP3"
     filipe "Companheiros! Hoje estamos aqui, não apenas como mineradores, mas como homens e mulheres dignos que lutam pela nossa liberdade e pelos direitos que nos foram negados!"
     filipe "Estamos sendo oprimidos, sufocados por impostos que não podemos pagar, enquanto nossas riquezas escorrem para os cofres da Coroa. É hora de nos levantarmos contra essa injustiça!"
     filipe "Unidos, somos mais fortes! Se cada um de nós se erguer, se cada um de nós clamar por nossa autonomia, não haverá poder que possa nos deter!"
@@ -172,7 +175,7 @@ label aumentaforça:
     "JUSTIÇAAA"
     filipe "Vamos lutar contra o monopólio do comercio"
     filipe "E também vamos lutar contra as casas de fundição que o governo quer construir"
-
+    stop sound
     cidada "Mas como vamos lutar contra as casas de fundição?"
     cidada "São muitos agentes da coroa que protegem a construção delas"
 
@@ -208,18 +211,19 @@ label estrategia:
     show agente1 at left
     agente2 "Aqui vocês deixam o seu ouro, quando a casa estiver pronta, derreteremos, faremos barras e marcaremos seu ouro. Depois disso poderá comercializá-lo"
     #sons de trocas de itens
-
-    show agente1 #saco
+    show agente1 saco
     ###imagem do agente com um saco na mão#############
     "O comerciante entrega o ouro, observando muito bem todos os agentes posicionadoe e armados, consegue ver tudo e juntar informações para passar ao outros"
-    pause 1.0
+    pause 2.0
 
     scene construção
     show bg telaescura
     #sons de cavalo e rodas
-    pause 1.0
+    play sound "audio/sons de Cavalo e rodas.MP3"
+    pause 2.0
 
     scene bg vilarica
+    stop sound
     show filipe at right
     show cidadao default at center
     filipe "Você voltou, como foi?"
@@ -229,9 +233,9 @@ jump cap2
 
 label cap2final:
     show bg telaescura
-    play sound ""
+    play sound "audio/sons de marcha.MP3"
     #sons de multidão andando
-    "Você se reune aos revoltosos para atacar a construção da casa de fundição, que decidirão uma estratégia para o ataque"
+    "Você e a população se reunem para atacar a construção da casa de fundição, que decidirão uma estratégia para o ataque"
 
     show bg casafundição
     show filipe at right #angry
@@ -247,19 +251,23 @@ label cap2final:
     agente2 "Que ridículo, prendam todos eles"
 
     #Sons de tristezas, gritos de socorro e cordas amarrando
+    play sound "audio/sons de tristezas, gritos de socorro e cordas amarrando.MP3"
 
     filipe "Mas como? Como descobriram do nosso plano?"
     agente2 "HAHAHA, foi fácil. Nem precisamos usar muita força contra seus amigos comerciantes que eles já soltaram tudo"
     agente2 "entregaram vocês e toda essa revolta ridícula"
     filipe "Traidores"
     agente2 "prendam todos eles"
+    stop sound
 
+    play sound "audio/sons de algemas.mp3"
     #sons de algemas
     scene cap2final
     show bg telaescura
     "Filipe e os outros foram capturados e levados. A revolta foi traída e não pode continuar, chegando assim ao fim da história."
     "Os abusos com impostos continuaram e o povo seguiu sofrendo com isso"
     pause 2.0
+    stop sound
 jump final
 
 label cap2:
@@ -283,7 +291,7 @@ label cap2:
 label estrategiaeficaz:
     scene bg grupos
     #####imagem de dois grupos divididos para atacarem######
-    "Eles se dividem em dois grupos e tentam impedir que as casas de fundição de vila rica sejam construídas, mas agentes da coroa estão no local"
+    "Ao amanhecer eles se dividem em dois grupos e tentam impedir que as casas de fundição de vila rica sejam construídas, mas agentes da coroa estão no local"
     show filipe at left
     filipe "Vou com esse grupo e atacar os agentes e impedir a construção, o outro grupo atacaram o grupo de agentes que fica a leste da casa de fundição"
     filipe"Boa sorte a todos"
@@ -297,21 +305,23 @@ label estrategiaeficaz:
     scene estrategiaeficaz
 
     show bg telaescura
+    play sound "audio/sons de espadas, flechas e gritos.MP3"
     #sons de espadas, flechas e gritos
-    pause 1.0
-    hide show bg telaescura
+    pause 5.0
 
     scene bg vitoria
+    stop sound
     ####imagens de agentes mortos e pessoas da revolta de pé
     show filipe at center
     "Filipe e alguns revoltos de pé e todos os agentes da coroa mortos"
 
     filipe "CONSEGUIMOS!"
     filipe "Vamos ajudar o outro grupo, depois recolhemos recursos que nos ajudarão, tratamos os feridos e pegamos os corpos da nossa gente"
+    pause 2.0   
 
     scene bg vitoria
     show morador default at right
-    show filipe at left
+    show filipe at left with dissolve
     "Eles chegam a outra casa de fundição e encontram o outro grupo. Eles também derrotaram os agentes da coroa"
 
     morador "CONSEGUIMOS, VILA RICA AGORA É NOSSAAA!"
@@ -325,8 +335,10 @@ label aumentarisco:
     show filipe at left
     filipe "Vamos todos juntos atacar a casa de fundição, em maior número conquistaremos fácil todo o território"
     #sons de murmurios
+    play sound "audio/sons de murmurios.MP3"
     "Todos os revoltados vão juntos a casa de fundição a oeste, porém alguns agentes avistam toda essa multidão gigante furiosa se movendo e comunicam mais agentes"
     pause 1.0
+    stop sound
     scene bg agentes
     #####imagem de varios agentes da coroa no fundo#####
     "Quando Filipe e os revoltados chegam na casa de fundição encontram muitos agentes posicionados"
@@ -348,11 +360,14 @@ label aumentarisco:
 
 label ataque:
     scene bg telaescura
-    pause 1.0
+    play sound "audio/sons de gritos e batalha.mp3"
+    pause 5.0
     #sons de gritos e batalha
     scene bg todosmortos
     #corpos dos participantes da revolta no chão, inclusive o de FIlipe dos Santos
     "Ao final da batalha todos os participantes da revolta forem mortos, inclusive Filipe dos Santos"
+    pause 3.0
+    stop sound
 
     show morador default at center
     morador "Todos morreram, vou fugir, nossa revolta foi um fracasso"
@@ -365,7 +380,10 @@ label entregartudo:
     show bg agentes
     show filipe at center #sad
     filipe "Nós nos rendemos, vocês nos pegaram"
+    show filipe preso at center
+    pause 2.0
     scene bg telaescura
+    play sound "audio/sons de algemas.mp3"
     #sons de algemas
     "Todos os participantes da revolta são levados e presos"
     "Fillipe dos santos, como o líder da revolta, é executado como uma forma de exemplo que a coroa passa a quem se opor a ela"
@@ -374,6 +392,7 @@ jump final
 
 label alternativa:
     scene bg fuga
+    play sound "audio/sons de corridas e gritos de medo.MP3"
     #####pessoas correndo no fundo######
     show filipe at center #angry
     filipe "VAMOS NOS REUNIR NOVAMENTE E BUSCAR OUTRA SOLUÇÃO"
@@ -387,13 +406,13 @@ label cap3estrategiaeficaz:
     scene bg marcha
     #imagem da revolta marchando
     #sons de marcha e murmurio
-
+    play sound "audio/sons de marcha.MP3"
     "A marcha avança para a sede do governo. O clima é tenso, mas esperançoso"
     show filipe at left 
     filipe "Vamos até o governador! Exigiremos o fim das casas de fundição"
     filipe "Exigiremos nossos direitos"
     hide filipe with moveinleft
-    
+    stop sound
     show bg rescinto
     #imagem de uma casa grande e luxuosa onde fica o governador, com pessoas da revolta em frente
 
@@ -407,10 +426,13 @@ label cap3estrategiaeficaz:
     conde "Eu entendo todo esse alvoroço com os impostos e as casas de fundição. Estamos analisando e vamos atender o pedido do povo"
     conde "Prometo, as casas de fundição não serão instaladas e o comércio será livre de impostos!"
     #sons de comemoração
+    play sound "audio/sons de comemoração.mp3"
     "O conde vendo que o povo agora comemora com o discurso, volta para seus aposentos"
     hide conde with moveoutleft
 
     filipe "Vamos voltar para Vila rica, parece que nossa revolta deu certo"
+    pause 2.0
+    stop sound
     menu:
         "Devemos desconfiar e nos preparar.":
             $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,13)
@@ -421,6 +443,7 @@ label cap3estrategiaeficaz:
             jump cap4aumentarmoral
 
 label cap3alternativa:
+    stop sound
     scene bg casafazenda
     ####imagem de uma casa isolada com pessoas no fundo
     show filipe at left #sad
@@ -451,15 +474,19 @@ label cap4alternativacap3:
 
     conde "HAHAHAHA, vocês depois de tudo isso vem até aqui pedir tudo isso e esperam que eu vá ajudá-los?"
     conde "Guardas, prendam todos eles"   
-    show agente1 at right with moveinright
+    show agente1 paraesquerda at right with moveinright
     filipe "Não, você não pode fazer isso"
     conde "HAHAHAHAHAHAHA"
     scene cap4alternativacap3
     show bg telaescura
+    play sound "sons de algemas e correria.mp3"
     #sons de algemas e correria
+    play sound "audio/sons de algemas e correria.mp3"
 
-    "Os guardas levam todos para prisão e a pedido do conde, Filipe dos Santos é executado para ficar de exemplo para todos que pensarem em se voltar contra a coroa e suas decisões."
+    "Os guardas levam todos para prisão e a pedido do conde"
+    "Filipe dos Santos é executado para ficar de exemplo para todos que pensarem em se voltar contra a coroa e suas decisões."
     pause 2.0
+    stop sound
 jump final
 
 label cap4ficaralerta:
@@ -472,19 +499,25 @@ label cap4ficaralerta:
     hide filipe 
     hide show bg vilarica
     show bg telaescura
-    
+    play sound "audio/sons de comemoração.mp3"
     #sons de comemorações
     "Toda a população de vila rica passa a noite comemorando e festejando o sucesso da revolta, mas alguns ainda ficam de guarda levantada e de olho em tudo"
     hide show bg telaescura
+    stop sound
+    "mas ao amãnhecer..."
+    play sound "audio/sons de cavalo no fundo.MP3"
+    pause 2.0
     show bg vilaricasolnascendo
     #imagem de vila rica com o sol nascendo
     #sons de cavalo no fundo
 
+    stop sound
     show cidadao faca at right
     #imagem de um morador com uma faca na mão
     show agente1 at center with moveinleft
     show agente2 at left with moveinleft
     "Os que ficaram alertas tentam combater as tropas de soldados, mas eles estão em menor número e a batalha dura pouco tempo"
+    play sound "audio/sons de gritos e espadas.mp3"
     #sons de gritos e espadas
     "Mas o grupo acaba sendo os primeiros a morrer sem conseguir nem ao menos avisar os outros"
     scene cap4ficaralerta
@@ -492,6 +525,7 @@ label cap4ficaralerta:
     show bg telaescura
     "As tropas da coroa portuguesa invadem, predem e matam todos os participantes da revolta"
     "Filipe dos Santos é preso e como era um dos líderes, é levado separado pelos agentes"
+    stop sound
     scene cap4ficaralerta
 
     show bg guardas
@@ -523,7 +557,7 @@ label cap4aumentarmoral:
     show filipe at left
     show cidada at center
 
-
+    play sound "audio/sons de comemoração.mp3"
     cidada "Você conseguiu, vamos ter nossos direitos e conseguir viver melhor graças a você Filipe"
     filipe "Foi graça a todos nós que lutamos e fomos reivindicar nosso direito. Todos somos heróis e heroinas"
     filipe "Agora nossos trabalhos serão muito mais valorizados"
@@ -532,8 +566,11 @@ label cap4aumentarmoral:
     show bg vilaricasolnascendo
     #imagem de vila rica com o sol nascendo
     "A população de Vila rica comemora a noite toda, mas ao nascer do sol..."
+    pause 5.0
+    stop sound
 
     show bg telaescura
+    play sound "audio/sons de gritos e espadas.mp3"
     #sons de gritos e espadas
 
     "Quando todos se dão conta, tropas da coroa já estão em vila rica prendendo e assassinando todos"
@@ -547,6 +584,7 @@ label cap4aumentarmoral:
     show filipe at center with moveinleft
     show agente2 at left with moveinleft
     "Filipe tenta fugir, mas é cercado por agentes que o seguram e amarram-no"
+    stop sound
     scene cap4aumentarmoral
 
     show bg guardas

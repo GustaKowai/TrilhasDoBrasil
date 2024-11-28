@@ -46,6 +46,8 @@ label fazerlogin:
     jump testesDeEscolhas
 
 label final:
+    scene bg telaescura
+    show eileen happy at center
     e "Espero que tenha se divertido."
     e "Até mais"
     

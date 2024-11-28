@@ -2,7 +2,8 @@
 init python:
     def low_beep(event, **kwargs):
         if event == "show":
-            renpy.music.play("audio/sfx/bip.ogg", channel="textSound", loop=True, relative_volume=1.5)
+            #renpy.music.play("audio/sfx/bip.ogg", channel="textSound", loop=True, relative_volume=1.5)
+            pass
         elif event == "slow_done" or event == "end":
             renpy.music.stop(channel="textSound")
 
