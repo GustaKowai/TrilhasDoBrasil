@@ -45,7 +45,8 @@ label cap1:
     show comerciante default at right with dissolve
     filipe "Precisamos nos unir contra essa opressão! Não podemos mais aceitar a imposição das casas de fundição."
     filipe "Todo o ouro que pegamos em pepitas seremos obrigados a levar nas casas de fundição, onde os agentes da coroa derretem o ouro e transformam em barras."
-    filipe "Porém a cada 5 barras de ouro 1 fica com a coroa e todas essas barras tem um selo que mostra que passaram pelas casas, só assim conseguimos comercializa-las."
+    filipe "Porém a cada cinco barras de ouro uma fica com a coroa! UM QUINTO de tudo que produzimos!" 
+    filipe "E todas essas barras tem um selo que mostra que passaram pelas casas, só assim conseguimos comercializa-las..."
     filipe "Precisamos ocupar toda vila rica"
 
     cidadao "Além de pegarem uma grande parte do nosso ouro, os agentes da coroa ainda agem de má fé, tentando de alguma maneira roubar nosso ouro"
@@ -134,7 +135,7 @@ label tentardialogar:
     show minerador happy at left
     minerador "Vamos continuar pensando, precisamos de mais recursos para o plano"
     scene tentardialogar
-jump cap2final
+    jump cap2final
 
 label atacar:
     show comerciante faca at center
@@ -161,7 +162,7 @@ label atacar:
     filipe "Nossa tentativa com o santinho do pau oco falhou, eles já estão espertos com isso. Nossos companheiros foram assassinado em tentativa de defender nosso ouro"
     filipe "Mas temos de continuar nosso plano"
     scene atacar
-jump cap2
+    jump cap2
 
 label aumentaforça:
     show bg discurso
@@ -184,7 +185,7 @@ label aumentaforça:
     "VAMOS A LUTAAA"
     "Será que vai dar certo?"
     scene aumenta força
-jump cap2
+    jump cap2
 
 label estrategia:
     scene bg carroça
@@ -229,7 +230,7 @@ label estrategia:
     filipe "Você voltou, como foi?"
     cidadao "Eu vi tudo, a localização e a quantidade de agentes lá. São bastante agentes, mas com todo o pessoal que estou vendo que juntaram, vamos conseguir se formos espertos"
     scene estrategia
-jump cap2
+    jump cap2
 
 label cap2final:
     show bg telaescura
@@ -264,11 +265,12 @@ label cap2final:
     #sons de algemas
     scene cap2final
     show bg telaescura
+    filipe "Jurei morrer pela liberdade. Cumpro minha palavra."
     "Filipe e os outros foram capturados e levados. A revolta foi traída e não pode continuar, chegando assim ao fim da história."
     "Os abusos com impostos continuaram e o povo seguiu sofrendo com isso"
     pause 2.0
     stop sound
-jump final
+    jump final1
 
 label cap2:
     show bg noite
@@ -374,7 +376,7 @@ label ataque:
     hide morador with moveoutright
     "A revolta acaba com quase todos os participantes mortos, e toda a luta foi em vão"
     "A casa de fundição foi construída e o governo manteve os altos impostos e agora rígida vigilância nos cidadaos"
-jump final
+    jump final1
 
 label entregartudo:
     show bg agentes
@@ -388,7 +390,7 @@ label entregartudo:
     "Todos os participantes da revolta são levados e presos"
     "Fillipe dos santos, como o líder da revolta, é executado como uma forma de exemplo que a coroa passa a quem se opor a ela"
     pause 2.0
-jump final
+    jump final1
 
 label alternativa:
     scene bg fuga
@@ -400,7 +402,7 @@ label alternativa:
     hide filipe with moveoutright
 
     "Alguns dos revoltos são mortos, mas a grande maioria consegue escapar e se esconder dos agentes"
-jump cap3alternativa
+    jump cap3alternativa
 
 label cap3estrategiaeficaz:
     scene bg marcha
@@ -456,7 +458,7 @@ label cap3alternativa:
     show minerador at right
     minerador "Que tal ao invés de tentarmos atacar os agentes e evitar a construção da casa, nós não vamos direto ao Conde de Assumar e falamos com ele"
     filipe "Acho nossa única chance, mas os agentes vão fazer de tudo para nos parar"
-jump cap4alternativacap3
+    jump cap4alternativacap3
 
 label cap4alternativacap3:
     scene bg telaescura
@@ -487,7 +489,7 @@ label cap4alternativacap3:
     "Filipe dos Santos é executado para ficar de exemplo para todos que pensarem em se voltar contra a coroa e suas decisões."
     pause 2.0
     stop sound
-jump final
+    jump final1
 
 label cap4ficaralerta:
     scene bg vilaricafesta
@@ -497,12 +499,12 @@ label cap4ficaralerta:
     filipe "Precisamos nos preparar. A coroa não ficará quieta. Não acho que aceitarão isso assim"
     filipe "Vamos ficar alerta para qualquer coisa e vigiar qualquer coisa estranha"
     hide filipe 
-    hide show bg vilarica
+    hide bg vilarica
     show bg telaescura
     play sound "audio/sons de comemoração.mp3"
     #sons de comemorações
     "Toda a população de vila rica passa a noite comemorando e festejando o sucesso da revolta, mas alguns ainda ficam de guarda levantada e de olho em tudo"
-    hide show bg telaescura
+    hide bg telaescura
     stop sound
     "mas ao amãnhecer..."
     play sound "audio/sons de cavalo no fundo.MP3"
@@ -544,11 +546,11 @@ label cap4ficaralerta:
     menu:
         "O que podemos aprender com isso?":
             $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,15)
-            jump moral
+            jump final3
 
         "É o fim de nossa luta.":
             $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,16)
-            jump final
+            jump final2
 
 label cap4aumentarmoral:
     scene bg vilaricafesta
@@ -566,17 +568,17 @@ label cap4aumentarmoral:
     show bg vilaricasolnascendo
     #imagem de vila rica com o sol nascendo
     "A população de Vila rica comemora a noite toda, mas ao nascer do sol..."
-    pause 5.0
+    pause 2.0
     stop sound
 
-    show bg telaescura
+    show bg telaescura with dissolve
     play sound "audio/sons de gritos e espadas.mp3"
     #sons de gritos e espadas
 
     "Quando todos se dão conta, tropas da coroa já estão em vila rica prendendo e assassinando todos"
     show bg vilaricasolnascendo
     show filipe at left
-    filipe "O que é isso, fizemos um acordo com o conde"
+    filipe "O que é isso?!{w} Fizemos um acordo com o conde"
     show agente1 at right with moveinleft
     agente1 "Vocês acharam mesmo que iam conseguir tudo isso"
     filipe "Desgraçados"
@@ -596,6 +598,7 @@ label cap4aumentarmoral:
     scene cap4aumentarmoral
 
     show bg telaescura
+    filipe "Jurei morrer pela liberdade. Cumpro minha palavra."
     "Filipe é morto e deixado no meio de vila rica para exemplo aos demais"
     "A revolta de Filipe dos Santos não alcançou seus objetivos e foi facilmente enganada e derrotada. A coroa portuguesa intensificou sua fiscalização."
 
@@ -603,14 +606,14 @@ label cap4aumentarmoral:
     menu:
         "O que podemos aprender com isso?":
             $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,17)
-            jump moral
+            jump final3
 
         "É o fim de nossa luta.":
             $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,18)
-jump final
+            jump final2
 
 label guia:   
-    show show bg minas with dissolve
+    show bg minas with dissolve
     show eileen happy with dissolve
     e "A história acontecerá aqui"
     n "O dia estava ensolarado"

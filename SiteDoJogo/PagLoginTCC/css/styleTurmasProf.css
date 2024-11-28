@@ -267,3 +267,7 @@ button#btnTurmas6:hover {
     text-decoration: underline;
     /* Adiciona sublinhado ao passar o mouse sobre o link */
 }
+
+.sair{
+    color: #fff;
+}

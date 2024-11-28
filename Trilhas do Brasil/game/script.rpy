@@ -1,4 +1,4 @@
-﻿define e = Character("Eileen", image="eileen", callback = low_beep, what_prefix='', what_suffix='')
+﻿define e = Character("...", image="eileen", callback = low_beep, what_prefix='', what_suffix='')
 define filipe = Character("Filipe dos Santos", image="filipe", callback = low_beep, what_prefix='', what_suffix='')
 define minerador = Character("Minerador", image="Minerador", callback = low_beep, what_prefix='', what_suffix='')
 define comerciante = Character("Comerciante", image="Comerciante", callback = low_beep, what_prefix='', what_suffix='')
@@ -45,14 +45,28 @@ label fazerlogin:
     jump inicioHistoria
     jump testesDeEscolhas
 
-label final:
+label final1:
     scene bg telaescura
     show eileen happy at center
-    e "Espero que tenha se divertido."
-    e "Até mais"
+    e "A revolta deu errado, mas será que você não poderia ter chegado mais longe?"
+    e "Quem sabe com escolhas diferentes?"
+    e "Espero que tenha se divertido. Até a próxima."
     
-    jump inicioHistoria
-    e "A historia acabou"
+    return
+label final2:
+    scene bg telaescura
+    show eileen happy at center
+    e "As pessoas da época não desistiram."
+    e "Essa revolta deu errado, mas as pessoas continuaram descontentes com as altas taxas da coroa."
+    e "Certeza que quer desistir?"
+    
+    return
+label final3:
+    scene bg telaescura
+    show eileen happy at center
+    e "A revolta falhou, mas os ânimos não se acalmaram"
+    e "Apesar de tudo, a independência do Brasil só foi declarada mais de 100 anos depois, em 1822."
+    e "Podemos ter perdido essa batalha, mas a guerra no final foi nossa."
     
     return
  
