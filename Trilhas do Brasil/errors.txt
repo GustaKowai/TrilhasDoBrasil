@@ -2,33 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/historia.rpy", line 289: expected 'image_name_component' not found.
-    hide show bg grupos
-        ^
+File "game/historia.rpy", line 497: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+        play sound "audio/sons de cavalo no fundo.MP3
 
-File "game/historia.rpy", line 291: expected 'image_name_component' not found.
-    show show bg casa
-        ^
-
-File "game/historia.rpy", line 303: expected 'image_name_component' not found.
-    hide show bg telaescura
-        ^
-
-File "game/historia.rpy", line 313: expected 'image_name_component' not found.
-    scene show bg vitoria
-          ^
-
-File "game/historia.rpy", line 472: expected 'image_name_component' not found.
-    hide show bg vilarica
-        ^
-
-File "game/historia.rpy", line 477: expected 'image_name_component' not found.
-    hide show bg telaescura
-        ^
-
-File "game/historia.rpy", line 574: expected 'image_name_component' not found.
-    show show bg minas with dissolve
-        ^
-
-Ren'Py Version: Ren'Py 8.2.1.24030407
-Wed Nov 27 14:24:36 2024
+Ren'Py Version: Ren'Py 8.3.3.24111502
+Wed Nov 27 21:07:39 2024
