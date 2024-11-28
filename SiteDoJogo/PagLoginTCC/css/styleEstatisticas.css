@@ -170,3 +170,7 @@ button#btnTurm1:hover, button#btnTurm2:hover, button#btnTurm3:hover {
     align-items: center;
     margin-top: 35px;
 }
+.clicado{
+    background-color: black;
+    color: #fff;
+}

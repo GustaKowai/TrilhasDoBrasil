@@ -674,7 +674,7 @@ function carregarEscolha(idAluno){
         console.log("A escolha não é definida");
       }else{
         for (elemento of tabela){
-          escolhas[elemento.idEscolhas] = "Escolha: " + elemento.ordemEscolha
+          escolhas[elemento.idEscolhas] += "Escolha: " + elemento.ordemEscolha + "<br>"
         }
       }
       console.log(escolhas);
