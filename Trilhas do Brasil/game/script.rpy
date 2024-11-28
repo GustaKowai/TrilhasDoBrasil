@@ -50,26 +50,36 @@ label final1:
     show eileen happy at center
     e "A revolta deu errado, mas será que você não poderia ter chegado mais longe?"
     e "Quem sabe com escolhas diferentes?"
-    e "Espero que tenha se divertido. Até a próxima."
-    
-    return
+    menu:
+        "gostaria de jogar de novo?"
+        "sim":
+            jump inicioHistoria
+        "Não":
+            return
 label final2:
     scene bg telaescura
     show eileen happy at center
     e "As pessoas da época não desistiram."
     e "Essa revolta deu errado, mas as pessoas continuaram descontentes com as altas taxas da coroa."
     e "Certeza que quer desistir?"
-    
-    return
+    menu:
+        "gostaria de jogar de novo?"
+        "sim":
+            jump inicioHistoria
+        "Não":
+            return
 label final3:
     scene bg telaescura
     show eileen happy at center
     e "A revolta falhou, mas os ânimos não se acalmaram"
     e "Apesar de tudo, a independência do Brasil só foi declarada mais de 100 anos depois, em 1822."
     e "Podemos ter perdido essa batalha, mas a guerra no final foi nossa."
-    
-    return
- 
+    menu:
+        "gostaria de jogar de novo?"
+        "sim":
+            jump inicioHistoria
+        "Não":
+            return
 
 #label de testes do bd
 label testesbd:

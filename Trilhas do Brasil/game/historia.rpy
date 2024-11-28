@@ -388,6 +388,7 @@ label entregartudo:
     play sound "audio/sons de algemas.mp3"
     #sons de algemas
     "Todos os participantes da revolta são levados e presos"
+    filipe "Jurei morrer pela liberdade. Cumpro minha palavra."
     "Fillipe dos santos, como o líder da revolta, é executado como uma forma de exemplo que a coroa passa a quem se opor a ela"
     pause 2.0
     jump final1
