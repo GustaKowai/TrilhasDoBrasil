@@ -14,7 +14,7 @@ function carregarAlunos(id,nome){
         console.log(this.responseText);
         tabela = JSON.parse(this.responseText);
         console.log(tabela.length);
-        document.getElementById('alunos').innerHTML +='<button type="button" class="btn btn-outline-dark">'+nome+'</button>';
+        document.getElementById('alunos').innerHTML +='<button type="button" onclick="AtualizaTurma()" class="btn btn-outline-dark">'+nome+'</button>';
         for(var i = 0; i <tabela.length; i++){
             document.getElementById('alunos').innerHTML +=
             '<button type="button" onclick="carregarEscolha('+tabela[i].idAluno+')" class="btn btn-outline-dark">'+tabela[i].nome+'</button>';

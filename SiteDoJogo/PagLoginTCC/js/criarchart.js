@@ -686,3 +686,93 @@ function carregarEscolha(idAluno){
       console.log("Chegou aqui");
       console.log(dados);
 }
+
+function NumeroEscolhaTurma(idEscolhas){
+  let idGrupo = getCookie("turma");
+  dados = JSON.stringify({idGrupo: idGrupo, idEscolhas: idEscolhas});
+  console.log("NumeroEscolhaTurma"+dados)
+  xmlhttp = new XMLHttpRequest();
+  xmlhttp.onload = function(){
+      console.log(this.responseText);
+      tabela = JSON.parse(this.responseText);
+      for (elemento of tabela){
+        console.log("O número de escolhas foi de: "+elemento.Numero)
+        resposta = elemento.Numero
+        console.log("Elemento: "+ resposta)
+        document.getElementById('Escolha'+idEscolhas).value = resposta
+        document.getElementById('Escolha'+idEscolhas).innerText = resposta
+      }
+  }
+  xmlhttp.open("POST","http://localhost/carregar_escolha_turma.php");
+      xmlhttp.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
+      xmlhttp.send("dados="+dados);
+      console.log("Chegou aqui");
+      console.log(dados);
+
+}
+
+function ComparaEscolhasTurma(Opcao1,Opcao2,Opcao3,Escolha){ 
+  let escolha1 = document.getElementById('Escolha'+Opcao1).value;
+  console.log("Escolha1 = " +escolha1)
+  let escolha2 = document.getElementById('Escolha'+Opcao2).value;
+  console.log("Escolha2 = " +escolha2)
+  let escolha3 = document.getElementById('Escolha'+Opcao3).value;
+  console.log("Escolha3 = " +escolha3)
+  if (escolha1 == 0 && escolha2 == 0 && escolha3 == 0){
+    porcentEscolha1 = 0
+    porcentEscolha2 = 0
+    porcentEscolha3 = 0
+  }else{
+    total = parseInt(escolha1) + parseInt(escolha2) + parseInt(escolha3)
+    console.log(total)
+    if (total == 0){total=parseInt(1)}
+    porcentEscolha1 = 100*escolha1/total
+    porcentEscolha2 = 100*escolha2/total
+    porcentEscolha3 = 100*escolha3/total
+  }
+  if (Escolha == 1){
+    console.log("A % da escolha 1 é: "+porcentEscolha1)
+    return porcentEscolha1
+  } else if (Escolha == 2){
+    console.log("A % da escolha 2 é: "+porcentEscolha2)
+    return porcentEscolha2
+  }else{
+    console.log("A % da escolha 3 é: "+porcentEscolha3)
+    return porcentEscolha3
+  }
+}
+
+
+function AtualizaTurma(){
+  var escolha = [];
+  for (i = 0; i < 19; i++){
+    escolha[i] = "";
+    NumeroEscolhaTurma(i);
+  }
+  escolha[1] = ComparaEscolhasTurma(1,2,0,1);
+  escolha[2] = ComparaEscolhasTurma(1,2,0,2);
+  escolha[3] = ComparaEscolhasTurma(3,4,5,1);
+  escolha[4] = ComparaEscolhasTurma(3,4,5,2);
+  escolha[5] = ComparaEscolhasTurma(3,4,5,3);
+  escolha[6] = ComparaEscolhasTurma(6,7,0,1);
+  escolha[7] = ComparaEscolhasTurma(6,7,0,2);
+  escolha[8] = ComparaEscolhasTurma(8,9,0,1);
+  escolha[9] = ComparaEscolhasTurma(8,9,0,2);
+  escolha[10] = ComparaEscolhasTurma(10,11,12,1);
+  escolha[11] = ComparaEscolhasTurma(10,11,12,2);
+  escolha[12] = ComparaEscolhasTurma(10,11,12,3);
+  escolha[13] = ComparaEscolhasTurma(13,14,0,1);
+  escolha[14] = ComparaEscolhasTurma(13,14,0,2);
+  escolha[15] = ComparaEscolhasTurma(15,16,0,1);
+  escolha[16] = ComparaEscolhasTurma(15,16,0,2);
+  escolha[17] = ComparaEscolhasTurma(17,18,0,1);
+  escolha[18] = ComparaEscolhasTurma(17,18,0,2);
+  console.log("Tabela de escolhas: "+escolha)
+  atualizar(escolha)
+}
+
+function carregarBacknumber(){
+  for (i = 0; i < 19; i++){
+    NumeroEscolhaTurma(i);
+  }
+}
