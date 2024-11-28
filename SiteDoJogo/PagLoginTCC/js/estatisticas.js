@@ -17,7 +17,7 @@ function carregarAlunos(id,nome){
         document.getElementById('alunos').innerHTML +='<button type="button" class="btn btn-outline-dark">'+nome+'</button>';
         for(var i = 0; i <tabela.length; i++){
             document.getElementById('alunos').innerHTML +=
-            '<button type="button" class="btn btn-outline-dark">'+tabela[i].nome+'</button>';
+            '<button type="button" onclick="carregarEscolha('+tabela[i].idAluno+')" class="btn btn-outline-dark">'+tabela[i].nome+'</button>';
         }
     }
     xmlhttp.open("POST","http://localhost/carregar_estatisticas.php");
