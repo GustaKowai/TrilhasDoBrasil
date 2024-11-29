@@ -39,7 +39,7 @@ var chart = JSC.chart('chartDiv', {
           id: '1',
           parent: 'pr',
           attributes: {
-            desc: 'Resistência 1',
+            desc: 'Temos que fazer algo!',
             ordem: ''
           }
         },
@@ -48,7 +48,7 @@ var chart = JSC.chart('chartDiv', {
           id: '2',
           parent: 'pr',
           attributes: {
-            desc: 'Pessimismo 2',
+            desc: 'O que podemos fazer?',
             ordem: ''
           }
         },
@@ -58,34 +58,34 @@ var chart = JSC.chart('chartDiv', {
           color: 'black',
           parent: '1,2',
           attributes: {
-            desc: 'Capítulo 1',
+            desc: 'A reunião secreta',
             ordem: ''
           }
         },
         {
-          name: 'Aumenta moral',
+          name: 'Rota do santinho',
           id: '3',
           parent: 'c1',
           attributes: {
-            desc: 'Resistência 1',
+            desc: 'Optam por usar os santinhos do pau oco',
             ordem: ''
           }
         },
         {
-          name: 'Aumenta força',
+          name: 'Captar recursos',
           id: '4',
           parent: 'c1',
           attributes: {
-            desc: 'Resistência 1',
+            desc: 'Convocar mais pessoas',
             ordem: ''
           }
         },
         {
-          name: 'Estratégia',
+          name: 'Observar as casas de fundição',
           id: '5',
           parent: 'c1',
           attributes: {
-            desc: 'Resistência 1',
+            desc: 'Vocês optam pela estratégia de vigia',
             ordem: ''
           }
         },
@@ -94,7 +94,7 @@ var chart = JSC.chart('chartDiv', {
           id: '6',
           parent: '3',
           attributes: {
-            desc: 'Resistência 1',
+            desc: 'Tentar dialogar com os agentes',
             ordem: ''
           }
         },
@@ -103,7 +103,7 @@ var chart = JSC.chart('chartDiv', {
           id: '7',
           parent: '3',
           attributes: {
-            desc: 'Resistência 1',
+            desc: 'Lutar com os agentes',
             ordem: ''
           }
         },
@@ -113,7 +113,7 @@ var chart = JSC.chart('chartDiv', {
           color: 'black',
           parent: '6',
           attributes: {
-            desc: 'Versão 1 do capítulo 2',
+            desc: 'O ataque falha, vocês foram traídos',
             ordem: ''
           }
         },
@@ -123,7 +123,7 @@ var chart = JSC.chart('chartDiv', {
           color: 'red',
           parent: 'c2_v1',
           attributes: {
-            desc: 'Resistência 1',
+            desc: '',
             ordem: ''
           }
         },
@@ -133,25 +133,25 @@ var chart = JSC.chart('chartDiv', {
           color: 'black',
           parent: '7,4,5',
           attributes: {
-            desc: 'Versão 2 do capítulo 2',
+            desc: 'Ataque a casa de fundição',
             ordem: ''
           }
         },
         {
-          name: 'Estratégia eficaz',
+          name: 'Dividir em duas frentes',
           id: '8',
           parent: 'c2_v2',
           attributes: {
-            desc: 'Versão 2 do capítulo 2',
+            desc: 'Vocês tentam usar uma estratégia',
             ordem: ''
           }
         },
         {
-          name: 'Aumentar o risco',
+          name: 'Atacar com tudo',
           id: '9',
           parent: 'c2_v2',
           attributes: {
-            desc: 'Versão 2 do capítulo 2',
+            desc: 'Enfrentar a coroa com tudo',
             ordem: ''
           }
         },
@@ -161,34 +161,34 @@ var chart = JSC.chart('chartDiv', {
           color: 'black',
           parent: '8',
           attributes: {
-            desc: 'Versão 2 do capítulo 2',
+            desc: 'Exigir o fim das casas de fundição',
             ordem: ''
           }
         },
         {
-          name: 'Ataque',
+          name: 'Atacar',
           id: '10',
           parent: '9',
           attributes: {
-            desc: 'Versão 2 do capítulo 2',
+            desc: 'Lutar com os agentes da coroa',
             ordem: ''
           }
         },
         {
-          name: 'Entregar tudo',
+          name: 'Se render',
           id: '11',
           parent: '9',
           attributes: {
-            desc: 'Versão 2 do capítulo 2',
+            desc: 'Se entregar ao ver que estão em desvantagem',
             ordem: ''
           }
         },
         {
-          name: 'Alternativa',
+          name: 'Fugir',
           id: '12',
           parent: '9',
           attributes: {
-            desc: 'Versão 2 do capítulo 2',
+            desc: 'Escapar com vida para tentar de novo depois',
             ordem: ''
           }
         },
@@ -198,7 +198,7 @@ var chart = JSC.chart('chartDiv', {
           color: 'red',
           parent: '10',
           attributes: {
-            desc: 'Resistência 1',
+            desc: '',
             ordem: ''
           }
         },
@@ -208,7 +208,7 @@ var chart = JSC.chart('chartDiv', {
           color: 'red',
           parent: '11',
           attributes: {
-            desc: 'Resistência 1',
+            desc: '',
             ordem: ''
           }
         },
@@ -218,17 +218,17 @@ var chart = JSC.chart('chartDiv', {
           color: 'black',
           parent: '12',
           attributes: {
-            desc: 'Resistência 1',
+            desc: 'Tentativa de conversar com o conde',
             ordem: ''
           }
         },
         {
-          name: 'Capítulo 4',
+          name: 'Final ruim: Filipe morto',
           id: 'c4',
           color: 'red',
           parent: 'c3_v2',
           attributes: {
-            desc: 'Resistência 1',
+            desc: '',
             ordem: ''
           }
         },
@@ -237,16 +237,16 @@ var chart = JSC.chart('chartDiv', {
           id: '13',
           parent: 'c3_v1',
           attributes: {
-            desc: 'Versão 2 do capítulo 2',
+            desc: 'Ficar atento mesmo com a aceitação do Conde',
             ordem: ''
           }
         },
         {
-          name: 'Aumentar moral',
+          name: 'Comemorar',
           id: '14',
           parent: 'c3_v1',
           attributes: {
-            desc: 'Versão 2 do capítulo 2',
+            desc: 'Festejar a vitória',
             ordem: ''
           }
         },
@@ -256,17 +256,17 @@ var chart = JSC.chart('chartDiv', {
           parent: '13',
           color: 'black',
           attributes: {
-            desc: 'Versão 2 do capítulo 2',
+            desc: 'A celebração',
             ordem: ''
           }
         },
         {
-          name: 'Todos morrem, felipe preso e morto',
+          name: 'Ataque à Celebração 1',
           id: 'f4',
           parent: 'c4_v1',
           color: 'gold',
           attributes: {
-            desc: 'Versão 2 do capítulo 2',
+            desc: 'Mesmo com os revoltosos atentos, a retaliação da coroa foi forte',
             ordem: ''
           }
         },
@@ -276,7 +276,7 @@ var chart = JSC.chart('chartDiv', {
           parent: 'f4',
           color: 'gold',
           attributes: {
-            desc: 'Versão 2 do capítulo 2',
+            desc: '',
             ordem: ''
           }
         },
@@ -286,17 +286,27 @@ var chart = JSC.chart('chartDiv', {
           parent: 'f4',
           color: 'gold',
           attributes: {
-            desc: 'Versão 2 do capítulo 2',
+            desc: '',
             ordem: ''
           }
         },
         {
-          name: 'Celebração',
-          id: 'celeb',
+          name: 'Capítulo 4',
+          id: 'c4_v2',
           parent: '14',
+          color: 'black',
+          attributes: {
+            desc: 'A celebração',
+            ordem: ''
+          }
+        },
+        {
+          name: 'Ataque à Celebração 2',
+          id: 'celeb',
+          parent: 'c4_v2',
           color: 'gold',
           attributes: {
-            desc: 'Versão 2 do capítulo 2',
+            desc: 'Após a festa, a coroa ataca os revoltosos',
             ordem: ''
           }
         },
@@ -363,7 +373,7 @@ function atualizar(escolhas) {
         id: '1',
         parent: 'pr',
         attributes: {
-          desc: 'Resistência 1',
+          desc: 'Temos que fazer algo!',
           ordem: escolhas[1]
         }
       },
@@ -372,7 +382,7 @@ function atualizar(escolhas) {
         id: '2',
         parent: 'pr',
         attributes: {
-          desc: 'Pessimismo 2',
+          desc: 'O que podemos fazer?',
           ordem: escolhas[2]
         }
       },
@@ -382,34 +392,34 @@ function atualizar(escolhas) {
         color: 'black',
         parent: '1,2',
         attributes: {
-          desc: 'Capítulo 1',
+          desc: 'A reunião secreta',
           ordem: ''
         }
       },
       {
-        name: 'Aumenta moral',
+        name: 'Rota do santinho',
         id: '3',
         parent: 'c1',
         attributes: {
-          desc: 'Resistência 1',
+          desc: 'Optam por usar os santinhos do pau oco',
           ordem: escolhas[3]
         }
       },
       {
-        name: 'Aumenta força',
+        name: 'Captar recursos',
         id: '4',
         parent: 'c1',
         attributes: {
-          desc: 'Resistência 1',
+          desc: 'Convocar mais pessoas',
           ordem: escolhas[4]
         }
       },
       {
-        name: 'Estratégia',
+        name: 'Observar as casas de fundição',
         id: '5',
         parent: 'c1',
         attributes: {
-          desc: 'Resistência 1',
+          desc: 'Vocês optam pela estratégia de vigia',
           ordem: escolhas[5]
         }
       },
@@ -418,7 +428,7 @@ function atualizar(escolhas) {
         id: '6',
         parent: '3',
         attributes: {
-          desc: 'Resistência 1',
+          desc: 'Lutar com os agentes',
           ordem: escolhas[6]
         }
       },
@@ -437,7 +447,7 @@ function atualizar(escolhas) {
         color: 'black',
         parent: '6',
         attributes: {
-          desc: 'Versão 1 do capítulo 2',
+          desc: 'O ataque falha, vocês foram traídos',
           ordem: ''
         }
       },
@@ -447,7 +457,7 @@ function atualizar(escolhas) {
         color: 'red',
         parent: 'c2_v1',
         attributes: {
-          desc: 'Resistência 1',
+          desc: '',
           ordem: ''
         }
       },
@@ -457,25 +467,25 @@ function atualizar(escolhas) {
         color: 'black',
         parent: '7,4,5',
         attributes: {
-          desc: 'Versão 2 do capítulo 2',
+          desc: 'Ataque a casa de fundição',
           ordem: ''
         }
       },
       {
-        name: 'Estratégia eficaz',
+        name: 'Dividir em duas frentes',
         id: '8',
         parent: 'c2_v2',
         attributes: {
-          desc: 'Versão 2 do capítulo 2',
+          desc: 'Vocês tentam usar uma estratégia',
           ordem: escolhas[8]
         }
       },
       {
-        name: 'Aumentar o risco',
+        name: 'Atacar com tudo',
         id: '9',
         parent: 'c2_v2',
         attributes: {
-          desc: 'Versão 2 do capítulo 2',
+          desc: 'Enfrentar a coroa com tudo',
           ordem: escolhas[9]
         }
       },
@@ -485,16 +495,16 @@ function atualizar(escolhas) {
         color: 'black',
         parent: '8',
         attributes: {
-          desc: 'Versão 2 do capítulo 2',
+          desc: 'Exigir o fim das casas de fundição',
           ordem: ''
         }
       },
       {
-        name: 'Ataque',
+        name: 'Atacar',
         id: '10',
         parent: '9',
         attributes: {
-          desc: 'Versão 2 do capítulo 2',
+          desc: 'Lutar com os agentes da coroa',
           ordem: escolhas[10]
         }
       },
@@ -503,16 +513,16 @@ function atualizar(escolhas) {
         id: '11',
         parent: '9',
         attributes: {
-          desc: 'Versão 2 do capítulo 2',
+          desc: 'Se entregar ao ver que estão em desvantagem',
           ordem: escolhas[11]
         }
       },
       {
-        name: 'Alternativa',
+        name: 'Fugir',
         id: '12',
         parent: '9',
         attributes: {
-          desc: 'Versão 2 do capítulo 2',
+          desc: 'Escapar com vida para tentar de novo depois',
           ordem: escolhas[12]
         }
       },
@@ -522,7 +532,7 @@ function atualizar(escolhas) {
         color: 'red',
         parent: '10',
         attributes: {
-          desc: 'Resistência 1',
+          desc: '',
           ordem: ''
         }
       },
@@ -532,7 +542,7 @@ function atualizar(escolhas) {
         color: 'red',
         parent: '11',
         attributes: {
-          desc: 'Resistência 1',
+          desc: '',
           ordem: ''
         }
       },
@@ -542,17 +552,17 @@ function atualizar(escolhas) {
         color: 'black',
         parent: '12',
         attributes: {
-          desc: 'Resistência 1',
+          desc: 'Tentativa de conversar com o Conde',
           ordem: ''
         }
       },
       {
-        name: 'Capítulo 4',
+        name: 'Final ruim: Filipe morto',
         id: 'c4',
         color: 'red',
         parent: 'c3_v2',
         attributes: {
-          desc: 'Resistência 1',
+          desc: '',
           ordem: ''
         }
       },
@@ -561,16 +571,16 @@ function atualizar(escolhas) {
         id: '13',
         parent: 'c3_v1',
         attributes: {
-          desc: 'Versão 2 do capítulo 2',
+          desc: 'Ficar atento mesmo com a aceitação do Conde',
           ordem: escolhas[13]
         }
       },
       {
-        name: 'Aumentar moral',
+        name: 'Comemorar',
         id: '14',
         parent: 'c3_v1',
         attributes: {
-          desc: 'Versão 2 do capítulo 2',
+          desc: 'Festejar a vitória',
           ordem: escolhas[14]
         }
       },
@@ -580,17 +590,17 @@ function atualizar(escolhas) {
         parent: '13',
         color: 'black',
         attributes: {
-          desc: 'Versão 2 do capítulo 2',
+          desc: 'A celebração',
           ordem: ''
         }
       },
       {
-        name: 'Todos morrem, felipe preso e morto',
+        name: 'Ataque à Celebração 1',
         id: 'f4',
         parent: 'c4_v1',
         color: 'gold',
         attributes: {
-          desc: 'Versão 2 do capítulo 2',
+          desc: 'Mesmo com os revoltosos atentos, a retaliação da coroa foi forte',
           ordem: ''
         }
       },
@@ -600,7 +610,7 @@ function atualizar(escolhas) {
         parent: 'f4',
         color: 'gold',
         attributes: {
-          desc: 'Versão 2 do capítulo 2',
+          desc: '',
           ordem: escolhas[15]
         }
       },
@@ -610,17 +620,27 @@ function atualizar(escolhas) {
         parent: 'f4',
         color: 'gold',
         attributes: {
-          desc: 'Versão 2 do capítulo 2',
+          desc: '',
           ordem: escolhas[16]
         }
       },
       {
-        name: 'Celebração',
-        id: 'celeb',
+        name: 'Capítulo 4',
+        id: 'c4_v2',
         parent: '14',
+        color: 'black',
+        attributes: {
+          desc: 'A celebração',
+          ordem: ''
+        }
+      },
+      {
+        name: 'Ataque à Celebração',
+        id: 'celeb',
+        parent: 'c4_v2',
         color: 'gold',
         attributes: {
-          desc: 'Versão 2 do capítulo 2',
+          desc: 'Após a festa, a coroa ataca os revoltosos',
           ordem: ''
         }
       },
