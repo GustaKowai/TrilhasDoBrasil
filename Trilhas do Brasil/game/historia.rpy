@@ -3,7 +3,7 @@ label inicioHistoria:
     "Você observa o movimento frenético dos mineradores nas encostas. Entre eles, está Felipe dos Santos, seu personagem principal."
 
     show filipe at left 
-    filipe "Mais um dia de trabalho que estamos terminando. Mas com essas casas de fundição que o governo está construindo, nosso trabalho será muito desvalorizado."
+    filipe "Mais um dia de trabalho que estamos terminando. Mas com essas casas de fundição que o governo está implementando, nosso trabalho será muito desvalorizado."
 
     show minerador at center with moveinright #sad
     minerador "Com os impostos exigidos pela coroa portuguesa e aqueles agentes, todo esse ouro que pegamos não valerá muito."
@@ -64,7 +64,7 @@ label cap1:
             scene cap1
             jump aumentaforça
 
-        "Podemos levar o ouro para a casa de fundição que está sendo construída, para vermos quantos agentes tem vigiado e a localização exata":
+        "Podemos levar o ouro para a casa de fundição, para vermos quantos agentes tem vigiando e a localização exata":
             $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,5)
             scene cap1
             jump estrategia
@@ -175,10 +175,10 @@ label aumentaforça:
     "ISSOO, VAMOS LUTAR POR JUSTIÇA"
     "JUSTIÇAAA"
     filipe "Vamos lutar contra o monopólio do comercio"
-    filipe "E também vamos lutar contra as casas de fundição que o governo quer construir"
+    filipe "E também vamos lutar contra as casas de fundição que o governo está implementando"
     stop sound
     cidada "Mas como vamos lutar contra as casas de fundição?"
-    cidada "São muitos agentes da coroa que protegem a construção delas"
+    cidada "São muitos agentes da coroa que protegem as casas de fundição"
 
     filipe "Com a nossa força unida, nada vai nos deter, nem mesmo eles"
     filipe "Quem está comigo?"
@@ -200,7 +200,7 @@ label estrategia:
     show cidadao default at center with moveinright
     agente1 "Parado aí, o que temos ai?"
     cidadao "Tenho mercadoria para comercializar e ouro tambem"
-    agente1 "Esse ouro você vai levar a casa de fundição que está sendo construída, deixe la que será anotado e quando terminar a construção, seu ouro será derretido e carimbado, devolveremos ele a você"
+    agente1 "Esse ouro você vai levar a casa de fundição mais a frente, deixe la que será calculado os impostos, seu ouro será derretido e carimbado, devolveremos ele a você"
     agente1 "Subindo a rua você verá a construção a frente"
     cidadao "Certo, vamos lá."
 
@@ -210,7 +210,7 @@ label estrategia:
     show bg casafundição 
     show cidadao default at center with moveinright
     show agente1 at left
-    agente2 "Aqui vocês deixam o seu ouro, quando a casa estiver pronta, derreteremos, faremos barras e marcaremos seu ouro. Depois disso poderá comercializá-lo"
+    agente2 "Aqui vocês deixam o seu ouro, derreteremos, faremos barras, marcaremos seu ouro e pegaremos os impostos. Depois disso poderá comercializá-lo"
     #sons de trocas de itens
     show agente1 saco
     ###imagem do agente com um saco na mão#############
@@ -236,7 +236,7 @@ label cap2final:
     show bg telaescura
     play sound "audio/sons de marcha.MP3"
     #sons de multidão andando
-    "Você e a população se reunem para atacar a construção da casa de fundição, que decidirão uma estratégia para o ataque"
+    "Você e a população se reunem para atacar a casa de fundição, mas tambem decidirão uma estratégia para o ataque"
 
     show bg casafundição
     show filipe at right #angry
@@ -256,9 +256,9 @@ label cap2final:
 
     filipe "Mas como? Como descobriram do nosso plano?"
     agente2 "HAHAHA, foi fácil. Nem precisamos usar muita força contra seus amigos comerciantes que eles já soltaram tudo"
-    agente2 "entregaram vocês e toda essa revolta ridícula"
+    agente2 "Entregaram vocês e toda essa revolta ridícula"
     filipe "Traidores"
-    agente2 "prendam todos eles"
+    agente2 "Prendam todos eles"
     stop sound
 
     play sound "audio/sons de algemas.mp3"
@@ -275,7 +275,7 @@ label cap2final:
 label cap2:
     show bg noite
     ###### imagem de pessoas juntas, casas no fundo na noite
-    "Você se junta aos revoltosos para atacar a construção da casa de fundição."
+    "Você se junta aos revoltosos para atacar a casa de fundição."
     show filipe at left #happy
     
     filipe "Agora é a nossa hora! Vamos lutar por nossa liberdade"
@@ -293,9 +293,9 @@ label cap2:
 label estrategiaeficaz:
     scene bg grupos
     #####imagem de dois grupos divididos para atacarem######
-    "Ao amanhecer eles se dividem em dois grupos e tentam impedir que as casas de fundição de vila rica sejam construídas, mas agentes da coroa estão no local"
+    "Ao amanhecer eles se dividem em dois grupos e tentam impedir que as casas de fundição de vila rica continuem operando, mas agentes da coroa estão no local"
     show filipe at left
-    filipe "Vou com esse grupo e atacar os agentes e impedir a construção, o outro grupo atacaram o grupo de agentes que fica a leste da casa de fundição"
+    filipe "Vou com esse grupo e atacar os agentes e impedir a continuação dessa casa, o outro restante ataquem o grupo de agentes que fica a leste da casa de fundição"
     filipe"Boa sorte a todos"
 
     scene bg casafundição
@@ -351,7 +351,7 @@ label aumentarisco:
             $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,10)
             jump ataque
 
-        "Se render":
+        "Se render, eles nos encuralaram":
             $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,11)
             jump entregartudo
 
@@ -375,7 +375,7 @@ label ataque:
     morador "Todos morreram, vou fugir, nossa revolta foi um fracasso"
     hide morador with moveoutright
     "A revolta acaba com quase todos os participantes mortos, e toda a luta foi em vão"
-    "A casa de fundição foi construída e o governo manteve os altos impostos e agora rígida vigilância nos cidadaos"
+    "A casa de fundição continuou com as atividades e o governo manteve os altos impostos e agora rígida vigilância nos cidadãos"
     jump final1
 
 label entregartudo:
@@ -422,7 +422,7 @@ label cap3estrategiaeficaz:
     "A Revolta chega ao recinto aonde o conde se localiza"
     show filipe at right #angry
     show conde at left
-    filipe "Conde, estamos aqui para exigir a diminuição dos impostos, o fim do monopólio, deixando que os produtos sejam comercializados por qualquer empresa, e contra a construção da casa de fundição"
+    filipe "Conde, estamos aqui para exigir a diminuição dos impostos, o fim do monopólio, deixando que os produtos sejam comercializados por qualquer empresa, e contra as casas de fundição"
     filipe "Ocupamos vila rica e viemos direto a você fazer esse pedido"
 
     conde "Acalmem-se, acalmem-se"
@@ -457,7 +457,7 @@ label cap3alternativa:
     escravo "Acho que tentar um ataque novamente é burrice, já tentamos e falhamos. Acho melhor desistir disso e aceitar que somos comandados pelo governo"
     filipe "Não podemos aceitar isso, temos que fazer algo, nem que custe nossas vida"
     show minerador at right
-    minerador "Que tal ao invés de tentarmos atacar os agentes e evitar a construção da casa, nós não vamos direto ao Conde de Assumar e falamos com ele"
+    minerador "Que tal ao invés de tentarmos atacar os agentes e evitar que as casas de fundição continuem, nós não vamos direto ao Conde de Assumar e falamos com ele"
     filipe "Acho nossa única chance, mas os agentes vão fazer de tudo para nos parar"
     jump cap4alternativacap3
 
@@ -472,7 +472,7 @@ label cap4alternativacap3:
     show conde at left with moveinleft #happy
 
     conde "O que vieram fazer aqui depois daquela tentativa ridícula de ataque a casa de fundição?"
-    filipe "Viemos conversar com o senhor, estamos aqui para pedir a diminuição dos impostos, o alívio no do monopólio, deixando que os produtos sejam comercializados por algumas outras empresas, e contra a construção da casa de fundição"
+    filipe "Viemos conversar com o senhor, estamos aqui para pedir a diminuição dos impostos, o alívio no do monopólio, deixando que os produtos sejam comercializados por algumas outras empresas, e contra as casa de fundição"
     filipe "Isso vem atrapalhando muito a vida dos cidadaos e pedimos que o senhor nos ajude"
 
     conde "HAHAHAHA, vocês depois de tudo isso vem até aqui pedir tudo isso e esperam que eu vá ajudá-los?"
