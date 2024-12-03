@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/historia.rpy", line 58: choice menuitem expects a non-empty block.
-    "Vamos ser mais espertos com o santinho de pau oco.":
-                                                         ^
+File "game/historia.rpy", line 111: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+                comerciante "Mas todo o ouro que tivemos tanto trabalho para pegar, seria levado uma grande parte pela casa de fundição
 
 Ren'Py Version: Ren'Py 8.3.3.24111502
-Mon Dec  2 21:05:06 2024
+Mon Dec  2 21:16:58 2024

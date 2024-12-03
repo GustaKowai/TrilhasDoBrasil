@@ -435,3 +435,1618 @@ Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
 Maximum texture size: 4096x4096
 Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
 Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1243.61s
+Loading error handling took 0.02s
+Loading script took 0.12s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.04s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Dump and make backups took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.06s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.16s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 32.0.101.5972'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1480.83s
+Loading error handling took 0.02s
+Loading script took 0.10s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/historia.rpy", line 111: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+                comerciante "mas todo o ouro que tivemos tanto trabalho para pegar, seria levado uma grande parte pela casa de fundição
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.16s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 32.0.101.5972'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1484.03s
+Loading error handling took 0.02s
+Loading script took 0.11s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/historia.rpy", line 111: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+                comerciante "Mas todo o ouro que tivemos tanto trabalho para pegar, seria levado uma grande parte pela casa de fundição
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.16s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 32.0.101.5972'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1486.46s
+Loading error handling took 0.03s
+Loading script took 0.15s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/historia.rpy", line 111: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+                comerciante "Mas todo o ouro que tivemos tanto trabalho para pegar, seria levado uma grande parte pela casa de fundição
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.14s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 32.0.101.5972'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1487.07s
+Loading error handling took 0.02s
+Loading script took 0.10s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/historia.rpy", line 111: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+                comerciante "Mas todo o ouro que tivemos tanto trabalho para pegar, seria levado uma grande parte pela casa de fundição
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.13s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 32.0.101.5972'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1487.79s
+Loading error handling took 0.02s
+Loading script took 0.10s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/historia.rpy", line 111: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+                comerciante "Mas todo o ouro que tivemos tanto trabalho para pegar, seria levado uma grande parte pela casa de fundição
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.14s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 32.0.101.5972'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1488.29s
+Loading error handling took 0.02s
+Loading script took 0.09s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/historia.rpy", line 111: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+                comerciante "Mas todo o ouro que tivemos tanto trabalho para pegar, seria levado uma grande parte pela casa de fundição
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.15s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 32.0.101.5972'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1505.01s
+Loading error handling took 0.02s
+Loading script took 0.16s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.04s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Etec Paulino Botelho\\AppData\\Roaming/RenPy/backups\\Trilhas do Brasil':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.12s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 32.0.101.5972'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1514.70s
+Loading error handling took 0.02s
+Loading script took 0.23s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.04s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Etec Paulino Botelho\\AppData\\Roaming/RenPy/backups\\Trilhas do Brasil':
+Dump and make backups took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.05s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.13s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 32.0.101.5972'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1936.90s
+Loading error handling took 0.02s
+Loading script took 0.18s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Etec Paulino Botelho\\AppData\\Roaming/RenPy/backups\\Trilhas do Brasil':
+Dump and make backups took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.05s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.13s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 32.0.101.5972'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1996.71s
+Loading error handling took 0.02s
+Loading script took 0.15s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Etec Paulino Botelho\\AppData\\Roaming/RenPy/backups\\Trilhas do Brasil':
+Dump and make backups took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.05s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.13s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 32.0.101.5972'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2075.90s
+Loading error handling took 0.02s
+Loading script took 0.17s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Etec Paulino Botelho\\AppData\\Roaming/RenPy/backups\\Trilhas do Brasil':
+Dump and make backups took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.05s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.13s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 32.0.101.5972'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2123.57s
+Loading error handling took 0.02s
+Loading script took 0.16s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Etec Paulino Botelho\\AppData\\Roaming/RenPy/backups\\Trilhas do Brasil':
+Dump and make backups took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.05s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.13s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 32.0.101.5972'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2248.31s
+Loading error handling took 0.02s
+Loading script took 0.10s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.16s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 32.0.101.5972'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2268.48s
+Loading error handling took 0.02s
+Loading script took 0.19s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Etec Paulino Botelho\\AppData\\Roaming/RenPy/backups\\Trilhas do Brasil':
+Dump and make backups took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.05s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.13s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 32.0.101.5972'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2302.14s
+Loading error handling took 0.02s
+Loading script took 0.16s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Etec Paulino Botelho\\AppData\\Roaming/RenPy/backups\\Trilhas do Brasil':
+Dump and make backups took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.05s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.13s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 32.0.101.5972'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2344.44s
+Loading error handling took 0.02s
+Loading script took 0.09s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.05s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.13s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 32.0.101.5972'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2368.99s
+Loading error handling took 0.02s
+Loading script took 0.16s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Etec Paulino Botelho\\AppData\\Roaming/RenPy/backups\\Trilhas do Brasil':
+Dump and make backups took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.05s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.13s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 32.0.101.5972'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/historia.rpy", line 95, in script
+    show cidadao default at right with moveinright
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\ast.py", line 1111, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\ast.py", line 1074, in show_imspec
+    renpy.config.show(name,
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\exports\displayexports.py", line 477, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 249, in _duplicate
+    args.extraneous()
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 109, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'cidadao' does not accept attributes 'default'.
+
+While running game code:
+  File "game/historia.rpy", line 95, in script
+    show cidadao default at right with moveinright
+Exception: Image 'cidadao' does not accept attributes 'default'.
+Resetting cache.
+Early init took 2381.51s
+Loading error handling took 0.02s
+Loading script took 0.16s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Etec Paulino Botelho\\AppData\\Roaming/RenPy/backups\\Trilhas do Brasil':
+Dump and make backups took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.06s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.13s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 32.0.101.5972'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2492.47s
+Loading error handling took 0.02s
+Loading script took 0.16s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Etec Paulino Botelho\\AppData\\Roaming/RenPy/backups\\Trilhas do Brasil':
+Dump and make backups took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.05s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.13s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 32.0.101.5972'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/historia.rpy", line 80, in script
+    show cidadao default at left with dissolve
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\ast.py", line 1111, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\ast.py", line 1074, in show_imspec
+    renpy.config.show(name,
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\exports\displayexports.py", line 477, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 249, in _duplicate
+    args.extraneous()
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 109, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'cidadao' does not accept attributes 'default'.
+
+While running game code:
+  File "game/historia.rpy", line 80, in script
+    show cidadao default at left with dissolve
+Exception: Image 'cidadao' does not accept attributes 'default'.
+Resetting cache.
+Early init took 2544.31s
+Loading error handling took 0.02s
+Loading script took 0.16s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Etec Paulino Botelho\\AppData\\Roaming/RenPy/backups\\Trilhas do Brasil':
+Dump and make backups took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.05s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.13s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 32.0.101.5972'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/historia.rpy", line 76, in script
+    cidadao "Concordo, vamos tentar isso"
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\ast.py", line 2573, in execute
+    Say.execute(self)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\ast.py", line 615, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\exports\sayexports.py", line 132, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\character.py", line 1455, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\character.py", line 1106, in do_display
+    display_say(who,
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\character.py", line 803, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\core.py", line 2215, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\core.py", line 2745, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  [Previous line repeated 1 more time]
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 424, in visit_all
+    for d in self.visit():
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\image.py", line 540, in visit
+    self.find_target()
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 249, in _duplicate
+    args.extraneous()
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 109, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'cidadao' does not accept attributes 'default'.
+
+While running game code:
+  File "game/historia.rpy", line 76, in script
+    cidadao "Concordo, vamos tentar isso"
+Exception: Image 'cidadao' does not accept attributes 'default'.
+Resetting cache.
+Early init took 2591.76s
+Loading error handling took 0.02s
+Loading script took 0.11s
+Loading save slot metadata took 0.05s
+Loading persistent took 0.00s
+Running init code took 0.04s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Dump and make backups took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.05s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.14s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 32.0.101.5972'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/historia.rpy", line 76, in script
+    cidadao "Concordo, vamos tentar isso"
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\ast.py", line 2573, in execute
+    Say.execute(self)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\ast.py", line 615, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\exports\sayexports.py", line 132, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\character.py", line 1455, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\character.py", line 1106, in do_display
+    display_say(who,
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\character.py", line 803, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\core.py", line 2215, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\core.py", line 2745, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  [Previous line repeated 1 more time]
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 424, in visit_all
+    for d in self.visit():
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\image.py", line 540, in visit
+    self.find_target()
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 249, in _duplicate
+    args.extraneous()
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 109, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'cidadao' does not accept attributes 'default'.
+
+While running game code:
+  File "game/historia.rpy", line 76, in script
+    cidadao "Concordo, vamos tentar isso"
+Exception: Image 'cidadao' does not accept attributes 'default'.
+Resetting cache.
+Early init took 2620.83s
+Loading error handling took 0.02s
+Loading script took 0.10s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.05s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.12s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 32.0.101.5972'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/historia.rpy", line 76, in script
+    cidadao "Concordo, vamos tentar isso"
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\ast.py", line 2573, in execute
+    Say.execute(self)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\ast.py", line 615, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\exports\sayexports.py", line 132, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\character.py", line 1455, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\character.py", line 1106, in do_display
+    display_say(who,
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\character.py", line 803, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\core.py", line 2215, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\core.py", line 2745, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  [Previous line repeated 1 more time]
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 424, in visit_all
+    for d in self.visit():
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\image.py", line 540, in visit
+    self.find_target()
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 249, in _duplicate
+    args.extraneous()
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 109, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'cidadao' does not accept attributes 'default'.
+
+While running game code:
+  File "game/historia.rpy", line 76, in script
+    cidadao "Concordo, vamos tentar isso"
+Exception: Image 'cidadao' does not accept attributes 'default'.
+
+Full traceback:
+  File "game/historia.rpy", line 59, in script
+    filipe "Vamos colocar o ouro em pó dentro de imagens de santos para passarmos pelos agentes sem precisar ter nosso ouro fiscalizado pelo governo"
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\ast.py", line 2573, in execute
+    Say.execute(self)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\ast.py", line 615, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\exports\sayexports.py", line 132, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\character.py", line 1455, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\character.py", line 1106, in do_display
+    display_say(who,
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\character.py", line 803, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\core.py", line 2215, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\core.py", line 2745, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  [Previous line repeated 1 more time]
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 424, in visit_all
+    for d in self.visit():
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\image.py", line 540, in visit
+    self.find_target()
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 249, in _duplicate
+    args.extraneous()
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 109, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'cidadao' does not accept attributes 'default'.
+
+While running game code:
+  File "game/historia.rpy", line 59, in script
+    filipe "Vamos colocar o ouro em pó dentro de imagens de santos para passarmos pelos agentes sem precisar ter nosso ouro fiscalizado pelo governo"
+Exception: Image 'cidadao' does not accept attributes 'default'.
+
+Full traceback:
+  File "game/historia.rpy", line 57, in script
+    menu:
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\ast.py", line 1619, in execute
+    choice = renpy.exports.menu(choices, self.set, args, kwargs, item_arguments)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\exports\menuexports.py", line 134, in menu
+    rv = renpy.store.menu(new_items)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\exports\menuexports.py", line 424, in display_menu
+    rv = renpy.ui.interact(mouse='menu', type=type, roll_forward=roll_forward)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\core.py", line 2215, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\core.py", line 2745, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  [Previous line repeated 1 more time]
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 424, in visit_all
+    for d in self.visit():
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\image.py", line 540, in visit
+    self.find_target()
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 249, in _duplicate
+    args.extraneous()
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 109, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'cidadao' does not accept attributes 'default'.
+
+While running game code:
+  File "game/historia.rpy", line 57, in script
+    menu:
+Exception: Image 'cidadao' does not accept attributes 'default'.
+
+Full traceback:
+  File "game/historia.rpy", line 55, in script
+    comerciante "O que podemos fazer? A coroa nos controla e tem olhos em todo lugar."
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\ast.py", line 2573, in execute
+    Say.execute(self)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\ast.py", line 615, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\exports\sayexports.py", line 132, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\character.py", line 1455, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\character.py", line 1106, in do_display
+    display_say(who,
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\character.py", line 803, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\core.py", line 2215, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\core.py", line 2745, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  [Previous line repeated 1 more time]
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 424, in visit_all
+    for d in self.visit():
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\image.py", line 540, in visit
+    self.find_target()
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 249, in _duplicate
+    args.extraneous()
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 109, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'cidadao' does not accept attributes 'default'.
+
+While running game code:
+  File "game/historia.rpy", line 55, in script
+    comerciante "O que podemos fazer? A coroa nos controla e tem olhos em todo lugar."
+Exception: Image 'cidadao' does not accept attributes 'default'.
+
+Full traceback:
+  File "game/historia.rpy", line 53, in script
+    cidadao "eles fazem chantagem e ameaças, sem falar de quando roubam a força."
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\ast.py", line 2573, in execute
+    Say.execute(self)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\ast.py", line 615, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\exports\sayexports.py", line 132, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\character.py", line 1455, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\character.py", line 1106, in do_display
+    display_say(who,
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\character.py", line 803, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\core.py", line 2215, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\core.py", line 2745, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  [Previous line repeated 1 more time]
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 424, in visit_all
+    for d in self.visit():
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\image.py", line 540, in visit
+    self.find_target()
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 249, in _duplicate
+    args.extraneous()
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 109, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'cidadao' does not accept attributes 'default'.
+
+While running game code:
+  File "game/historia.rpy", line 53, in script
+    cidadao "eles fazem chantagem e ameaças, sem falar de quando roubam a força."
+Exception: Image 'cidadao' does not accept attributes 'default'.
+
+Full traceback:
+  File "game/historia.rpy", line 52, in script
+    cidadao "Além de pegarem uma grande parte do nosso ouro, os agentes da coroa ainda agem de má fé, tentando de alguma maneira roubar nosso ouro"
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\ast.py", line 2573, in execute
+    Say.execute(self)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\ast.py", line 615, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\exports\sayexports.py", line 132, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\character.py", line 1455, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\character.py", line 1106, in do_display
+    display_say(who,
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\character.py", line 803, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\core.py", line 2215, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\core.py", line 2745, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  [Previous line repeated 1 more time]
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 424, in visit_all
+    for d in self.visit():
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\image.py", line 540, in visit
+    self.find_target()
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 249, in _duplicate
+    args.extraneous()
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 109, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'cidadao' does not accept attributes 'default'.
+
+While running game code:
+  File "game/historia.rpy", line 52, in script
+    cidadao "Além de pegarem uma grande parte do nosso ouro, os agentes da coroa ainda agem de má fé, tentando de alguma maneira roubar nosso ouro"
+Exception: Image 'cidadao' does not accept attributes 'default'.
+
+Full traceback:
+  File "game/historia.rpy", line 50, in script
+    filipe "Precisamos ocupar toda vila rica"
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\ast.py", line 2573, in execute
+    Say.execute(self)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\ast.py", line 615, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\exports\sayexports.py", line 132, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\character.py", line 1455, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\character.py", line 1106, in do_display
+    display_say(who,
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\character.py", line 803, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\core.py", line 2215, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\core.py", line 2745, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  [Previous line repeated 1 more time]
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 424, in visit_all
+    for d in self.visit():
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\image.py", line 540, in visit
+    self.find_target()
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 249, in _duplicate
+    args.extraneous()
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 109, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'cidadao' does not accept attributes 'default'.
+
+While running game code:
+  File "game/historia.rpy", line 50, in script
+    filipe "Precisamos ocupar toda vila rica"
+Exception: Image 'cidadao' does not accept attributes 'default'.
+
+Full traceback:
+  File "game/historia.rpy", line 49, in script
+    filipe "E todas essas barras tem um selo que mostra que passaram pelas casas, só assim conseguimos comercializa-las..."
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\ast.py", line 2573, in execute
+    Say.execute(self)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\ast.py", line 615, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\exports\sayexports.py", line 132, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\character.py", line 1455, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\character.py", line 1106, in do_display
+    display_say(who,
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\character.py", line 803, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\core.py", line 2215, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\core.py", line 2745, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  [Previous line repeated 1 more time]
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 424, in visit_all
+    for d in self.visit():
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\image.py", line 540, in visit
+    self.find_target()
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 249, in _duplicate
+    args.extraneous()
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 109, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'cidadao' does not accept attributes 'default'.
+
+While running game code:
+  File "game/historia.rpy", line 49, in script
+    filipe "E todas essas barras tem um selo que mostra que passaram pelas casas, só assim conseguimos comercializa-las..."
+Exception: Image 'cidadao' does not accept attributes 'default'.
+
+Full traceback:
+  File "game/historia.rpy", line 48, in script
+    filipe "Porém a cada cinco barras de ouro uma fica com a coroa! UM QUINTO de tudo que produzimos!"
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\ast.py", line 2573, in execute
+    Say.execute(self)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\ast.py", line 615, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\exports\sayexports.py", line 132, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\character.py", line 1455, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\character.py", line 1106, in do_display
+    display_say(who,
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\character.py", line 803, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\core.py", line 2215, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\core.py", line 2745, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  [Previous line repeated 1 more time]
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 424, in visit_all
+    for d in self.visit():
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\image.py", line 540, in visit
+    self.find_target()
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 249, in _duplicate
+    args.extraneous()
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 109, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'cidadao' does not accept attributes 'default'.
+
+While running game code:
+  File "game/historia.rpy", line 48, in script
+    filipe "Porém a cada cinco barras de ouro uma fica com a coroa! UM QUINTO de tudo que produzimos!"
+Exception: Image 'cidadao' does not accept attributes 'default'.
+
+Full traceback:
+  File "game/historia.rpy", line 47, in script
+    filipe "Todo o ouro que pegamos em pepitas seremos obrigados a levar nas casas de fundição, onde os agentes da coroa derretem o ouro e transformam em barras."
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\ast.py", line 2573, in execute
+    Say.execute(self)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\ast.py", line 615, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\exports\sayexports.py", line 132, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\character.py", line 1455, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\character.py", line 1106, in do_display
+    display_say(who,
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\character.py", line 803, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\core.py", line 2215, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\core.py", line 2745, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  [Previous line repeated 1 more time]
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 424, in visit_all
+    for d in self.visit():
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\image.py", line 540, in visit
+    self.find_target()
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 249, in _duplicate
+    args.extraneous()
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 109, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'cidadao' does not accept attributes 'default'.
+
+While running game code:
+  File "game/historia.rpy", line 47, in script
+    filipe "Todo o ouro que pegamos em pepitas seremos obrigados a levar nas casas de fundição, onde os agentes da coroa derretem o ouro e transformam em barras."
+Exception: Image 'cidadao' does not accept attributes 'default'.
+Resetting cache.
+Early init took 2715.22s
+Loading error handling took 0.02s
+Loading script took 0.16s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Etec Paulino Botelho\\AppData\\Roaming/RenPy/backups\\Trilhas do Brasil':
+Dump and make backups took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.09s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.13s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 32.0.101.5972'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/historia.rpy", line 215, in script
+    show minerador default at center with moveinright
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\ast.py", line 1111, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\ast.py", line 1074, in show_imspec
+    renpy.config.show(name,
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\exports\displayexports.py", line 477, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 249, in _duplicate
+    args.extraneous()
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 109, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'minerador' does not accept attributes 'default'.
+
+While running game code:
+  File "game/historia.rpy", line 215, in script
+    show minerador default at center with moveinright
+Exception: Image 'minerador' does not accept attributes 'default'.
+Resetting cache.
+Early init took 2733.83s
+Loading error handling took 0.02s
+Loading script took 0.16s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Etec Paulino Botelho\\AppData\\Roaming/RenPy/backups\\Trilhas do Brasil':
+Dump and make backups took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.05s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.13s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 32.0.101.5972'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 986) drawable=(1920, 986)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/historia.rpy", line 233, in script
+    show minerador default at center
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\ast.py", line 1111, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\ast.py", line 1074, in show_imspec
+    renpy.config.show(name,
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\exports\displayexports.py", line 477, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 249, in _duplicate
+    args.extraneous()
+  File "C:\Users\Etec Paulino Botelho\Downloads\renpy-8.3.3-sdk\renpy\display\displayable.py", line 109, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'minerador' does not accept attributes 'default'.
+
+While running game code:
+  File "game/historia.rpy", line 233, in script
+    show minerador default at center
+Exception: Image 'minerador' does not accept attributes 'default'.

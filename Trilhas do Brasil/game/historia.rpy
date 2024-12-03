@@ -41,7 +41,7 @@ label cap1:
     
     "Você se junta a uma reunião secreta. O ambiente é carregado de descontentamento."
     show filipe at center with dissolve
-    show cidadao default at left with dissolve
+    show cidadao at left with dissolve
     show comerciante default at right with dissolve
     filipe "Precisamos nos unir contra essa opressão! Não podemos mais aceitar a imposição das casas de fundição."
     filipe "Todo o ouro que pegamos em pepitas seremos obrigados a levar nas casas de fundição, onde os agentes da coroa derretem o ouro e transformam em barras."
@@ -77,7 +77,7 @@ label aumentamoral (count=2):
     scene bg reuniao
     show filipe at right with dissolve
     show comerciante default at center with dissolve
-    show morador default at left with dissolve
+    show cidadao at left with dissolve
 
     filipe "Vamos tentar utilizar o santinho do pau oco"
     filipe "Vocês vão passar com esses santinhos pelos guardas e tentar salvar o máximo de ouro sem passar pelas casas de fundição, veremos se vai dar certo esse plano"
@@ -85,19 +85,19 @@ label aumentamoral (count=2):
     comerciante "Vamos tentar, se conseguirmos voltaremos para avisar aos outros"
 
     hide comerciante with moveoutleft
-    hide morador with moveoutleft
+    hide cidadao with moveoutleft
     pause 1.0
     scene aumentamoral
 
     scene bg carroça
     "Os dois comerciantes juntam suas mercadorias e vão para a cidade tentar comercializar mas encontram uma inspeção feita pelos agentes da coroa."
     show comerciante default at center with moveinright #happy
-    show morador default at right with moveinright
+    show cidadao at right with moveinright
     show agente1 at left
     agente1 "Muito bem, o que vocês tem aqui ?"
 
     show comerciante at center #sad
-    show morador at right #sad
+    show cidadao at right #sad
 
     agente1 "Algumas mercadorias, comidas, santinhos"
     agente1 "Parece haver algo dentro desses santinhos, o que é isso?"
@@ -107,7 +107,8 @@ label aumentamoral (count=2):
     agente1 "Pensaram que iam nos enganar? hahahahaha"
 
     menu:
-        "Desculpe-me senhor, mas todo o ouro que tivemos tanto trabalho para pegar, seria levado uma grande parte pela casa de fundição":
+        "Desculpe-me senhor,podemos explicar.":
+            comerciante "Mas todo o ouro que tivemos tanto trabalho para pegar, seria levado uma grande parte pela casa de fundição"
             $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,6)
             jump tentardialogar
 
@@ -122,10 +123,10 @@ label tentardialogar:
     agente1 "Não quero saber, vocês vão pagar por isso e ainda vamos ficar com todo esse ouro para nós"
     show agente1 saco
     show comerciante #algema
-    show morador #algema
+    show cidadao #algema
     agente1 "Vou leva-los para a prisão"
     hide comerciante with moveoutleft
-    hide morador with moveoutleft
+    hide cidadao with moveoutleft
 
     scene tentardialogar
 
@@ -193,25 +194,25 @@ label aumentaforça:
 label estrategia:
     scene bg carroça
     show filipe  at left
-    show cidadao default at center
+    show minerador at center
     filipe "Você segue com o plano enquanto eu e os outros vamos tentar recrutar mais apoiadores para nosso plano"
     hide filipe
-    hide cidadao with moveoutleft
+    hide minerador with moveoutleft
     #Ilustração de uma carroça no fundo com algumas coisas e ouro em cima, os dois comerciantes indo em direção a uma inspeção feita pelos agentes
     
     show agente1 at left
-    show cidadao default at center with moveinright
+    show minerador at center with moveinright
     agente1 "Parado aí, o que temos ai?"
-    cidadao "Tenho mercadoria para comercializar e ouro tambem"
+    minerador "Tenho mercadoria para comercializar e ouro tambem"
     agente1 "Esse ouro você vai levar a casa de fundição mais a frente, deixe la que será calculado os impostos, seu ouro será derretido e carimbado, devolveremos ele a você"
     agente1 "Subindo a rua você verá a construção a frente"
-    cidadao "Certo, vamos lá."
+    minerador "Certo, vamos lá."
 
-    hide cidadao with moveoutleft
+    hide minerador with moveoutleft
     scene estrategia
 
     show bg casafundição 
-    show cidadao default at center with moveinright
+    show minerador at center with moveinright
     show agente1 at left
     agente2 "Aqui vocês deixam o seu ouro, derreteremos, faremos barras, marcaremos seu ouro e pegaremos os impostos. Depois disso poderá comercializá-lo"
     #sons de trocas de itens
@@ -229,9 +230,9 @@ label estrategia:
     scene bg vilarica
     stop sound
     show filipe at right
-    show cidadao default at center
+    show minerador at center
     filipe "Você voltou, como foi?"
-    cidadao "Eu vi tudo, a localização e a quantidade de agentes lá. São bastante agentes, mas com todo o pessoal que estou vendo que juntaram, vamos conseguir se formos espertos"
+    minerador "Eu vi tudo, a localização e a quantidade de agentes lá. São bastante agentes, mas com todo o pessoal que estou vendo que juntaram, vamos conseguir se formos espertos"
     scene estrategia
     jump cap2
 
@@ -508,7 +509,7 @@ label cap4ficaralerta:
     play sound "audio/sons de comemoração.mp3"
     #sons de comemorações
     "Toda a população de vila rica passa a noite comemorando e festejando o sucesso da revolta, mas alguns ainda ficam de guarda levantada e de olho em tudo"
-    hide bg telaescura
+
     stop sound
     "mas ao amãnhecer..."
     play sound "audio/sons de cavalo no fundo.MP3"
@@ -518,7 +519,7 @@ label cap4ficaralerta:
     #sons de cavalo no fundo
 
     stop sound
-    show cidadao faca at right
+    show morador faca at right
     #imagem de um morador com uma faca na mão
     show agente1 at center with moveinleft
     show agente2 at left with moveinleft
