@@ -55,7 +55,8 @@ label cap1:
     comerciante "O que podemos fazer? A coroa nos controla e tem olhos em todo lugar."
 
     menu:
-        "Vamos ser mais espertos com o santinho de pau oco, onde colocamos ouro em pó dentro de imagens de santos para passarmos pelos agentes sem precisar ter nosso ouro fiscalizado pelo governo":
+        "Vamos ser mais espertos com o santinho de pau oco.":
+            filipe "Vamos colocar o ouro em pó dentro de imagens de santos para passarmos pelos agentes sem precisar ter nosso ouro fiscalizado pelo governo"
             $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,3)
             jump aumentamoral
 
@@ -64,30 +65,32 @@ label cap1:
             scene cap1
             jump aumentaforça
 
-        "Podemos levar o ouro para a casa de fundição, para vermos quantos agentes tem vigiando e a localização exata":
+        "Podemos levar o ouro para a casa de fundição":
+            filipe "Veremos quantos agentes tem vigiando, a localização exata e montaremos a estratégia"
+            cidadao "Perfeito"
             $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,5)
             scene cap1
             jump estrategia
 
 label aumentamoral (count=2):
-    cidadao "concordo, vamos tentar isso"
+    cidadao "Concordo, vamos tentar isso"
     scene bg reuniao
     show filipe at right with dissolve
     show comerciante default at center with dissolve
     show morador default at left with dissolve
 
     filipe "Vamos tentar utilizar o santinho do pau oco"
-    filipe "Vocês vão passar com esses santinhos pelos guardas e tentar salvar o máximo de ouro sem passar pelas casas de fundição que serão construídas, veremos se vai dar certo esse plano"
+    filipe "Vocês vão passar com esses santinhos pelos guardas e tentar salvar o máximo de ouro sem passar pelas casas de fundição, veremos se vai dar certo esse plano"
 
     comerciante "Vamos tentar, se conseguirmos voltaremos para avisar aos outros"
 
-    "Os dois comerciantes juntam suas mercadorias e vão para a cidade tentar comercializar mas encontram uma inspeção feita pelos agentes da coroa."
     hide comerciante with moveoutleft
     hide morador with moveoutleft
     pause 1.0
     scene aumentamoral
 
     scene bg carroça
+    "Os dois comerciantes juntam suas mercadorias e vão para a cidade tentar comercializar mas encontram uma inspeção feita pelos agentes da coroa."
     show comerciante default at center with moveinright #happy
     show morador default at right with moveinright
     show agente1 at left
