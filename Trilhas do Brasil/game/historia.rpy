@@ -65,7 +65,7 @@ label cap1:
             scene cap1
             jump aumentaforça
 
-        "Podemos levar o ouro para a casa de fundição":
+        "Podemos levar o ouro para a casa de fundição.":
             filipe "Veremos quantos agentes tem vigiando, a localização exata e montaremos a estratégia"
             cidadao "Perfeito"
             $ ordemEscolha = insertEscolhaIntoBD("trilhadobrasil",persistent.alunoID,5)
