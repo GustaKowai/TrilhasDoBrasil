@@ -1,6 +1,6 @@
 label inicioHistoria:
     scene bg vilarica
-    "Você observa o movimento frenético dos mineradores nas encostas. Entre eles, está Felipe dos Santos, seu personagem principal."
+    "Você observa o movimento frenético dos mineradores nas encostas. Entre eles, está Filipe dos Santos, seu personagem principal."
 
     show filipe at left 
     filipe "Mais um dia de trabalho que estamos terminando. Mas com essas casas de fundição que o governo está implementando, nosso trabalho será muito desvalorizado."

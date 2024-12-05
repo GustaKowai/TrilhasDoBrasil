@@ -80,8 +80,8 @@ function checkCookie() {
     if (idProfessor != "") {
         carregarTurmas(idProfessor);
     } else {
-        carregarTurmas(1)
-        //window.location.href = 'index.html';
+        //carregarTurmas(1)
+        window.location.href = 'index.html';
     }
   }
 

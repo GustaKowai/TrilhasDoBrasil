@@ -269,5 +269,14 @@ button#btnTurmas6:hover {
 }
 
 .sair{
+    position: absolute;
+    left: 80%;
     color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+.sair:hover{
+    text-decoration: underline;
+    cursor:pointer;
 }
